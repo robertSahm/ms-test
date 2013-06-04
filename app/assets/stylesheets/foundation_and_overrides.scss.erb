@@ -26,9 +26,9 @@ $em-base: 16px !default;
 
 // Various global styles
 
-$default-float: left;
+// $default-float: left;
 
-// $body-bg: #fff;
+// $body-bg: #E6F5FF;
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
@@ -117,6 +117,15 @@ $default-float: left;
 // $column-gutter: emCalc(30px);
 // $total-columns: 12;
 
+//                            ,,        ,,  
+//       .g8"""bgd            db      `7MM  
+//     .dP'     `M                      MM  
+//     dM'       ` `7Mb,od8 `7MM   ,M""bMM  
+//     MM            MM' "'   MM ,AP    MM  
+//     MM.    `7MMF' MM       MM 8MI    MM  
+//     `Mb.     MM   MM       MM `Mb    MM  
+//       `"bmmmdPY .JMML.   .JMML.`Wbmd"MML.
+
 //
 // Block Grid Variables
 //
@@ -130,6 +139,16 @@ $default-float: left;
 
 // $block-grid-media-queries: true;
 
+//      MMP""MM""YMM                          
+//      P'   MM   `7                          
+//           MM `7M'   `MF`7MMpdMAo.  .gP"Ya  
+//           MM   VA   ,V   MM   `Wb ,M'   Yb 
+//           MM    VA ,V    MM    M8 8M"""""" 
+//           MM     VVV     MM   ,AP YM.    , 
+//         .JMML.   ,V      MMbmmd'   `Mbmmd' 
+//                 ,V       MM                
+//              OOb"      .JMML.              
+
 //
 // Typography Variables
 //
@@ -137,29 +156,106 @@ $default-float: left;
 // Heading font styles
 
 @import "foundation/foundation-global";
+
+
+//klinicslabbook-webfont
+//klinicslabbookit-webfont
 @font-face {
     font-family: 'klinicslabbook-webfont';
     src: url('<%= asset_path('klinicslabbook-webfont.eot') %>');
     src: url('<%= asset_path('klinicslabbook-webfont.eot') %>'+'?#iefix') format('embedded-opentype'),
          url('<%= asset_path('klinicslabbook-webfont.woff') %>') format('woff'),
          url('<%= asset_path('klinicslabbook-webfont.ttf') %>') format('truetype'),
-         url('<%= asset_path('klinicslabbook-webfont.svg') %>#museo_sans_300regular') format('svg');
-    font-weight: 300;
+         url('<%= asset_path('klinicslabbook-webfont.svg') %>#klinicslabbook-webfont') format('svg');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'klinicslabbookit-webfont';
+    src: url('<%= asset_path('klinicslabbookit-webfont.eot') %>');
+    src: url('<%= asset_path('klinicslabbookit-webfont.eot') %>'+'?#iefix') format('embedded-opentype'),
+         url('<%= asset_path('klinicslabbookit-webfont.woff') %>') format('woff'),
+         url('<%= asset_path('klinicslabbookit-webfont.ttf') %>') format('truetype'),
+         url('<%= asset_path('klinicslabbookit-webfont.svg') %>#klinicslabbookit-webfont') format('svg');
     font-style: normal;
 }
 
-$header-font-family: "klinicslabbook-webfont", "serif";
-$header-font-weight: 400;
+//klinicslabbold-webfont
+//klinicslabboldit-webfont
+@font-face {
+    font-family: 'klinicslabbold-webfont';
+    src: url('<%= asset_path('klinicslabbold-webfont.eot') %>');
+    src: url('<%= asset_path('klinicslabbold-webfont.eot') %>'+'?#iefix') format('embedded-opentype'),
+         url('<%= asset_path('klinicslabbold-webfont.woff') %>') format('woff'),
+         url('<%= asset_path('klinicslabbold-webfont.ttf') %>') format('truetype'),
+         url('<%= asset_path('klinicslabbold-webfont.svg') %>#klinicslabbold-webfont') format('svg');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'klinicslabboldit-webfont';
+    src: url('<%= asset_path('klinicslabboldit-webfont.eot') %>');
+    src: url('<%= asset_path('klinicslabboldit-webfont.eot') %>'+'?#iefix') format('embedded-opentype'),
+         url('<%= asset_path('klinicslabboldit-webfont.woff') %>') format('woff'),
+         url('<%= asset_path('klinicslabboldit-webfont.ttf') %>') format('truetype'),
+         url('<%= asset_path('klinicslabboldit-webfont.svg') %>#klinicslabboldit-webfont') format('svg');
+    font-style: normal;
+}
+
+//klinicslabmedium-webfont
+//klinicslabmediumit-webfont
+
+@font-face {
+    font-family: 'klinicslabmedium-webfont';
+    src: url('<%= asset_path('klinicslabmedium-webfont.eot') %>');
+    src: url('<%= asset_path('klinicslabmedium-webfont.eot') %>'+'?#iefix') format('embedded-opentype'),
+         url('<%= asset_path('klinicslabmedium-webfont.woff') %>') format('woff'),
+         url('<%= asset_path('klinicslabmedium-webfont.ttf') %>') format('truetype'),
+         url('<%= asset_path('klinicslabmedium-webfont.svg') %>#klinicslabmedium-webfont') format('svg');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'klinicslabmediumit-webfont';
+    src: url('<%= asset_path('klinicslabmediumit-webfont.eot') %>');
+    src: url('<%= asset_path('klinicslabmediumit-webfont.eot') %>'+'?#iefix') format('embedded-opentype'),
+         url('<%= asset_path('klinicslabmediumit-webfont.woff') %>') format('woff'),
+         url('<%= asset_path('klinicslabmediumit-webfont.ttf') %>') format('truetype'),
+         url('<%= asset_path('klinicslabmediumit-webfont.svg') %>#klinicslabmediumit-webfont') format('svg');
+    font-style: normal;
+}
+
+//klinicslablight-webfont
+//klinicslablightit-webfont
+
+@font-face {
+    font-family: 'klinicslablight-webfont';
+    src: url('<%= asset_path('klinicslablight-webfont.eot') %>');
+    src: url('<%= asset_path('klinicslablight-webfont.eot') %>'+'?#iefix') format('embedded-opentype'),
+         url('<%= asset_path('klinicslablight-webfont.woff') %>') format('woff'),
+         url('<%= asset_path('klinicslablight-webfont.ttf') %>') format('truetype'),
+         url('<%= asset_path('klinicslablight-webfont.svg') %>#klinicslablight-webfont') format('svg');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'klinicslablightit-webfont';
+    src: url('<%= asset_path('klinicslablightit-webfont.eot') %>');
+    src: url('<%= asset_path('klinicslablightit-webfont.eot') %>'+'?#iefix') format('embedded-opentype'),
+         url('<%= asset_path('klinicslablightit-webfont.woff') %>') format('woff'),
+         url('<%= asset_path('klinicslablightit-webfont.ttf') %>') format('truetype'),
+         url('<%= asset_path('klinicslablightit-webfont.svg') %>#klinicslablightit-webfont') format('svg');
+    font-style: normal;
+}
+
+$header-font-family: 'klinicslabbook-webfont';
+$header-font-weight: normal;
 $header-font-style: normal;
 $header-font-color: #444;
 $header-line-height: 1.4;
 $header-top-margin: .2em;
 $header-bottom-margin: .5em;
-// $header-text-rendering: optimizeLegibility;
+$header-text-rendering: optimizeLegibility;
 
 // Heading font sizes
-
-$h1-font-size: emCalc(44px);
+$h1-font-size: emCalc(39px);
 $h2-font-size: emCalc(37px);
 $h3-font-size: emCalc(27px);
 $h4-font-size: emCalc(23px);
@@ -260,6 +356,14 @@ $h6-font-size: 1em;
 // $microformat-abbr-font-weight: bold;
 // $microformat-abbr-font-decoration: none;
 
+//      `7MM"""YMM                                         
+//        MM    `7                                         
+//        MM   d  ,pW"Wq.`7Mb,od8 `7MMpMMMb.pMMMb. ,pP"Ybd 
+//        MM""MM 6W'   `Wb MM' "'   MM    MM    MM 8I   `" 
+//        MM   Y 8M     M8 MM       MM    MM    MM `YMMMa. 
+//        MM     YA.   ,A9 MM       MM    MM    MM L.   I8 
+//      .JMML.    `Ybmd9'.JMML.   .JMML  JMML  JMMLM9mmmP' 
+
 //
 // Form Variables
 //
@@ -325,6 +429,15 @@ $h6-font-size: 1em;
 
 // $glowing-effect-fade-time: 0.45s;
 // $glowing-effect-color: $input-focus-border-color;
+
+//   `7MM"""Yp,              mm     mm                             
+//     MM    Yb              MM     MM                             
+//     MM    dP `7MM  `7MM mmMMmm mmMMmm ,pW"Wq.`7MMpMMMb. ,pP"Ybd 
+//     MM"""bg.   MM    MM   MM     MM  6W'   `Wb MM    MM 8I   `" 
+//     MM    `Y   MM    MM   MM     MM  8M     M8 MM    MM `YMMMa. 
+//     MM    ,9   MM    MM   MM     MM  YA.   ,A9 MM    MM L.   I8 
+//   .JMMmmmd9    `Mbod"YML. `Mbmo  `Mbmo`Ybmd9'.JMML  JMMLM9mmmP' 
+
 
 //
 // Button Variables
@@ -460,6 +573,15 @@ $h6-font-size: 1em;
 // $split-button-pip-top-lrg: $button-lrg + emCalc(5px);
 // $split-button-pip-left-lrg: emCalc(-9px);
 
+//                ,,                                 
+//       db     `7MM                    mm           
+//      ;MM:      MM                    MM           
+//     ,V^MM.     MM  .gP"Ya `7Mb,od8 mmMMmm ,pP"Ybd 
+//    ,M  `MM     MM ,M'   Yb  MM' "'   MM   8I   `" 
+//    AbmmmqMA    MM 8M""""""  MM       MM   `YMMMa. 
+//   A'     VML   MM YM.    ,  MM       MM   L.   I8 
+// .AMA.   .AMMA.JMML.`Mbmmd'.JMML.     `MbmoM9mmmP'
+
 //
 // Alert Variables
 //
@@ -502,6 +624,14 @@ $h6-font-size: 1em;
 
 // $alert-radius:                     $global-radius;
 
+//                          ,,                                   ,,        
+// `7MM"""Yp,             `7MM                                  *MM        
+//   MM    Yb               MM                                   MM        
+//   MM    dP `7Mb,od8 ,M""bMM  ,p6"bo `7Mb,od8 `7MMpMMMb.pMMMb. MM,dMMb.  
+//   MM"""bg.   MM' ",AP    MM 6M'  OO   MM' "'   MM    MM    MM MM    `Mb 
+//   MM    `Y   MM   8MI    MM 8M        MM       MM    MM    MM MM     M8 
+//   MM    ,9   MM   `Mb    MM YM.    ,  MM       MM    MM    MM MM.   ,M9 
+// .JMMmmmd9  .JMML.  `Wbmd"MML.YMbmd' .JMML.   .JMML  JMML  JMMLP^YbmdP' 
 
 //
 // Breadcrumb Variables
@@ -936,6 +1066,24 @@ $h6-font-size: 1em;
 // $price-cta-bg: #f5f5f5;
 // $price-cta-align: center;
 // $price-cta-padding: emCalc(20px) emCalc(20px) 0;
+
+//   `7MM"""Mq.                                            
+//     MM   `MM.                                           
+//     MM   ,M9 `7Mb,od8 .P"Ybmmm `7Mb,od8 ,pP"Ybd ,pP"Ybd 
+//     MMmmdM9    MM' "':MI  I8     MM' "' 8I   `" 8I   `" 
+//     MM         MM     WmmmP"     MM     `YMMMa. `YMMMa. 
+//     MM         MM    8M          MM     L.   I8 L.   I8 
+//   .JMML.     .JMML.   YMMMMMb  .JMML.   M9mmmP' M9mmmP' 
+//                      6'     dP                          
+//                      Ybmmmd'                 
+//   `7MM"""Yp,                  
+//     MM    Yb                  
+//     MM    dP  ,6"Yb. `7Mb,od8 
+//     MM"""bg. 8)   MM   MM' "' 
+//     MM    `Y  ,pm9MM   MM     
+//     MM    ,9 8M   MM   MM     
+//   .JMMmmmd9  `Moo9^Yo.JMML.   
+
 
 //
 // Progress Bar Variables

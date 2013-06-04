@@ -1,0 +1,280 @@
+.redBorder {
+	border: 1px solid red;
+}
+
+.blueBorder {
+	border: 1px solid blue;
+}
+
+.greenBorder {
+	border: 1px solid green;
+
+}
+
+//     ,...                                                
+//   .d' ""                mm                              
+//   dM`                   MM                              
+//  mMMmm,pW"Wq.`7MMpMMMbmmMMmm                            
+//   MM 6W'   `Wb MM    MM MM                              
+//   MM 8M     M8 MM    MM MM                              
+//   MM YA.   ,A9 MM    MM MM                              
+// .JMML.`Ybmd9'.JMML  JMML`Mbmo                           
+//                    ,,             ,,                    
+//                    db             db                    
+                                                        
+// `7MMpMMMb.pMMMb. `7MM `7M'   `MF`7MM `7MMpMMMb. ,pP"Ybd 
+//   MM    MM    MM   MM   `VA ,V'   MM   MM    MM 8I   `" 
+//   MM    MM    MM   MM     XMX     MM   MM    MM `YMMMa. 
+//   MM    MM    MM   MM   ,V' VA.   MM   MM    MM L.   I8 
+// .JMML  JMML  JMML.JMML.AM.   .MA.JMML.JMML  JMMLM9mmmP'
+
+//Font Book 
+@mixin fontBook {
+	font-family: 'klinicslabbook-webfont';
+}
+@mixin fontBookIt {
+	font-family: 'klinicslabbookit-webfont';
+}
+
+//Font Bold
+@mixin fontBold {
+	font-family: 'klinicslabbold-webfont';
+}
+@mixin fontBoldIt {
+	font-family: 'klinicslabboldit-webfont';
+}
+
+//Font Medium
+@mixin fontMed {
+	font-family: 'klinicslabmedium-webfont';
+}
+@mixin fontMedIt {
+	font-family: 'klinicslabmediumit-webfont';
+}
+
+//Font Light
+@mixin fontLight {
+	font-family: 'klinicslablight-webfont';
+}
+@mixin fontLightIt{
+	font-family: 'klinicslablightIt-webfont';
+}
+
+//                     ,,                          
+//   .g8"""bgd       `7MM                          
+// .dP'     `M         MM                          
+// dM'       `,pW"Wq.  MM  ,pW"Wq.`7Mb,od8 ,pP"Ybd 
+// MM        6W'   `Wb MM 6W'   `Wb MM' "' 8I   `" 
+// MM.       8M     M8 MM 8M     M8 MM     `YMMMa. 
+// `Mb.     ,YA.   ,A9 MM YA.   ,A9 MM     L.   I8 
+//   `"bmmmd' `Ybmd9'.JMML.`Ybmd9'.JMML.   M9mmmP' 
+
+$body-bg: #eee;
+$body-font-color: #222;
+$darkBlue: #5D718C;
+$ketchumYellow: #DFDDB4;
+
+body {
+	background-color: $body-bg;
+}
+
+//                              ,,                  
+// `7MMF'  `7MMF'             `7MM                  
+//   MM      MM                 MM                  
+//   MM      MM  .gP"Ya    ,M""bMM `7Mb,od8 
+//   MMmmmmmmMM ,M'   Yb ,AP    MM   MM' "' 
+//   MM      MM 8M"""""" 8MI    MM   MM     
+//   MM      MM YM.    , `Mb    MM   MM     
+// .JMML.  .JMML.`Mbmmd'  `Wbmd"MML.JMML.   
+
+.headerRow {
+	margin-bottom: 2%;
+}
+
+h1.logo {
+	color: $darkBlue !important;
+	@include fontLight;
+	margin: 0 0 0 3%;
+	padding: 0;
+	font-weight: 400;
+}
+
+.bass_playing { //img
+	width: 100%;
+	margin-top: 12%;
+	padding-right: 0 !important;
+	
+}
+
+.headerTitle {
+	margin-top: 1%;
+	padding: 0 !important;
+}
+
+.headerImg {
+	padding-left: 0 !important;
+}
+
+// `7MM"""Mq.                   mm                                            
+//   MM   `MM.                  MM                                            
+//   MM   ,M9 ,pW"Wq.`7Mb,od8 mmMMmm ,6"Yb. `7Mb,od8 ,pW"Wq.`7M'    ,A    `MF'
+//   MMmmdM9 6W'   `Wb MM' "'   MM  8)   MM   MM' "'6W'   `Wb VA   ,VAA   ,V  
+//   MM      8M     M8 MM       MM   ,pm9MM   MM    8M     M8  VA ,V  VA ,V   
+//   MM      YA.   ,A9 MM       MM  8M   MM   MM    YA.   ,A9   VVV    VVV    
+// .JMML.     `Ybmd9'.JMML.     `Mbm`Moo9^Yo.JMML.   `Ybmd9'     W      W     
+
+.bgBlack {
+	max-height: 400px;
+	background-color: black;
+}
+
+.portaSpin {
+	margin-left: 22%;
+	z-index: -100;
+}
+
+img.portaDevices  {
+	margin-top: 25%;
+}
+
+.portaLogoRow {
+
+	.portaLogo {
+		margin-top: -32%;
+		margin-left: 15%;
+		padding-bottom: 5%;
+	}
+}
+
+//                                ,,                         
+// `7MM              mm         `7MM                         
+//   MM              MM           MM                         
+//   MM  ,MP.gP"Ya mmMMmm ,p6"bo  MMpMMMb. `7MMpMMMb.pMMMb.  
+//   MM ;Y ,M'   Yb  MM  6M'  OO  MM    MM   MM    MM    MM  
+//   MM;Mm 8M""""""  MM  8M       MM    MM   MM    MM    MM  
+//   MM `MbYM.    ,  MM  YM.    , MM    MM   MM    MM    MM  
+// .JMML. YA`Mbmmd'  `MbmoYMbmd'.JMML  JMML.JMML  JMML  JMML.
+
+.ketchumWrapper {
+	background-color: $ketchumYellow;
+	position: relative;
+	max-height: 400px;
+	margin-top: 3%;
+	overflow: hidden;
+}
+
+// .ketchumBG {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	height: 100%;
+// 	max-height: 400px;
+// 	min-height: 100%;
+// }
+
+.ketchTexture {
+	background-image: url('ketchumBG.png');
+	height: 100%;
+	min-width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	//z-index: 20;
+}
+
+.copyjunk {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	min-width: 100%;
+	max-height: 400px;
+	opacity: .5;
+	min-height: 100%;
+}
+
+.ketchumLogo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 200;
+	margin-top: 2%;
+	margin-left: 13%;
+}
+
+.ketchShape {
+	position: relative;
+	max-width: 900px;
+	width: 100%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 20%;
+}
+
+//                                     ,,  
+//   .g8"""bgd                       `7MM  
+// .dP'     `M                         MM  
+// dM'       `,6"Yb. `7Mb,od8 ,pW"Wq.  MM  
+// MM        8)   MM   MM' "'6W'   `Wb MM  
+// MM.        ,pm9MM   MM    8M     M8 MM  
+// `Mb.     ,8M   MM   MM    YA.   ,A9 MM  
+//   `"bmmmd'`Moo9^Yo.JMML.   `Ybmd9'.JMML.
+
+.carolWrapper {
+	margin-top: 3%;
+	background-color: #fff;
+	max-height: 400px;
+}
+
+.carolLogo {
+	margin-left: 15%;
+	padding: 13% 0 0 0;
+}
+
+.carolContentTop {
+	padding: 5% 3% 7% 3%;
+}
+                                                     
+//                                               ,,   ,,  
+//                         `7MM"""Yb.          `7MM   db  
+//                           MM    `Yb.          MM       
+//  ,p6"bo  pd*"*b.  ,p6"bo  MM     `Mb  .gP"Ya  MM `7MM  
+// 6M'  OO (O)   j8 6M'  OO  MM      MM ,M'   Yb MM   MM  
+// 8M          ,;j9 8M       MM     ,MP 8M"""""" MM   MM  
+// YM.    , ,-='    YM.    , MM    ,dP' YM.    , MM   MM  
+//  YMbmd' Ammmmmmm  YMbmd'.JMMmmmdP'    `Mbmmd.JMML.JMML.
+
+.c2cWrapper {
+	background-image: url('bricksBigDark.jpg');
+	max-height: 400px;
+	margin-top: 3%;
+}
+
+.c2cAwning {
+	width: 100%;
+	margin: 7%;
+}
+
+//                                           ,...             
+//                                         .d' ""       mm    
+//                                         dM`          MM    
+//  ,p6"bo `7Mb,od8 ,6"Yb`7M'    ,A    `MFmMMm,pP"Ybd mmMMmm  
+// 6M'  OO   MM' "'8)   MM VA   ,VAA   ,V  MM 8I   `"   MM    
+// 8M        MM     ,pm9MM  VA ,V  VA ,V   MM `YMMMa.   MM    
+// YM.    ,  MM    8M   MM   VVV    VVV    MM L.   I8   MM    
+//  YMbmd' .JMML.  `Moo9^Yo.  W      W   .JMMLM9mmmP'   `Mbmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -157,6 +157,10 @@ $em-base: 16px !default;
 
 @import "foundation/foundation-global";
 
+$body-bg: #eee;
+$body-font-color: #222;
+$darkBlue: #5D718C;
+$ketchumYellow: #DFDDB4;
 
 //klinicslabbook-webfont
 //klinicslabbookit-webfont
@@ -245,6 +249,38 @@ $em-base: 16px !default;
     font-style: normal;
 }
 
+//Font Book 
+@mixin fontBook {
+    font-family: 'klinicslabbook-webfont';
+}
+@mixin fontBookIt {
+    font-family: 'klinicslabbookit-webfont';
+}
+
+//Font Bold
+@mixin fontBold {
+    font-family: 'klinicslabbold-webfont';
+}
+@mixin fontBoldIt {
+    font-family: 'klinicslabboldit-webfont';
+}
+
+//Font Medium
+@mixin fontMed {
+    font-family: 'klinicslabmedium-webfont';
+}
+@mixin fontMedIt {
+    font-family: 'klinicslabmediumit-webfont';
+}
+
+//Font Light
+@mixin fontLight {
+    font-family: 'klinicslablight-webfont';
+}
+@mixin fontLightIt{
+    font-family: 'klinicslablightIt-webfont';
+}
+
 $header-font-family: 'klinicslabbook-webfont';
 $header-font-weight: normal;
 $header-font-style: normal;
@@ -277,7 +313,7 @@ $h6-font-size: 1em;
 
 // Paragraphs
 
-// $paragraph-font-family: inherit;
+$paragraph-font-family: 'klinicslablight-webfont';
 // $paragraph-font-weight: normal;
 // $paragraph-font-size: 1em;
 // $paragraph-line-height: 1.6;
@@ -295,7 +331,7 @@ $h6-font-size: 1em;
 // Anchors
 
 // $anchor-text-decoration: none;
-// $anchor-font-color: $primary-color;
+$anchor-font-color: inherit;
 // $anchor-font-color-hover: darken($primary-color, 5%);
 
 // <hr> element
@@ -1356,17 +1392,26 @@ $h6-font-size: 1em;
 // $tooltip-radius: $global-radius;
 // $tooltip-pip-size: 5px;
 
+// MMP""MM""YMM                   `7MM"""Yp,                  
+// P'   MM   `7                     MM    Yb                  
+//      MM  ,pW"Wq.`7MMpdMAo.       MM    dP  ,6"Yb. `7Mb,od8 
+//      MM 6W'   `Wb MM   `Wb       MM"""bg. 8)   MM   MM' "' 
+//      MM 8M     M8 MM    M8       MM    `Y  ,pm9MM   MM     
+//      MM YA.   ,A9 MM   ,AP       MM    ,9 8M   MM   MM     
+//    .JMML.`Ybmd9'  MMbmmd'      .JMMmmmd9  `Moo9^Yo.JMML.   
+//                   MM                                       
+//                 .JMML.                                     
+
 //
 // Top Bar Variables
 //
 
 // Background color for the top bar
 
-// $topbar-bg:                            #111 !default;
-
+$topbar-bg:                              #fff !default;
 // Height and margin
 
-// $topbar-height:                        45px;
+//$topbar-height:                           120px;
 // $topbar-margin-bottom:                 emCalc(30px);
 
 // Control Input height for top bar
@@ -1375,12 +1420,12 @@ $h6-font-size: 1em;
 
 // Controlling the styles for the title in the top bar
 
-// $topbar-title-weight:                  bold;
+$topbar-title-weight:                     normal;
 // $topbar-title-font-size:               emCalc(17px);
 
 // Style the top bar dropdown elements
 
-// $topbar-dropdown-bg:                   #222;
+$topbar-dropdown-bg:                      #fff;
 // $topbar-dropdown-link-color:           #fff;
 // $topbar-dropdown-link-bg:              lighten($topbar-bg, 5%);
 // $topbar-dropdown-toggle-size:          5px;
@@ -1389,7 +1434,7 @@ $h6-font-size: 1em;
 
 // Set the link colors and styles for top-level nav
 
-// $topbar-link-color:                    #fff;
+$topbar-link-color:                       $darkBlue;
 // $topbar-link-color-hover:              #fff;
 // $topbar-link-color-active:             #fff;
 // $topbar-link-weight:                   bold;

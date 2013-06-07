@@ -34,6 +34,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :production do
+  gem 'pg'
+end
+group :development, :test do
+  gem 'sqlite3'
+end
+
 # Add Foundation Here
 gem 'zurb-foundation', '~> 4.0.0'
 

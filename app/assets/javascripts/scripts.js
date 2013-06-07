@@ -17,7 +17,7 @@ $(function () {
     $('.thumb').removeClass('scroll').addClass('flip');        
             
       // add/remove flip class that make the transition effect
-      $('.thumb.flip').click(
+      $('.thumb.flip').hover(
         function () {
             $(this).find('.thumb-wrapper').addClass('flipIt flip');
         },

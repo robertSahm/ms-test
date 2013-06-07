@@ -35,7 +35,6 @@ end
 # Add Foundation Here
 gem 'zurb-foundation', '~> 4.0.0'
 
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

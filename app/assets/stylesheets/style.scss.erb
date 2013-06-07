@@ -8,7 +8,10 @@
 
 .greenBorder {
 	border: 1px solid green;
+}
 
+.blackBorder {
+	border: 2px solid black;
 }
 
 //     ,...                                                
@@ -74,18 +77,22 @@ $body-font-color: #222;
 $darkBlue: #5D718C;
 $ketchumYellow: #DFDDB4;
 
-@mixin gradBlue {
-background: -moz-linear-gradient(-45deg, rgba(30,87,153,0) 0%, rgba(41,137,216,0.25) 25%, rgba(102,157,201,0.37) 37%, rgba(32,124,202,0.72) 72%, rgba(93,113,140,1) 100%);
-background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(30,87,153,0)), color-stop(25%,rgba(41,137,216,0.25)), color-stop(37%,rgba(102,157,201,0.37)), color-stop(72%,rgba(32,124,202,0.72)), color-stop(100%,rgba(93,113,140,1)));
-background: -webkit-linear-gradient(-45deg, rgba(30,87,153,0) 0%,rgba(41,137,216,0.25) 25%,rgba(102,157,201,0.37) 37%,rgba(32,124,202,0.72) 72%,rgba(93,113,140,1) 100%);
-background: -o-linear-gradient(-45deg, rgba(30,87,153,0) 0%,rgba(41,137,216,0.25) 25%,rgba(102,157,201,0.37) 37%,rgba(32,124,202,0.72) 72%,rgba(93,113,140,1) 100%);
-background: -ms-linear-gradient(-45deg, rgba(30,87,153,0) 0%,rgba(41,137,216,0.25) 25%,rgba(102,157,201,0.37) 37%,rgba(32,124,202,0.72) 72%,rgba(93,113,140,1) 100%);
-background: linear-gradient(135deg, rgba(30,87,153,0) 0%,rgba(41,137,216,0.25) 25%,rgba(102,157,201,0.37) 37%,rgba(32,124,202,0.72) 72%,rgba(93,113,140,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#5d718c',GradientType=1 );
-}
+// @mixin gradBlue {
+// background: -moz-linear-gradient(-45deg, rgba(30,87,153,0) 0%, rgba(41,137,216,0.25) 25%, rgba(102,157,201,0.37) 37%, rgba(32,124,202,0.72) 72%, rgba(93,113,140,1) 100%);
+// background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(30,87,153,0)), color-stop(25%,rgba(41,137,216,0.25)), color-stop(37%,rgba(102,157,201,0.37)), color-stop(72%,rgba(32,124,202,0.72)), color-stop(100%,rgba(93,113,140,1)));
+// background: -webkit-linear-gradient(-45deg, rgba(30,87,153,0) 0%,rgba(41,137,216,0.25) 25%,rgba(102,157,201,0.37) 37%,rgba(32,124,202,0.72) 72%,rgba(93,113,140,1) 100%);
+// background: -o-linear-gradient(-45deg, rgba(30,87,153,0) 0%,rgba(41,137,216,0.25) 25%,rgba(102,157,201,0.37) 37%,rgba(32,124,202,0.72) 72%,rgba(93,113,140,1) 100%);
+// background: -ms-linear-gradient(-45deg, rgba(30,87,153,0) 0%,rgba(41,137,216,0.25) 25%,rgba(102,157,201,0.37) 37%,rgba(32,124,202,0.72) 72%,rgba(93,113,140,1) 100%);
+// background: linear-gradient(135deg, rgba(30,87,153,0) 0%,rgba(41,137,216,0.25) 25%,rgba(102,157,201,0.37) 37%,rgba(32,124,202,0.72) 72%,rgba(93,113,140,1) 100%);
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#5d718c',GradientType=1 );
+// }
 
 body {
 	background-color: $body-bg;
+}
+
+.leftFloat {
+	float: left !important;
 }
 
 //                              ,,                  
@@ -97,24 +104,39 @@ body {
 //   MM      MM YM.    , `Mb    MM   MM     
 // .JMML.  .JMML.`Mbmmd'  `Wbmd"MML.JMML.   
 
-.headerRow {
-	margin-bottom: 2%;
 
-	a {
+
+.header {
+	padding-top: 20px;
+
+	.top-bar {
+		margin-bottom: 10px;
+	}
+
+	ul.navUl {
+
+	}
+
+	a.navLink {
 		@include fontLight;
 		font-size: 1.4em !important;
 		color: $darkBlue;
 		font-weight: 400 !important;
 		font-style: normal;
+		margin: 0  !important;
+		padding: 21px 15px 4px 15px !important;
+		line-height: 1.2em !important;
+
 	}
 }
 
 h1.logo {
-	color: $darkBlue !important;
-	@include fontLight;
+	//color:  !important;
+	@include fontBook;
 	margin: 0 0 0 3%;
 	padding: 0;
 	font-weight: 400;
+	white-space: nowrap;
 }
 
 .bass_playing { //img
@@ -132,6 +154,37 @@ h1.logo {
 .headerImg {
 	padding-left: 0 !important;
 }
+
+//  ,,        ,,                            
+// *MM      `7MM                            
+//  MM        MM                            
+//  MM,dMMb.  MM  ,pW"Wq.   ,p6"bo  ,pP"Ybd 
+//  MM    `Mb MM 6W'   `Wb 6M'  OO  8I   `" 
+//  MM     M8 MM 8M     M8 8M       `YMMMa. 
+//  MM.   ,M9 MM YA.   ,A9 YM.    , L.   I8 
+//  P^YbmdP'.JMML.`Ybmd9'   YMbmd'  M9mmmP'
+
+.blockWrapper {
+	padding: 2%;
+}
+
+//  ,,        ,,                ,,        ,,                            
+// *MM        db               *MM      `7MM                            
+//  MM                          MM        MM                            
+//  MM,dMMb.`7MM  .P"Ybmmm      MM,dMMb.  MM  ,pW"Wq.   ,p6"bo  ,pP"Ybd 
+//  MM    `Mb MM :MI  I8        MM    `Mb MM 6W'   `Wb 6M'  OO  8I   `" 
+//  MM     M8 MM  WmmmP"        MM     M8 MM 8M     M8 8M       `YMMMa. 
+//  MM.   ,M9 MM 8M             MM.   ,M9 MM YA.   ,A9 YM.    , L.   I8 
+//  P^YbmdP'.JMML.YMMMMMb       P^YbmdP'.JMML.`Ybmd9'   YMbmd'  M9mmmP' 
+//               6'     dP                                              
+//               Ybmmmd'                                                
+
+
+.fullBlock {
+	display: none;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
 
 // `7MM"""Mq.                   mm                                            
 //   MM   `MM.                  MM                                            

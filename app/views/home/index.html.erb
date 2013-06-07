@@ -1,60 +1,60 @@
-<div class="headerRow row">
-	<div class="large-5 small-5">
-	 	<h1 class="logo">
-  		<a href="#">Robert Sahm</a>
-  	</h1>
-  </div>
-	<div class="contain-to-grid fixed sticky">
-		<nav class="top-bar ">
-  		<section class="top-bar-section">
-				<ul class="left">
-					<li class=""><a href="#">work</a></li>
-					<li class=""><a href="#">about</a></li>
-					<li class=""><a href="#">contact</a></li>
-					<li class=""><a href="#">resume</a></li>
-				</ul>
-			</section>
+<div class="row">
+	<div class="large-9 small-12 columns large-centered small-centered contain-to-grid header">
+		<nav class="top-bar">
+		  <ul class="title-area">
+		    <!-- Title Area -->
+		    <li class="name">
+		      <h1 class="logo"><a href="#">Robert Sahm</a></h1>
+		    </li>
+		    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just 	have icon alone -->
+		    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+		  </ul>
+		
+		  <section class="top-bar-section">
+		    <!-- Left Nav Section -->
+		    <ul class="right navUl">
+		      <li class="navItem"><a class="navLink" href="#">work</a></li>
+		      <li class="navItem"><a class="navLink" href="#">about</a></li>
+		      <li class="navItem"><a class="navLink" href="#">contact</a></li>
+			   </ul>
+		  </section>
 		</nav>
 	</div>
 </div>
 
-<!--	
-	<nav class="top-bar">
-	  <ul class="title-area">
-
-	  <li class="name">
+<div class="row">
+	<div class="row blockWrapper">
+		<div class="portaBlockWrapper large-4 columns">
+			<%= image_tag "portaBlock.png", :class => "portaBlock small-12 small-centered" %>
+		</div>
+		<div class="ketchBlockWrapper large-4 columns">
+			<%= image_tag "ketchBlock.png", :class => "ketchBlock small-12 small-centered" %>
+		</div>
+			<div class="c2cBlockWrapper large-4 columns">
+			<%= image_tag "c2cBlock.png", :class => "c2cBlock small-12 small-centered" %>
+		</div>
+	</div>
 	
-	  </li>
-	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-	  </ul>
-	
-	  <section class="top-bar-section">
+	<div class="row blockWrapper">
+		<div class="portaBlockWrapper large-4 columns">
+			<%= image_tag "portaBlock.png", :class => "portaBlock small-12 small-centered" %>
+		</div>
+		<div class="ketchBlockWrapper large-4 columns">
+			<%= image_tag "ketchBlock.png", :class => "ketchBlock small-12 small-centered" %>
+		</div>
+			<div class="c2cBlockWrapper large-4 columns">
+			<%= image_tag "c2cBlock.png", :class => "c2cBlock small-12 small-centered" %>
+		</div>
+	</div>
+</div>
 
-	    <ul class="left">
-	      <li class="divider"></li>
-	      <li class="active"><a href="#">work</a></li>
-	      <li class="divider"></li>
-	      <li><a href="#">about</a></li>
-	      <li class="divider"></li>
-	      <li><a href="#">contact</a></li>
-	      <li class="divider"></li>
-	      <li><a href="#">resume</a></li>
-	      <li class="divider"></li>
-	    </ul>
-	
 
-	    <ul class="right">
-	      <li class="divider hide-for-small"></li>
-	      <li class="divider show-for-small"></li>
-	    </ul>
-	  </section>
-	</nav>
-	-->
 
 
 <!-- Portarock Section -->
 
-<div class="bgBlack">
+
+<div class="bgBlack fullBlock">
 	<div class="row">
 		<div class="large-6 small-6 columns">
 			<%= image_tag "portaSpin.png", :class => "portaSpin" %>
@@ -72,7 +72,7 @@
 
 <!-- Ketchum Section -->
 
-<div class="ketchumWrapper">
+<div class="ketchumWrapper fullBlock">
 	<%= image_tag "copyjunk.png", :class => "copyjunk" %>
 
 	<div class="row ketchTexture">
@@ -91,7 +91,7 @@
 
 <!-- Carol Beehler Section -->
 
-<div class="carolWrapper">
+<div class="carolWrapper fullBlock">
 	<div class="row">
 		<div class="large-6 small-6 columns">
 			<%= image_tag "carolLogo.png", :class => "carolLogo" %>
@@ -104,7 +104,7 @@
 
 <!-- c2c Deli Section -->
 
-<div class="c2cWrapper">
+<div class="c2cWrapper fullBlock">
 	<div class='row'>
 		<div class="large-10 small-10 centered columns">
 			<%= image_tag "c2cAwning.png", :class => "c2cAwning" %>
@@ -114,7 +114,7 @@
 
 <!-- c2c Deli Section -->
 
-<div class="crawWrapper centered">
+<div class="crawWrapper centered fullBlock">
 	<div class="row">
 		<%= image_tag "crawHeader.png", :class => "crawHeader centered" %>
 	</div>

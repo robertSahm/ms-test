@@ -15,10 +15,11 @@
 
   	<title><%= content_for?(:title) ? yield(:title) : "Robert Sahm" %></title>
 
+  <%= javascript_include_tag "jquery.js" %>
   	<%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
-    <%= javascript_include_tag "stroll.js" %>
-    <%= javascript_include_tag "jquery.scrollorama.js" %>
+<!--     <%= javascript_include_tag "stroll.js" %>
+    <%= javascript_include_tag "jquery.scrollorama.js" %> -->
     <%= csrf_meta_tags %>
          
   </head>

@@ -1,0 +1,46 @@
+/*
+Syntax error: Invalid property: "Backtrace:" (no value).
+        on line 4 of stylesheets
+
+1: /*
+2: Errno::ENOENT: No such file or directory - stylesheets/sass
+3: 
+4: Backtrace:
+5: /Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:360:in `read'
+6: /Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:360:in `update_stylesheet'
+7: /Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+8: /Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:201:in `each'
+9: /Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+
+Backtrace:
+stylesheets:4
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/engine.rb:614:in `parse_property'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/engine.rb:597:in `parse_property_or_rule'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/engine.rb:578:in `parse_line'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/engine.rb:471:in `build_tree'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/engine.rb:490:in `block in append_children'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/engine.rb:489:in `each'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/engine.rb:489:in `append_children'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/engine.rb:345:in `_to_tree'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/engine.rb:315:in `_render'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/engine.rb:262:in `render'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:235:in `watch'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/plugin.rb:107:in `method_missing'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/exec.rb:452:in `watch_or_update'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/exec.rb:315:in `process_result'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/exec.rb:41:in `parse'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/exec.rb:21:in `parse!'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/bin/sass:9:in `<top (required)>'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/bin/sass:23:in `load'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/bin/sass:23:in `<main>'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/bin/ruby_noexec_wrapper:14:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid property: \"Backtrace:\" (no value).\A         on line 4 of stylesheets\A \A 1: /*\A 2: Errno::ENOENT: No such file or directory - stylesheets/sass\A 3: \A 4: Backtrace:\A 5: /Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:360:in `read'\A 6: /Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:360:in `update_stylesheet'\A 7: /Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'\A 8: /Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:201:in `each'\A 9: /Users/robertSahm/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'"; }

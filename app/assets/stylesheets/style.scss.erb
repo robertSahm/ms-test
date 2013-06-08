@@ -77,18 +77,12 @@ $body-font-color: #222;
 $darkBlue: #5D718C;
 $ketchumYellow: #DFDDB4;
 
-// @mixin gradBlue {
-// background: -moz-linear-gradient(-45deg, rgba(30,87,153,0) 0%, rgba(41,137,216,0.25) 25%, rgba(102,157,201,0.37) 37%, rgba(32,124,202,0.72) 72%, rgba(93,113,140,1) 100%);
-// background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(30,87,153,0)), color-stop(25%,rgba(41,137,216,0.25)), color-stop(37%,rgba(102,157,201,0.37)), color-stop(72%,rgba(32,124,202,0.72)), color-stop(100%,rgba(93,113,140,1)));
-// background: -webkit-linear-gradient(-45deg, rgba(30,87,153,0) 0%,rgba(41,137,216,0.25) 25%,rgba(102,157,201,0.37) 37%,rgba(32,124,202,0.72) 72%,rgba(93,113,140,1) 100%);
-// background: -o-linear-gradient(-45deg, rgba(30,87,153,0) 0%,rgba(41,137,216,0.25) 25%,rgba(102,157,201,0.37) 37%,rgba(32,124,202,0.72) 72%,rgba(93,113,140,1) 100%);
-// background: -ms-linear-gradient(-45deg, rgba(30,87,153,0) 0%,rgba(41,137,216,0.25) 25%,rgba(102,157,201,0.37) 37%,rgba(32,124,202,0.72) 72%,rgba(93,113,140,1) 100%);
-// background: linear-gradient(135deg, rgba(30,87,153,0) 0%,rgba(41,137,216,0.25) 25%,rgba(102,157,201,0.37) 37%,rgba(32,124,202,0.72) 72%,rgba(93,113,140,1) 100%);
-// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#5d718c',GradientType=1 );
-// }
+// :before, :after { -webkit-transform: translateZ(0); }
+//   -webkit-transform: translate3d(0, 0, 0) !important;
 
 body {
 	background-color: $body-bg;
+  -webkit-transform: translate3d(0, 0, 0) !important;
 }
 
 .leftFloat {
@@ -126,7 +120,6 @@ body {
 		margin: 0  !important;
 		padding: 21px 15px 4px 15px !important;
 		line-height: 1.2em !important;
-
 	}
 }
 
@@ -165,34 +158,27 @@ h1.logo {
 //  MM.   ,M9 MM YA.   ,A9 YM.    , L.   I8 
 //  P^YbmdP'.JMML.`Ybmd9'   YMbmd'  M9mmmP'
 
+
 .flipbox-container {
 
-	img {
-		width: 100%;
-	height: 50%;
-	}
 }
 
-#portaClick {
+.blockWrapper {
 
-	img {
-		height: 100%;
 
-		background-color: red !important;
-		
+	#portaBlockWrapper, #ketchBlockWrapper, #c2cBlockWrapper {
+
 	}
 }
 
 .afterBlock {
-	// display: block;
-	// position: relative;
-	// top: 0;
-	// left: 0;
-	// height: 100%;
 	background: none repeat scroll 0% 0% transparent !important;
+
 }
 
-
+.dispNone {
+	display: none !important;
+}
 
 
 
@@ -387,13 +373,7 @@ img.portaDevices  {
 	padding-bottom: 7%;
 }
 
-.flipbox-container {
-	position: relative;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-}
+
 
 
 

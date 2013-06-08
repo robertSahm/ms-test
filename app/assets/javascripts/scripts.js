@@ -1,28 +1,31 @@
  
 // Porta Flipper 
 $(function () {
-  $('#portaBlockWrapper').each(function(){
+  $('#portaBlockWrapper').each(function() {
     function flip(t) {      // t is the id/class of the element
       $('#portaClick').off().flippy({   // here instead of t you can also write #portaClick and remove it
                             // .off() removes mouseout/mouseover handlers
         color_target: "none",
         depth : "0",
-        light : ".1",
-        direction : "TOP",
+        light : "0",
+        direction : "BOTTOM",
         duration : "400",
         verso: "<img class='small-12 small-centered' src='/assets/portaBlock.png' class='afterBlock' />",
         //recto: "<img class='small-12 small-centered' src='/assets/ketchBlock.png' class='afterBlock' />",
         onFinish: function () {
-
           $('#portaClick').off().on('click', function () { 
             $('#portaClick').addClass('afterBlock');
 
+
             // remove(d) handles again and add mouseout
             flipBack('#portaClick');
+
           });
         },
+
         onReverseFinish: function () {
           $('#portaClick').off().on('click', function(){
+            
             flip('#portaClick');
           });
         }
@@ -31,7 +34,7 @@ $(function () {
     
     function flipBack(t) {
       $(t).flippyReverse({
-        direction: "TOP",
+        direction: "BOTTOM",
         color_target: "none",
         verso: "<img class='small-12 small-centered' src='/assets/portaBlock.png' alt='Portablock' />",
       });
@@ -39,6 +42,7 @@ $(function () {
     
     $(function () {
       $("#portaClick").on('click', function () { 
+        $('#portaClick').addClass('afterBlock');
         // at start bind mouseover and run function flip()
         flip('#portaClick'); // here you send the id/class of the element
       });
@@ -57,7 +61,7 @@ $(function () {
         depth : "0",
         light : ".1",
         direction : "TOP",
-        duration : "400",
+        duration : "1000",
         verso: "<img class='small-12 small-centered' src='/assets/ketchBlock.png' class='afterBlock' />",
         //recto: "<img class='small-12 small-centered' src='/assets/ketchBlock.png' class='afterBlock' />",
         onFinish: function () {
@@ -105,7 +109,7 @@ $(function () {
         depth : "0",
         light : ".1",
         direction : "TOP",
-        duration : "400",
+        duration : "1000",
         verso: "<img class='small-12 small-centered' src='/assets/c2cBlock.png' class='afterBlock' />",
         //recto: "<img class='small-12 small-centered' src='/assets/ketchBlock.png' class='afterBlock' />",
         onFinish: function () {

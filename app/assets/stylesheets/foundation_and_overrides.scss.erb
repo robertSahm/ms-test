@@ -90,16 +90,16 @@ $default-float: left;
 
 // Media Queries
 
-// $small-screen: 480px;
-// $medium-screen: 768px;
-// $large-screen: 1220px;
+$small-screen: 480px;
+$medium-screen: 1200px;
+$large-screen: 1500px;
 
-// $screen: "only screen";
-// $small: "only screen and (min-width: #{$small-screen})";
-// $medium: "only screen and (min-width: #{$medium-screen})";
-// $large: "only screen and (min-width: #{$large-screen})";
-// $landscape: "only screen and (orientation: landscape)";
-// $portrait: "only screen and (orientation: portrait)";
+$screen: "only screen";
+$small: "only screen and (min-width: #{$small-screen})";
+$medium: "only screen and (min-width: #{$medium-screen})";
+$large: "only screen and (min-width: #{$large-screen})";
+$landscape: "only screen and (orientation: landscape)";
+$portrait: "only screen and (orientation: portrait)";
 
 //// Cursors
 
@@ -1433,7 +1433,7 @@ $topbar-dropdown-bg:                      #eee;
 // $topbar-dropdown-link-bg:              lighten($topbar-bg, 5%);
 // $topbar-dropdown-toggle-size:          5px;
 // $topbar-dropdown-toggle-color:         #fff;
-$topbar-dropdown-toggle-alpha:         0.3;
+$topbar-dropdown-toggle-alpha:            0.3;
 
 // Set the link colors and styles for top-level nav
 
@@ -1464,7 +1464,7 @@ $topbar-menu-icon-color:                  $darkBlue;
 // Transitions and breakpoint styles
 
 // $topbar-transition-speed:              300ms;
-$topbar-breakpoint:                    emCalc(768px); // Change to 9999px for always mobile layout
+$topbar-breakpoint:                    emCalc(745px); // Change to 9999px for always mobile layout
 // $topbar-media-query:                   "only screen and (min-width: #{$topbar-breakpoint})";
 
 // Divider Styles

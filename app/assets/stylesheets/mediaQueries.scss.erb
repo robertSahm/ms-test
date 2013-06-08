@@ -1,0 +1,27 @@
+$small-screen: 480px;
+$medium-screen: 768px;
+$large-screen: 1220px;
+
+$screen: "only screen";
+$small: "only screen and (min-width: #{$small-screen})";
+$medium: "only screen and (min-width: #{$medium-screen})";
+$large: "only screen and (min-width: #{$large-screen})";
+$landscape: "only screen and (orientation: landscape)";
+$portrait: "only screen and (orientation: portrait)";
+
+@media #{$small} { 
+
+}
+
+@media only screen and (max-width: 480px) {
+	.top-bar .name h1 a {
+		font-size: 35px;
+	}
+
+}
+
+// @media #{$screen} {
+// 	.top-bar .name h1 a {
+// 		font-size: 10px;
+// 	}
+//  }

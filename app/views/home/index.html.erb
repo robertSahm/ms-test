@@ -22,18 +22,7 @@
 	</div>
 </div>
 
-<div id="container">
-	<div class="lower">
-		<h1>Back</h1>
-		<p>Works in IE10, Chrome, Firefox & Safari</p>
-		<p>Source <a href="http://www.cssplay.co.uk/menu/css3-3d-card.html">CssPlay</a>
-	</div>
-	<div class="upper">
-		<h1>Front</h1>
-		<p>Works in IE10, Chrome, Firefox & Safari</p>
-		<p>Source <a href="http://www.cssplay.co.uk/menu/css3-3d-card.html">CssPlay</a>
-	</div>
-</div>
+
 
 
 <!--  <div id="myFlippyBox" height ="200px" width="200px">
@@ -44,11 +33,7 @@
 <div class="row">
 	<div class="row blockWrapper">
 		<div class="portaBlockWrapper large-4 columns">
-			<div class="flipbox-container">
-				<div id="myFlippyBox">
-				    <%= image_tag "portaBlock.png", :class => "portaBlock" %>
-				</div>
-			</div>
+
 		</div>
 	</div>
 </div>
@@ -59,51 +44,35 @@
 
 
 <div class="row">
-	<div class="row blockWrapper">
-		<div class="portaBlockWrapper large-4 columns">
-<!-- 			<section class="container">
-  			<div id="card">
-    			<figure class="front"><%= image_tag "portaBlock.png", :class => "portaBlock" %></figure>
-    			<figure class="back"><%= image_tag "ketchBlock.png", :class => "ketchBlock" %></figure>
-  			</div>
-			</section>
-			<section id="options">
-				<p>
-					<button id="flip">Flip Card</button>
-				</p>
-			</section> -->
-
-		<%= image_tag "portaBlock.png", :class => "portaBlock small-12 small-centered" %>
+	<div class="blockWrapper">
+		<div class="large-4 medium-6 columns" id="portaBlockWrapper">
+			<div class="flipbox-container">
+				<div id="portaClick">
+				  <%= image_tag "portaBlock.png" %>
+				</div>
+			</div>
 		</div>
 
 
-
-
-
-
-
-
-
-		<div class="ketchBlockWrapper large-4 columns">
-			<%= image_tag "ketchBlock.png", :class => "ketchBlock small-12 small-centered" %>
+		<div class="large-4 medium-6 columns" id="ketchBlockWrapper">
+			<div class="flipbox-container">
+				<div id="ketchClick">
+				  <%= image_tag "ketchBlock.png" %>
+				</div>
+			</div>
 		</div>
-			<div class="c2cBlockWrapper large-4 columns">
-			<%= image_tag "c2cBlock.png", :class => "c2cBlock small-12 small-centered" %>
+
+		<div class="large-4 medium-6 columns" id="c2cBlockWrapper">
+			<div class="flipbox-container">
+				<div id="c2cClick">
+				  <%= image_tag "c2cBlock.png" %>
+				</div>
+			</div>
 		</div>
-	</div>
-	
-	<div class="row blockWrapper">
-		<div class="portaBlockWrapper large-4 columns">
-			<%= image_tag "portaBlock.png", :class => "portaBlock small-12 small-centered" %>
-		</div>
-		<div class="ketchBlockWrapper large-4 columns">
-			<%= image_tag "ketchBlock.png", :class => "ketchBlock small-12 small-centered" %>
-		</div>
-			<div class="c2cBlockWrapper large-4 columns">
-			<%= image_tag "c2cBlock.png", :class => "c2cBlock small-12 small-centered" %>
-		</div>
+
 	</div>
 </div>
+
 
 
 

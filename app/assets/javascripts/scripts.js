@@ -10,7 +10,8 @@ $(function () {
         light : "0",
         direction : "BOTTOM",
         duration : "400",
-        verso: "<img class='small-12 small-centered' src='/assets/portaBlock.png' class='afterBlock' />",
+        verso: "<h1>DJ Portarock needed a home base for all web operations. I build him one</h1><h5>see details</h5>",
+        //verso: "<img class='small-12 small-centered' src='/assets/portaBlock.png' class='afterBlock' />",
         //recto: "<img class='small-12 small-centered' src='/assets/ketchBlock.png' class='afterBlock' />",
         onFinish: function () {
           $('#portaClick').off().on('click', function () { 
@@ -49,6 +50,35 @@ $(function () {
     });
   });
 });
+
+
+
+
+// $(function() {
+
+//   $('flipbox-container').mouseenter( function () {
+//     $(this).css('opacity', '0.1');
+//     $('.portaBlockCol').css('opacity', '1');
+//     return false;
+
+//   }).mouseout( function () {
+//   //   $('.portaBlockCol').fadeOut(500);
+//   // $('.portaBlockBW').fadeIn(500);
+//     return false;
+//   });
+// });
+
+// $(function() {
+//     $(".hoverFlip")
+//         .mouseover(function() { 
+//             var src = $(this).attr("src").match(/[^\.]+/) + "portaBlockBW.png";
+//             $(this).attr("src", src);
+//         })
+//         .mouseout(function() {
+//             var src = $(this).attr("src").replace("portaBlockCol.png", ".png");
+//             $(this).attr("src", src);
+//         });
+// });
 
 
 //Ketch Flipper

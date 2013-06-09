@@ -81,7 +81,7 @@ $ketchumYellow: #DFDDB4;
 //   -webkit-transform: translate3d(0, 0, 0) !important;
 
 body {
-	background-color: $body-bg;
+	background-color: $body-bg !important;
   -webkit-transform: translate3d(0, 0, 0) !important;
 }
 
@@ -173,7 +173,9 @@ h1.logo {
 
 .afterBlock {
 	background: none repeat scroll 0% 0% transparent !important;
-
+	min-height: 220px;
+	margin: 0;
+	padding: 0;
 }
 
 .dispNone {
@@ -182,13 +184,62 @@ h1.logo {
 
 .blockRow1, .blockRow2 {
 	margin-top: 5%;
-	height: 100%;
-	width: 100%;
-	border: 1px solid red;
-	min-height: 208px;
+	min-height: 200px;
+	//width: 100%;
 }
 
+ul.blockGrid {
+	width: 100%;
+	position: relative;
+}
 
+.portaBlockCol {
+
+}
+
+ul.blockGrid {
+
+}
+
+#portaHoverFlip {
+	position: relative;
+	height: 200px;
+	width: 100%;
+
+	.blockBW {
+		position: relative;
+	}
+	
+	.blockCol {
+			position: relative;
+			margin-top: -47%;
+	}
+}
+
+// #portaHoverFlip {
+// 	background-image: url('portaBlockBW.png');
+// 	background-size: contain;
+// 	background-repeat: no-repeat;
+// 	position: relative;
+// 	top: 0;
+// 	left: 0;
+// 	height: 200px;
+// 	width: 100%;
+// -webkit-transition:background-image .5s ease-in-out;
+//    -moz-transition:background-image .5s ease-in-out;
+//      -o-transition:background-image .5s ease-in-out;
+//         transition:background-image .5s ease-in-out;
+// }
+
+
+// #portaHoverFlip:hover {
+// 	background-image: url('portaBlockCol.png');
+// 	background-size: contain;
+// 	background-repeat: no-repeat;
+// 	position: relative;
+// 	top: 0;
+// 	left: 0;
+// }
 
 
 

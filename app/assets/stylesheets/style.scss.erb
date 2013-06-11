@@ -82,10 +82,17 @@ $ketchumYellow: #DFDDB4;
 
 body {
 	background-color: $body-bg !important;
-  -webkit-transform: translate3d(0, 0, 0) !important;
 }
 
-
+li.toggle-topbar a  {
+	// display: block;
+	// top: 4px;
+	// left: -100%;
+	// position: relative;
+	// height: 32px;
+	// width: 32px;
+	// border: 1px solid green;
+}
 //                              ,,                  
 // `7MMF'  `7MMF'             `7MM                  
 //   MM      MM                 MM                  
@@ -101,26 +108,25 @@ body {
 	left: 0;
 	height: 80px;
 	border-bottom: 1px solid grey;
-
-	.navBorder {
-		
-		margin-bottom: 0px;
-	}
 }
+
 .left li {
-	padding-top: 4px ;
+	padding-top: 6px;
+	white-space: nowrap;
 }
 
 .navWrap {
-
+	display: relative;
+	top: 10px;
+	left: 0;
+	max-width: 550px;
+	margin: 0 auto;
 
 	.sahmBlock {
-		padding-left: 17%;
 
 	}
 
 	.navBlock {
-
 	}
 }
 
@@ -129,19 +135,12 @@ body {
 	overflow: show;
 }
 
-ul.navUl {
-
-	li {
-		// margin: 0 !important;
-		// padding: 0 !important;
-
-		a {
-			// margin: 0 !important;
-			// padding: 0 !important;
-			// text-align: center;
-		}
-	}
+h1.name {
+	@include fontBook;
+	font-weight: 400;
 }
+
+
 
 
 
@@ -166,24 +165,7 @@ ul.navUl {
 // }
 
 
-// h1.logo {
-// 	//color:  !important;
-// 	@include fontBook;
-// 	//margin: 0 0 0 3%;
-// 	//padding: 0;
-// 	font-weight: 400;
-// 		//white-space: nowrap;
-// min-width: 205px;
-// }
 
-// .headerTitle {
-// 	margin-top: 1%;
-// 	padding: 0 !important;
-// }
-
-// .headerImg {
-// 	padding-left: 0 !important;
-// }
 
 // div.large-12, div.large-6, div.large-4 {
 // //transition: 
@@ -211,10 +193,6 @@ ul.navUl {
 // 	padding: 10%; // controlls overall sizes
 // }
 
-.blockRow1 {
-	max-width: 950px;
-	//padding-right: 2%;
-}
 
 .dispNone {
 	display: none !important;

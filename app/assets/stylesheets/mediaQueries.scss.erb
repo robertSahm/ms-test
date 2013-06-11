@@ -1,12 +1,16 @@
-
-
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {  //480 and under
 	
-	.top-bar .name h1 a {
-		font-size: 35px;
-		margin-left: 5%;
+	.top-bar {
+    margin-top: 10%;
+		margin-bottom: 10%;
+
+		.name h1 a {
+			font-size: 35px;
+			margin-left: 0%; 
+		}
 	}
+
+
 
 	.hoverFade {
 		
@@ -18,37 +22,86 @@
   	img.ketchBlockBW, img.ketchBlockCol {
     	width: 65%;
     	margin-left: 15%;
-    	padding-top: 4%;
+    	padding-top: 1%;
   	}
 
   	img.carolBlockBW, img.carolBlockCol {
     	width: 70%;
     	margin-left: 13%;
-    	margin-top: 23%;
+    	padding-top: 19%;
   	}
 
   	img.c2cBlockBW, img.c2cBlockCol {
     	width: 50%;
     	margin-left: 23%;
-  		margin-top: 11%;
+  		padding-top: 8%;
   	}
 
   	img.crawBlockBW, img.crawBlockCol {
     	width: 78%;
     	margin-left: 8%;
-    	margin-top: 13%;
+    	padding-top: 8%;
   	}
 
   	img.candlBlockBW, img.candlBlockCol {
     	width: 30%;
     	margin-left: 36%;
-    	margin-top: 40%;
+    	padding-top: 40%;
     	margin-bottom: 20%;
   	}
   }
 }
 
+@media only screen and (min-width: 481px) { //481 and over
+	
+	.top-bar {
+		margin-bottom: 5% !important;
 
+		.name h1 a {
+			font-size: 35px;
+			margin-left: 5%;
+		}
+	}
+
+	.hoverFade {
+		
+    img.portaBlockBW, img.portaBlockCol {
+      margin-top: 5%;
+    	width: 80%;
+      margin-left: 8%;
+  	}
+
+  	img.ketchBlockBW, img.ketchBlockCol {
+    	width: 78%;
+    	padding-top: 1%;
+    	margin-left: 5%;
+  	}
+
+  	img.carolBlockBW, img.carolBlockCol {
+    	width: 75%;
+    	padding-top: 22%;
+  	}
+
+  	img.c2cBlockBW, img.c2cBlockCol {
+    	width: 50%;
+  		padding-top: 18%;
+  		margin-left: 21%;
+  	}
+
+  	img.crawBlockBW, img.crawBlockCol {
+    	width: 78%;
+    	padding-top: 8%;
+    	margin-left: 6%;
+  	}
+
+  	img.candlBlockBW, img.candlBlockCol {
+    	width: 30%;
+    	padding-top: 23%;
+    	margin-left: 27%;
+    	margin-bottom: 20%;
+  	}
+  }
+}
 
 
 @media only screen and (max-width: 650px) {

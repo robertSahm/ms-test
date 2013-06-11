@@ -275,6 +275,8 @@
 
 
 
+
+
 // `7MMF'  `7MMF'                                  
 //   MM      MM                                    
 //   MM      MM  ,pW"Wq.`7M'   `MF'.gP"Ya `7Mb,od8 
@@ -354,7 +356,7 @@ $(function () {
 $(function () {
   $('img.crawBlockCol').hide();
   $('.crawBlockBW').mouseenter( function () {
-    $('img.crawBlockCol').fadeIn(300);
+    $('img.crawBlockCol').fadeIn(600);
     $('img.crawBlockBW').fadeOut(300);
   });
 

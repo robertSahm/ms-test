@@ -148,6 +148,17 @@ h1.logo {
 	padding-left: 0 !important;
 }
 
+div.large-12, div.large-6, div.large-4 {
+//transition: 
+//            width .5s, 
+//           height .5s, 
+//        transform .5s;
+// -webkit-transition: 
+//             width .5s, 
+//            height .5s, 
+// -webkit-transform .5s;
+} 
+
 
 //  ,,        ,,                            
 // *MM      `7MM                            
@@ -159,87 +170,47 @@ h1.logo {
 //  P^YbmdP'.JMML.`Ybmd9'   YMbmd'  M9mmmP'
 
 
-.flipbox-container {
+// .flipbox-container {
+// 	padding: 10%; // controlls overall sizes
+// }
 
-}
-
-.blockWrapper {
-	margin-top: 3%;
-
-	#portaBlockWrapper, #ketchBlockWrapper, #c2cBlockWrapper {
-
-	}
-}
-
-.afterBlock {
-	background: none repeat scroll 0% 0% transparent !important;
-	min-height: 220px;
-	margin: 0;
-	padding: 0;
+.blockRow1 {
+	max-width: 850px;
+	//padding-right: 2%;
 }
 
 .dispNone {
 	display: none !important;
 }
 
-.blockRow1, .blockRow2 {
-	margin-top: 5%;
-	min-height: 200px;
-	//width: 100%;
-}
+.blockWrapper {
+	// position: relative;
+	// top: 0;
+	// left: 0;
 
-ul.blockGrid {
-	width: 100%;
-	position: relative;
-}
+	.imgClick {
+		// position: relative;
+		// top: 0;
+		// left: 0;
 
-.portaBlockCol {
-
-}
-
-ul.blockGrid {
-
-}
-
-#portaHoverFlip {
-	position: relative;
-	height: 200px;
-	width: 100%;
-
-	.blockBW {
-		position: relative;
-	}
-	
-	.blockCol {
+		.hoverFade {
 			position: relative;
-			margin-top: -47%;
+			top: 0;
+			left: 0;
+			min-width: 100%;
+			min-height: 150px;
+			//border: 1px solid red;
+		
+			img {
+  			position: absolute;
+    		left: 0;
+    		// min-width: 150px;
+    		// max-height: 100%;
+    	}
+    }
 	}
 }
 
-// #portaHoverFlip {
-// 	background-image: url('portaBlockBW.png');
-// 	background-size: contain;
-// 	background-repeat: no-repeat;
-// 	position: relative;
-// 	top: 0;
-// 	left: 0;
-// 	height: 200px;
-// 	width: 100%;
-// -webkit-transition:background-image .5s ease-in-out;
-//    -moz-transition:background-image .5s ease-in-out;
-//      -o-transition:background-image .5s ease-in-out;
-//         transition:background-image .5s ease-in-out;
-// }
-
-
-// #portaHoverFlip:hover {
-// 	background-image: url('portaBlockCol.png');
-// 	background-size: contain;
-// 	background-repeat: no-repeat;
-// 	position: relative;
-// 	top: 0;
-// 	left: 0;
-// }
 
 
 
@@ -256,10 +227,6 @@ ul.blockGrid {
 //               Ybmmmd'                                                
 
 
-.fullBlock {
-	display: none;
-}
-
 /////////////////////////////////////////////////////////////////////////////////////
 
 // `7MM"""Mq.                   mm                                            
@@ -269,6 +236,28 @@ ul.blockGrid {
 //   MM      8M     M8 MM       MM   ,pm9MM   MM    8M     M8  VA ,V  VA ,V   
 //   MM      YA.   ,A9 MM       MM  8M   MM   MM    YA.   ,A9   VVV    VVV    
 // .JMML.     `Ybmd9'.JMML.     `Mbm`Moo9^Yo.JMML.   `Ybmd9'     W      W     
+
+.posRel {
+}
+
+#portaRow {
+	display: none;
+	padding-bottom: 100px;
+	position: absolute;
+	width: 100%;
+	top: 110px;
+	left: 0;
+}
+
+.portaLogoPos {
+	position: relative;
+	top: -257px;
+	left: 0;
+	// -webkit-transition-property: top;
+ //  -webkit-transition-duration: 0.5s;
+ //  transition-property: top;
+	// transition-duration: 0.5s;
+}
 
 .bgBlack {
 	max-height: 400px;
@@ -301,6 +290,10 @@ img.portaDevices  {
 //   MM;Mm 8M""""""  MM  8M       MM    MM   MM    MM    MM  
 //   MM `MbYM.    ,  MM  YM.    , MM    MM   MM    MM    MM  
 // .JMML. YA`Mbmmd'  `MbmoYMbmd'.JMML  JMML.JMML  JMML  JMML.
+.ketchBigBlock {
+	display: none;
+}
+
 
 .ketchumWrapper {
 	background-color: $ketchumYellow;
@@ -367,6 +360,11 @@ img.portaDevices  {
 // `Mb.     ,8M   MM   MM    YA.   ,A9 MM  
 //   `"bmmmd'`Moo9^Yo.JMML.   `Ybmd9'.JMML.
 
+.carolBigBlock {
+	display: none;
+}
+
+
 .carolWrapper {
 	margin-top: 3%;
 	background-color: #fff;
@@ -391,6 +389,11 @@ img.portaDevices  {
 // YM.    , ,-='    YM.    , MM    ,dP' YM.    , MM   MM  
 //  YMbmd' Ammmmmmm  YMbmd'.JMMmmmdP'    `Mbmmd.JMML.JMML.
 
+.c2cBigBlock {
+	display: none;
+}
+
+
 .c2cWrapper {
 	background-image: url('bricksBigDark.jpg');
 	max-height: 400px;
@@ -410,6 +413,10 @@ img.portaDevices  {
 // 8M        MM     ,pm9MM  VA ,V  VA ,V   MM `YMMMa.   MM    
 // YM.    ,  MM    8M   MM   VVV    VVV    MM L.   I8   MM    
 //  YMbmd' .JMML.  `Moo9^Yo.  W      W   .JMMLM9mmmP'   `Mbmo
+
+.crawBigBlock {
+	display: none;
+}
 
 .crawWrapper {
 	margin-top: 3%;

@@ -391,7 +391,13 @@ $(function () {
   });
 });
 
+// $(function () {
+//   $('.titleWrap').delay(1000).animate({
+//     'right': '-=300',
+//     'opacity': 0,
 
+//   }, 4000);
+// });
 
 // $('.blockRow1').animate({
       //   'margin-top' : '+=50%'

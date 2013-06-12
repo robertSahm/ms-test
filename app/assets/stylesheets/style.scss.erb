@@ -101,48 +101,84 @@ li.toggle-topbar a  {
 //   MM      MM 8M"""""" 8MI    MM   MM     
 //   MM      MM YM.    , `Mb    MM   MM     
 // .JMML.  .JMML.`Mbmmd'  `Wbmd"MML.JMML.   
+
+
 .headerWrapper {
-	margin-bottom: 5%;
+	margin-bottom: 0;
+	padding-bottom: 30px;
 	position: relative;
 	top: 0;
 	left: 0;
 	height: 80px;
-	border-bottom: 1px solid grey;
+
+	.topRow {
+		margin-bottom: 70px;
+	}
 }
 
 .left li {
-	padding-top: 6px;
+	padding-top: 13px;
 	white-space: nowrap;
+	padding-bottom: 0;
 }
 
 .navWrap {
-	display: relative;
-	top: 10px;
+	position: relative;
+	top: 30px;
 	left: 0;
-	max-width: 550px;
+	max-width: 680px;
 	margin: 0 auto;
+	margin-bottom: 30px;
 
 	.sahmBlock {
 
 	}
 
 	.navBlock {
+		position: relative;
+		top: 0px;
+		left: 0px;
 	}
 }
 
-.title-area a {
+h1.name {
+	@include fontLight;
+	font-weight: 400;
+	font-size: 70px !important;
 	white-space: nowrap;
 	overflow: show;
 }
 
-h1.name {
-	@include fontBook;
-	font-weight: 400;
+.titleWrap {
+	position: relative;
+	margin: 0 auto;
+	top: 0px;
+	line-height: 0;
+	height: .5em;
+	//width: 40%;
+
+	h4.jobTitle {
+		color: $darkBlue;
+		text-align: center;
+		position: relative;
+		@include fontLightIt;
+		padding: 0;
+		background-color: $body-bg;
+		line-height: .4em;
+		font-size: 1.6em;
+		width: 291px;
+		height: auto;
+		margin: 0 auto;
+	}
 }
 
-
-
-
+.greyLine {
+	position: relative;
+	top: 3px;
+	border-bottom: 1px solid $darkBlue;
+	z-index: -100;
+	margin-bottom: 90px;
+}
 
 // ul.navUl, ul.title-area {
 // 	//margin-top: 18px;
@@ -198,7 +234,13 @@ h1.name {
 	display: none !important;
 }
 
+.blockRow {
+	margin-top: 6%;
+	//margin-bottom: 20%;
+}
+
 .blockWrapper {
+	margin-top: 70px;
 	margin-bottom: 4%;
 
 	.imgClick {

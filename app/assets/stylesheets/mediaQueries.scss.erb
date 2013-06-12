@@ -1,18 +1,14 @@
 @media only screen and (max-width: 480px) { //480 and under
 
+.name h1 a {
+  font-size: 40px !important;
+  margin-left: 0%;
+  font-family: 'klinicslabbold-webfont' !important;
+  font-weight: 400;
+}
 
 .top-bar {
   margin-top: 10%;
-  margin-bottom: 10%;
-
-  .name h1 a {
-    font-size: 38px !important;
-    margin-left: 0%;
-    
-    font-family: 'klinicslabbold-webfont' ;
-    font-weight: 400;
-
-  }
 }
 
 li.toggle-topbar a  {
@@ -24,7 +20,37 @@ li.toggle-topbar a  {
   width: 32px;
 }
 
+.topRow {
+  // border: 1px solid red;
+  // margin: 0px !important;
+  // // position: relative !important;
+  // // top: 0;
+  // // left: 0;
+  // height: 70px;
+}
 
+.titleWrap {
+  // border: 1px solid blue;
+  // margin: 0 auto;
+  // top: 25px;
+  // line-height: 0;
+  // height: .5em;
+  // //width: 40%;
+
+  h4.jobTitle {
+    // color: $darkBlue;
+    // text-align: center;
+    // position: relative;
+    // @include fontLightIt;
+    // padding: 0;
+    // background-color: $body-bg;
+    // line-height: .4em;
+    // font-size: 1.6em;
+    // width: 291px;
+    // height: auto;
+    // margin: 0 auto;
+  }
+}
 
 .hoverFade {
 
@@ -69,15 +95,6 @@ li.toggle-topbar a  {
 } ////////////////////////////////////// CLOSE 480
 
 @media only screen and (min-width: 481px) { //481 and over
-
-.top-bar {
-margin-bottom: 5% !important;
-
-  .name h1 a {
-    // font-size: 35px;
-    // margin-left: 5%;
-  }
-}
 
 .hoverFade {
 
@@ -126,24 +143,36 @@ margin-bottom: 5% !important;
   border: none !important;
 }
 
+.name h1 a {
+  font-size: 60px;
+  margin-left: 0%;
+  font-family: 'klinicslablight-webfont' ;
+  font-weight: 400;
+}
+
 .expanded ul.left {
-  width: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  //float: right !important;
+  margin-top: -0px;
   text-align: center;
-  float: right !important;
-  margin-right: 2%;
 
   li {
-    float: right;
+    position: relative;
+    float: left;
     font-size: 1.35em;
-
-    :hover {
-      border: 1px solid black;
-    }
+    margin: 0;
+    padding: 0 0 5% 0;
+    max-width: 100px;
+    text-align: center;
 
     a {
-      padding: 0 15% 0 15%;
-      margin: 0;
-      font-size: 1em;
+      // position: relative;
+      // padding: 0% 13% 0 13%;
+      // margin: 0 !important;
+      // font-size: 1em;
+     
     }
   } 
 }
@@ -151,6 +180,8 @@ margin-bottom: 5% !important;
 }///////////////// close 768 and under
 
 @media only screen and (min-width: 769px) { // larger then 768
+
+
 
 
 

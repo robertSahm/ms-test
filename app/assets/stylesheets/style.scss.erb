@@ -104,13 +104,14 @@ body {
 
 
 .left li {
-	padding-top: 13px;
+	padding-top: 10px;
 	white-space: nowrap;
 	padding-bottom: 0;
 	background-color: $body-bg;
 
 	a {
-					background-color: $body-bg !important;
+		background-color: $body-bg !important;
+		@include fontBook;
 	}
 }
 
@@ -136,9 +137,9 @@ body {
 }
 
 h1.name {
-	@include fontLight;
+	@include fontMed;
 	font-weight: 400;
-	font-size: 70px !important;
+	font-size: 67px !important;
 	white-space: nowrap;
 	overflow: show;
 	background-color: $body-bg;
@@ -163,7 +164,6 @@ h1.name {
 			float: right;
 			padding: 0;
 			margin: 0;
-
 
 			a {
   			display: table-cell; 
@@ -205,7 +205,7 @@ h1.name {
 		color: $yellow;
 		text-align: center;
 		position: relative;
-		@include fontLightIt;
+		@include fontBookIt;
 		padding: 0;
 		background-color: $body-bg;
 		line-height: .4em;
@@ -230,17 +230,17 @@ h1.name {
 .rowIntro {
 	margin-top: 6%;
 	text-align: center;
-	margin-bottom: 800px;
+	margin-bottom: 100px;
 }
 
 h1.biggest {
-	@include fontBook;
+	@include fontMed;
 	font-size: 80px;
 			color: $orange;
 
 	span.ital {
 		@include fontMedIt;
-		// color: $blueLight;
+		color: $blueLight;
 	}
 }
 
@@ -326,9 +326,9 @@ img.candlBlockCol {
 #portaRow {
 	display: none;
 	padding-bottom: 100px;
-	position: absolute;
+	position: relative;
 	width: 100%;
-	top: 110px;
+	top: 10px;
 	left: 0;
 }
 

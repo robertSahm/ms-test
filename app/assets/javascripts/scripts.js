@@ -434,7 +434,7 @@ $(function () {
 //Clicks 
 $(function () {
 //$('#portaBlockCol').on('click', function(){
-  $('.portaBlockCol').click(function() {
+  $('.portaBlockBW').click(function() {
     $('#portaRow').fadeIn(500).addClass('large-12');
     $('.portaLogoRow').fadeIn(1000);
     $('.blockRow1').css('margin-top', '430px')

@@ -295,90 +295,141 @@
 
 
 // Porta Hover
-$(function () {
-  $('img.portaBlockCol').hide();
-  $('.portaBlockBW').mouseenter( function () {
-    $('img.portaBlockCol').fadeIn(300);
-    $('img.portaBlockBW').fadeOut(300);
-    return false;
-  });
+// $(function () {
+//   $('img.portaBlockCol').hide();
+//   $('.portaBlockBW').mouseenter( function () {
+//     $('img.portaBlockCol').fadeIn(300);
+//     $('img.portaBlockBW').fadeOut(300);
+//     return false;
+//   });
 
-  $('.portaBlockCol').mouseleave( function () {
-    $('img.portaBlockCol').fadeOut(300);
-    $('img.portaBlockBW').fadeIn(300);
-    return false;
+//   $('.portaBlockCol').mouseleave( function () {
+//     $('img.portaBlockCol').fadeOut(300);
+//     $('img.portaBlockBW').fadeIn(300);
+//     return false;
+//   });
+// });
+
+//Porta hover
+$(function () {
+  $('.portaBlockBW').mouseenter( function () {
+    $('img.portaBlockCol').stop(true, true).animate({
+      opacity : '1'
+    }, 200);
+    $(this).stop(true, true).animate({
+      opacity : '0' 
+    }, 200);
+  });
+  $('.portaBlockBW').mouseleave( function () {
+    $(this).stop(true, true).animate({
+      opacity : '1'
+    }, 1800);
+    $('img.portaBlockCol').stop(true, true).animate({
+      opacity : '0'
+    }, 1800);
   });
 });
 
 // Ketch Hover
 $(function () {
-  $('img.ketchBlockCol').hide();
   $('.ketchBlockBW').mouseenter( function () {
-    $('img.ketchBlockCol').fadeIn(300);
-    $('img.ketchBlockBW').fadeOut(300);
+    $('img.ketchBlockCol').stop(true, true).animate({
+      opacity : '1'
+    }, 200);
+    $(this).stop(true, true).animate({
+      opacity : '0' 
+    }, 200);
   });
+  $('.ketchBlockBW').mouseleave( function () {
+    $(this).stop(true, true).animate({
+      opacity : '1'
+    }, 1800);
+    $('img.ketchBlockCol').stop(true, true).animate({
+      opacity : '0'
+    }, 1800);
+  });
+});
 
-  $('.ketchBlockCol').mouseleave( function () {
-    $('img.ketchBlockCol').fadeOut(300);
-    $('img.ketchBlockBW').fadeIn(300);
+// Carol Hover
+$(function () {
+  $('.carolBlockBW').mouseenter( function () {
+    $('img.carolBlockCol').stop(true, true).animate({
+      opacity : '1'
+    }, 200);
+    $(this).stop(true, true).animate({
+      opacity : '0' 
+    }, 200);
+  });
+  $('img.carolBlockBW').mouseleave( function () {
+    $(this).stop(true, true).animate({
+      opacity : '1'
+    }, 1800);
+    $('img.carolBlockCol').stop(true, true).animate({
+      opacity : '0'
+    }, 1800);
   });
 });
 
 // c2c Hover
 $(function () {
-  $('img.c2cBlockCol').hide();
   $('.c2cBlockBW').mouseenter( function () {
-    $('img.c2cBlockCol').fadeIn(300);
-    $('img.c2cBlockBW').fadeOut(300);
+    $('img.c2cBlockCol').stop(true, true).animate({
+      opacity : '1'
+    }, 200);
+    $(this).stop(true, true).animate({
+      opacity : '0' 
+    }, 200);
   });
-
-  $('.c2cBlockCol').mouseleave( function () {
-    $('img.c2cBlockCol').fadeOut(300);
-    $('img.c2cBlockBW').fadeIn(300);
-  });
-});
-
-//carol hover
-$(function () {
-  $('img.carolBlockCol').hide();
-  $('.carolBlockBW').mouseenter( function () {
-    $('img.carolBlockCol').fadeIn(300);
-    $('img.carolBlockBW').fadeOut(300);
-  });
-
-  $('.carolBlockCol').mouseleave( function () {
-    $('img.carolBlockCol').fadeOut(300);
-    $('img.carolBlockBW').fadeIn(300);
+  $('.c2cBlockBW').mouseleave( function () {
+    $(this).stop(true, true).animate({
+      opacity : '1'
+    }, 1800);
+    $('img.c2cBlockCol').stop(true, true).animate({
+      opacity : '0'
+    }, 1800);
   });
 });
 
-//craw hover
+// craw Hover
 $(function () {
-  $('img.crawBlockCol').hide();
   $('.crawBlockBW').mouseenter( function () {
-    $('img.crawBlockCol').fadeIn(600);
-    $('img.crawBlockBW').fadeOut(300);
+    $('img.crawBlockCol').stop(true, true).animate({
+      opacity : '1'
+    }, 200);
+    $(this).stop(true, true).animate({
+      opacity : '0' 
+    }, 200);
   });
-
-  $('.crawBlockCol').mouseleave( function () {
-    $('img.crawBlockCol').fadeOut(300);
-    $('img.crawBlockBW').fadeIn(300);
+  $('.crawBlockBW').mouseleave( function () {
+    $(this).stop(true, true).animate({
+      opacity : '1'
+    }, 1800);
+    $('img.crawBlockCol').stop(true, true).animate({
+      opacity : '0'
+    }, 1800);
   });
 });
 
-// charlotte and lisa hover
+// candl Hover
 $(function () {
-  $('img.candlBlockCol').hide();
   $('.candlBlockBW').mouseenter( function () {
-    $('img.candlBlockCol').fadeIn(300);
-    $('img.candlBlockBW').fadeOut(300);
+    $('img.candlBlockCol').stop(true, true).animate({
+      opacity : '1'
+    }, 200);
+    $(this).stop(true, true).animate({
+      opacity : '0' 
+    }, 200);
   });
-
-  $('.candlBlockCol').mouseleave( function () {
-    $('img.candlBlockCol').fadeOut(300);
-    $('img.candlBlockBW').fadeIn(300);
+  $('.candlBlockBW').mouseleave( function () {
+    $(this).stop(true, true).animate({
+      opacity : '1'
+    }, 1800);
+    $('img.candlBlockCol').stop(true, true).animate({
+      opacity : '0'
+    }, 1800);
   });
 });
+
 
 //Clicks 
 $(function () {

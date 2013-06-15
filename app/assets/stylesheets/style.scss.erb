@@ -175,7 +175,9 @@ h1.name {
 	}
 }
 
-
+.titleRow {
+	margin-bottom: 40px;
+}
 
 .greyRow {
 	position: relative;
@@ -227,6 +229,10 @@ h1.name {
 // .JMML.JMML  JMML`Mbmo.JMML.   `Ybmd9'  
 // Intro stuff
 
+.introHide {
+	display: none;
+}
+
 .rowIntro {
 	margin-top: 6%;
 	text-align: center;
@@ -272,13 +278,13 @@ img.candlBlockCol {
 	display: none !important;
 }
 
-.blockRow {
-	margin-top: 6%;
-	//margin-bottom: 20%;
+.blockRow1, .blockRow2 {
+	margin-top: 1%;
 }
 
+
 .blockWrapper {
-	margin-top: 70px;
+	margin-top: 10px;
 	margin-bottom: 4%;
 
 	.imgClick {
@@ -296,6 +302,66 @@ img.candlBlockCol {
     }
 	}
 }
+
+.portaHoverText, 
+.ketchHoverText, 
+.carolHoverText, 
+.c2cHoverText,
+.crawHoverText,
+.candlHoverText {
+	display: none;
+	padding: 0 7%;
+}
+
+.letterFirst {
+	font-size: 1.5em;
+	line-height: 1em;
+	letter-spacing: .02em;
+	@include fontBook;
+}
+
+p.portaHoverP {
+	font-size: 1.2em;
+	@include fontBook;
+	color: $body-bg;
+}
+
+p.ketchHoverP {
+	padding-top: 10%;
+	font-size: 1.2em;
+	@include fontBook;
+	color: $blueDark;
+}
+
+p.carolHoverP {
+	padding-top: 0px;
+	font-size: 1.2em;
+	@include fontBook;
+	color: $blueDark;
+}
+
+p.c2cHoverP {
+	padding-top: 4%;
+	font-size: 1.2em;
+	@include fontBook;
+	color: $blueDark;
+}
+
+p.crawHoverP {
+	padding-top: 10%;
+	font-size: 1.2em;
+	@include fontBook;
+	color: $blueDark;
+}
+
+p.candlHoverP {
+	//margin-top: -10%;
+	font-size: 1.2em;
+	@include fontBook;
+	color: $blueDark;
+	z-index: 100;
+}
+
 
 
 //  ,,        ,,                ,,        ,,                            
@@ -323,8 +389,15 @@ img.candlBlockCol {
 .posRel {
 }
 
-#portaRow {
+.portaTop {
+	margin-bottom: 10px;
+}
+
+.portaHide {
 	display: none;
+}
+
+#portaRow {
 	padding-bottom: 100px;
 	position: relative;
 	width: 100%;
@@ -336,10 +409,6 @@ img.candlBlockCol {
 	position: relative;
 	top: -257px;
 	left: 0;
-	// -webkit-transition-property: top;
- //  -webkit-transition-duration: 0.5s;
- //  transition-property: top;
-	// transition-duration: 0.5s;
 }
 
 .bgBlack {
@@ -373,10 +442,10 @@ img.portaDevices  {
 //   MM;Mm 8M""""""  MM  8M       MM    MM   MM    MM    MM  
 //   MM `MbYM.    ,  MM  YM.    , MM    MM   MM    MM    MM  
 // .JMML. YA`Mbmmd'  `MbmoYMbmd'.JMML  JMML.JMML  JMML  JMML.
+
 .ketchBigBlock {
 	display: none;
 }
-
 
 .ketchumWrapper {
 	background-color: $ketchumYellow;
@@ -385,15 +454,6 @@ img.portaDevices  {
 	margin-top: 3%;
 	overflow: hidden;
 }
-
-// .ketchumBG {
-// 	position: absolute;
-// 	top: 0;
-// 	left: 0;
-// 	height: 100%;
-// 	max-height: 400px;
-// 	min-height: 100%;
-// }
 
 .ketchTexture {
 	background-image: url('ketchumBG.png');

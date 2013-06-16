@@ -76,6 +76,7 @@ $body-bg: #EFECCA;
 $body-font-color: #444;
 $yellowKetchum: #DFDDB4;
 $bluePorta: #00BDFF;
+$redPorta: #BE4D4B;
 
 $orange		 :#DE5605;
 $yellow		 :#F7A035;	
@@ -429,18 +430,17 @@ p.candlHoverP {
 
 	.portaInfo {
 
-		p1.portaText {
+		p1 {
 			display: block;
 			color: $bluePorta;
 			@include fontBook;
 			font-size: 1.4em;
 			letter-spacing: .05em;
 			//padding-left: 0;
-			padding: 10% 0 10% 0;
+			padding: 10% 2% 10% 5%;
 			margin: 1% 0 5% 2%;
 			border-right: 1px solid $bluePorta;
-
-
+			border-left: 1px solid $bluePorta;
 		}
 	}
 }
@@ -459,6 +459,10 @@ p.candlHoverP {
 	position: relative;
 	top: -257px;
 	left: 0;
+}
+
+.portaPlayer {
+	padding-left: 4%;
 }
 
 .bgBlack {

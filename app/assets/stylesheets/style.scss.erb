@@ -90,7 +90,7 @@ $white     :#EFECCA;
 //   -webkit-transform: translate3d(0, 0, 0) !important;
 
 body {
-	background-color: $body-bg !important;
+	background-color: $body-bg;
 }
 
 //                              ,,                  
@@ -102,6 +102,9 @@ body {
 //   MM      MM YM.    , `Mb    MM   MM     
 // .JMML.  .JMML.`Mbmmd'  `Wbmd"MML.JMML.   
 
+.top-bar.expanded {
+  background: $body-bg; 
+}
 
 .left li {
 	padding-top: 10px;
@@ -149,7 +152,7 @@ h1.name {
 	//top: -10px;
 	margin: 0;
 	padding: 0;
-	background-color: $body-bg;
+	background-color: $white;
 	
 	ul.left {
 		//display: inline;
@@ -303,6 +306,10 @@ img.candlBlockCol {
 	}
 }
 
+.shrinkMe {
+	z-index: 200;
+}
+
 .portaHoverText, 
 .ketchHoverText, 
 .carolHoverText, 
@@ -321,7 +328,7 @@ img.candlBlockCol {
 }
 
 p.portaHoverP {
-	font-size: 1.2em;
+	font-size: 1em;
 	@include fontBook;
 	color: $body-bg;
 }

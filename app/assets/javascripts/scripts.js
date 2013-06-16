@@ -188,82 +188,31 @@ $(function () {
   });
 });
 
-
-// // c2c Hover
-// $(function () {
-//   $('.c2cBlockBW').mouseenter( function () {
-//     $('img.c2cBlockCol').stop(true, true).animate({
-//       opacity : '1'
-//     }, 200);
-//     $(this).stop(true, true).animate({
-//       opacity : '0' 
-//     }, 200);
-//   });
-//   $('.c2cBlockBW').mouseleave( function () {
-//     $(this).stop(true, true).animate({
-//       opacity : '1'
-//     }, 1800);
-//     $('img.c2cBlockCol').stop(true, true).animate({
-//       opacity : '0'
-//     }, 1800);
-//   });
-// });
-
-// // craw Hover
-// $(function () {
-//   $('.crawBlockBW').mouseenter( function () {
-//     $('img.crawBlockCol').stop(true, true).animate({
-//       opacity : '1'
-//     }, 200);
-//     $(this).stop(true, true).animate({
-//       opacity : '0' 
-//     }, 200);
-//   });
-//   $('.crawBlockBW').mouseleave( function () {
-//     $(this).stop(true, true).animate({
-//       opacity : '1'
-//     }, 1800);
-//     $('img.crawBlockCol').stop(true, true).animate({
-//       opacity : '0'
-//     }, 1800);
-//   });
-// });
-
-// // candl Hover
-// $(function () {
-//   $('.candlBlockBW').mouseenter( function () {
-//     $('img.candlBlockCol').stop(true, true).animate({
-//       opacity : '1'
-//     }, 200);
-//     $(this).stop(true, true).animate({
-//       opacity : '0' 
-//     }, 200);
-//   });
-//   $('.candlBlockBW').mouseleave( function () {
-//     $(this).stop(true, true).animate({
-//       opacity : '1'
-//     }, 1800);
-//     $('img.candlBlockCol').stop(true, true).animate({
-//       opacity : '0'
-//     }, 1800);
-//   });
-// });
-
-
-
-
 //Clicks 
 $(function () {
 //$('#portaBlockCol').on('click', function(){
   $('.portaBlockBW').click(function() {
     $('.portaHide').fadeIn(500);
+    $('img.shrinkMe').fadeIn(500).addClass('click2Hide');
     $('#portaRow').fadeIn(500).addClass('large-12');
     $('.portaLogoRow').fadeIn(4000);
-    $('.blockRow1').css('margin-top', '430px')
+    //$('.blockRow1').animate({'margin-bottom': '+=430px'})
     $('#portaBlockWrapper').hide();  
   });
 });
 
+$(function () {
+  $('img.shrinkMe').click( function () {
+    //$(this).hide("slide", {direction: "left" }, "slow");
+    //$('#portaRow').hide("slide", {direction: "left" }, 1000);
+    $(this).hide("slide", {direction: "left" }, 300);
+    $('#portaRow').hide("slide", {direction: "left" }, 300);
+    $('#portaBlockWrapper').fadeIn(500).animate({
+      'margin-top' : ""
+    },500);
+    $('.blockRow1').css('margin-top', '0')  
+  });
+});
 
 // $(function () {
 //   $('.portaTop').clickToggl(function() {

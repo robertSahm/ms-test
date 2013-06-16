@@ -21,8 +21,6 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-gem 'heroku_rails_deflate', :group => :production
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
@@ -38,6 +36,7 @@ group :doc do
 end
 
 group :production do
+	gem 'heroku_rails_deflate'
   gem 'pg'
 end
 group :development, :test do

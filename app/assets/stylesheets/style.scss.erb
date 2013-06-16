@@ -74,7 +74,8 @@
 
 $body-bg: #EFECCA;
 $body-font-color: #444;
-$ketchumYellow: #DFDDB4;
+$yellowKetchum: #DFDDB4;
+$bluePorta: #00BDFF;
 
 $orange		 :#DE5605;
 $yellow		 :#F7A035;	
@@ -310,6 +311,19 @@ img.candlBlockCol {
 	z-index: 200;
 }
 
+.portaInfo {
+	width: 100%;
+	background-color: black;
+	// position: relative;
+	// top: 0;
+	// left: 0;
+	float: left;
+
+	p {
+		display: block;
+	}
+}
+
 .portaHoverText, 
 .ketchHoverText, 
 .carolHoverText, 
@@ -410,7 +424,18 @@ p.candlHoverP {
 	width: 100%;
 	top: 10px;
 	left: 0;
+
+	.portaInfo {
+
+		p.portaText {
+			color: $bluePorta;
+			@include fontBook;
+			font-size: 1.1em;
+
+		}
+	}
 }
+
 
 .portaLogoPos {
 	position: relative;
@@ -455,7 +480,7 @@ img.portaDevices  {
 }
 
 .ketchumWrapper {
-	background-color: $ketchumYellow;
+	background-color: $yellowKetchum;
 	position: relative;
 	max-height: 400px;
 	margin-top: 3%;

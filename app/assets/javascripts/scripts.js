@@ -205,8 +205,8 @@ $(function () {
   $('img.shrinkMe').click( function () {
     //$(this).hide("slide", {direction: "left" }, "slow");
     //$('#portaRow').hide("slide", {direction: "left" }, 1000);
-    $(this).hide("slide", {direction: "left" }, 300);
-    $('#portaRow').hide("slide", {direction: "left" }, 300);
+    $(this).hide("slide", {direction: "down" }, 500);
+  $('#portaRow').hide("slide", {direction: "up" }, 500);
     $('#portaBlockWrapper').fadeIn(500).animate({
       'margin-top' : ""
     },500);

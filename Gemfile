@@ -36,7 +36,7 @@ group :doc do
 end
 
 group :production do
-	gem 'heroku_rails_deflate'
+	# gem 'heroku_rails_deflate'
   gem 'pg'
 end
 group :development, :test do

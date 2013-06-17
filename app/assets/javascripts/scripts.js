@@ -190,13 +190,11 @@ $(function () {
 
 //Clicks 
 $(function () {
-//$('#portaBlockCol').on('click', function(){
   $('.portaBlockBW').click(function() {
     $('.portaHide').fadeIn(500);
     $('img.shrinkMe').fadeIn(500).addClass('click2Hide');
     $('#portaRow').fadeIn(500).addClass('large-12');
     $('.portaLogoRow').fadeIn(4000);
-    //$('.blockRow1').animate({'margin-bottom': '+=430px'})
     $('#portaBlockWrapper').hide();  
   });
 });
@@ -204,9 +202,9 @@ $(function () {
 $(function () {
   $('img.shrinkMe').click( function () {
     //$(this).hide("slide", {direction: "left" }, "slow");
-    //$('#portaRow').hide("slide", {direction: "left" }, 1000);
+    $('#portaRow').hide("slide", {direction: "left" }, 1000);
     $(this).hide("slide", {direction: "down" }, 500);
-  $('#portaRow').hide("slide", {direction: "up" }, 500);
+    $('#portaRow').hide("slide", {direction: "up" }, 500);
     $('#portaBlockWrapper').fadeIn(500).animate({
       'margin-top' : ""
     },500);

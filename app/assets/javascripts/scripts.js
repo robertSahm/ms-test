@@ -191,7 +191,7 @@ $(function () {
 //Clicks 
 $(function () {
   $('.portaBlockBW').click(function() {
-    $('body').css('background-color', '#000000');
+    //$('body').css('background-color', '#000000');
     $('.portaHide').fadeIn(500);
     $('img.shrinkMe').fadeIn(500).addClass('click2Hide');
     $('#portaRow').fadeIn(500).addClass('large-12');

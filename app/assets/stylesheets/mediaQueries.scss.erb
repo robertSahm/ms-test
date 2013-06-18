@@ -1,58 +1,42 @@
-@media only screen and (max-width: 480px) { //480 and under
+@media only screen and (max-width: 380px) { //380 and under
 
-.name h1 a {
-  font-size: 40px !important;
-  margin-left: 0%;
-  //font-family: 'klinicslabbold-webfont' !important;
-  font-weight: 400;
-}
-
-.top-bar {
-  margin-top: 10%;
-}
-
-// li.toggle-topbar a  {
-//   display: block;
-//   top: 4px;
-//   left: -20px;
-//   position: relative;
-//   height: 32px;
-//   width: 32px;
-// }
-
-.topRow {
-  // border: 1px solid red;
-  // margin: 0px !important;
-  // // position: relative !important;
-  // // top: 0;
-  // // left: 0;
-  // height: 70px;
-}
-
-.titleWrap {
-  // border: 1px solid blue;
-  // margin: 0 auto;
-  // top: 25px;
-  // line-height: 0;
-  // height: .5em;
-  // //width: 40%;
-
-  h4.jobTitle {
-    // color: $darkBlue;
-    // text-align: center;
-    // position: relative;
-    // @include fontLightIt;
-    // padding: 0;
-    // background-color: $body-bg;
-    // line-height: .4em;
-    // font-size: 1.6em;
-    // width: 291px;
-    // height: auto;
-    // margin: 0 auto;
+  .name h1 a {
+    font-size: 30px !important;
+    margin-left: -10%;
+    margin-top: 10%;
+    font-weight: 400;
+    padding-bottom: 30px;
   }
-}
 
-.hoverFade {
+  .blockWrapper {
+    width: 100% !important;
+  }
+
+  ul.navUl {
+    padding-right: 17px;
+  }
+
+  h4.desc {
+    font-size: 1em !important;
+  }
+
+  ul.title-area {
+    li.toggle-topbar {
+      top: 29px;
+      a {
+        span {
+          width: 34px !important;
+          height: 2px !important;
+        }
+      }
+    }
+  }
+
+  .top-bar {
+    min-height: 80px;
+  }
+  
+  .hoverFade {
 
   img.portaBlockBW, img.portaBlockCol {
     width: 65%;
@@ -89,19 +73,18 @@
    padding-top: 40%;
    margin-bottom: 20%;
   }
-}
+  }
 
+} //CLOSE 380 and under
 
-} ////////////////////////////////////// CLOSE 480
-
-@media only screen and (min-width: 481px) { //481 and over
+@media only screen and (min-width: 481px) { // Between 481 and 768
 
 .hoverFade {
 
-    img.portaBlockBW, img.portaBlockCol {
-      margin-top: 5%;
-     width: 80%;
-      margin-left: 8%;
+  img.portaBlockBW, img.portaBlockCol {
+    margin-top: 5%;
+    width: 80%;
+    margin-left: 8%;
    }
 
    img.ketchBlockBW, img.ketchBlockCol {
@@ -116,9 +99,9 @@
    }
 
    img.c2cBlockBW, img.c2cBlockCol {
-     width: 50%;
-   padding-top: 18%;
-   margin-left: 21%;
+    width: 50%;
+    padding-top: 18%;
+    margin-left: 21%;
    }
 
    img.crawBlockBW, img.crawBlockCol {
@@ -133,54 +116,11 @@
      margin-left: 27%;
      margin-bottom: 20%;
   }
-}
+} 
 
-// .blockRow1, .blockRow2 {
-//     width: 350px;
-//     border: 1px solid red;
-//     float: left;
-// }
+}//end
 
-
-} //end
-
-
-@media only screen and (max-width: 768px) { //768 and under
-
-.headerWrapper {
-  border: none !important;
-}
-
-.name h1 a {
-  font-size: 60px;
-  margin-left: 0%;
-  //font-family: 'klinicslablight-webfont' ;
-  font-weight: 400;
-}
-
-
-
-
-}///////////////// close 768 and under
-
-@media only screen and (min-width: 480px) { // larger then 768
-
-
-
-
-
-
-} ////////// CLOSE larger then 768
-
-@media only screen and (max-width: 700px) { // larger then 768
-
-  body {
-    // border: 4px solid blue !important;
-  }
-
-  
-
-
+@media only screen and (min-width: 769px) { // 769 and up
 
 
 } ////////// CLOSE larger then 768

@@ -1,7 +1,4 @@
-.TESTMESSAGE {
-	position: relative;
 
-}
 
 .redBorder {
 	border: 1px solid red;
@@ -79,15 +76,21 @@
 
 $body-bg: #EFECCA;
 $body-font-color: #444;
-$yellowKetchum: #DFDDB4;
-$bluePorta: #00BDFF;
-$redPorta: #BE4D4B;
 
+//Home Colors
 $orange		 :#DE5605;
 $yellow		 :#F7A035;	
 $blueLight :#B1DEB5;
 $blueDark  :#65ABA6;
 $white     :#EFECCA;
+
+//Porta Colors
+$bluePorta: #00BDFF;
+$redPorta:  #BE4D4B;
+$bgPorta:   #000000;
+
+//Ketchum Colors
+$yellowKetchum: #DFDDB4;
 
 
 //$blueDark: #5D718C;
@@ -100,6 +103,8 @@ body {
 	background-color: $body-bg;
 }
 
+
+
 //                              ,,                  
 // `7MMF'  `7MMF'             `7MM                  
 //   MM      MM                 MM                  
@@ -109,79 +114,50 @@ body {
 //   MM      MM YM.    , `Mb    MM   MM     
 // .JMML.  .JMML.`Mbmmd'  `Wbmd"MML.JMML.   
 
-.top-bar.expanded {
+.top-bar, .expanded {
   background: $body-bg; 
+  margin-bottom: 10px !important;
 }
 
-.left li {
-	padding-top: 10px;
-	white-space: nowrap;
-	padding-bottom: 0;
-	background-color: $body-bg;
-
-	a {
-		background-color: $body-bg !important;
-		@include fontBook;
-	}
+.bgCol {
+	background-color: $body-bg !important;
 }
 
-.navWrap {
-	position: relative;
-	top: 30px;
-	left: 0;
-	max-width: 680px;
-	margin: 0 auto;
-	margin-bottom: 30px;
-	background-color: $body-bg;
-
-	.navBlock {
-		position: relative;
-		top: 3px; // lines up nav test w name
-		left: 0px;
-		background-color: $body-bg;
-
-		a {
-			background-color: $body-bg !important;
-		}
-	}
-}
-
+//Robert Sahm type
 h1.name {
 	@include fontMed;
 	font-weight: 400;
-	font-size: 67px !important;
+	font-size: 2.1em !important;
 	white-space: nowrap;
 	overflow: show;
 	background-color: $body-bg;
+	color: lighten($body-bg, 20%);
+	text-align: center;
 }
 
-.expanded {
-	//top: -10px;
-	margin: 0;
-	padding: 0;
-	background-color: $white;
-	
-	ul.left {
-		//display: inline;
-		height: 80px;
-		text-align: left;
-		padding: 0 0 0 0;
-		margin: -10px 0 0 0;
-		background-color: $body-bg !important;
+// Nav
 
-		li {
-			top: -20px;
-			float: right;
-			padding: 0;
-			margin: 0;
+.navRow {
+	position: relative;
+	top: -5px;
+}
 
-			a {
-  			display: table-cell; 
-  			vertical-align: middle; 
-  			text-align: center; 
-  			padding: 15px !important;
-			}
-		}
+ul.navUl {
+	background-color: $body-bg;
+  width: 100%;
+  display: block;
+  margin: 0 auto !important;
+  text-align: center;
+
+	li.navLi {
+		display: inline-block;
+		float: none;
+
+		a.navLink {
+  	  @include fontBook;
+  	  width: 100%;
+  	  height: 100%;
+  	}
 	}
 }
 
@@ -191,7 +167,7 @@ h1.name {
 
 .greyRow {
 	position: relative;
-	top: 40px;
+	top: 10px;
 	left: 0;
 
 	.greyLine {
@@ -204,30 +180,35 @@ h1.name {
 	}
 }
 
-.descWrap {
-	position: relative;
-	margin: 0 auto;
-	top: -3px;
-	line-height: 0;
-	height: .5em;
-	//width: 40%;
-	margin-top: 40px;
+.descRow {
+	margin-top: 0px;
 
-	h4.desc {
-		color: $yellow;
-		text-align: center;
+	.descWrap {
 		position: relative;
-		@include fontBookIt;
-		padding: 0;
-		background-color: $body-bg;
-		line-height: .4em;
-		font-size: 1.6em;
-		width: 49%;
-		min-width: 200px;
-		height: auto;
 		margin: 0 auto;
+		top: -3px;
+		line-height: 0;
+		height: .5em;
+		//width: 40%;
+		margin-top: 10px;
+	
+		h4.desc {
+			color: $yellow;
+			text-align: center;
+			position: relative;
+			@include fontBookIt;
+			padding: 0;
+			background-color: $body-bg;
+			line-height: .4em;
+			font-size: 1.2em;
+			width: 49%;
+			min-width: 100px;
+			height: auto;
+			margin: 0 auto;
+		}
 	}
 }
+
 
 //   ,,                                   
 //   db            mm                     
@@ -288,8 +269,8 @@ img.candlBlockCol {
 	display: none !important;
 }
 
-.blockRow1, .blockRow2 {
-	margin-top: 1%;
+.blockWrapper {
+	margin-top: 4% !important;
 }
 
 
@@ -297,6 +278,7 @@ img.candlBlockCol {
 	margin-top: 10px;
 	margin-bottom: 4%;
 	//min-width: 300px;
+	//border: 1px solid orange;
 
 	.imgClick {
 

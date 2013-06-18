@@ -90,8 +90,8 @@ $em-base: 16px !default;
 
 // Media Queries
 
-$small-screen: 480px;
-$medium-screen: 768px;
+$small-screen: 800px;
+$medium-screen: 801px;
 $large-screen: 1280px;
 
 $screen: "only screen";
@@ -347,8 +347,8 @@ $paragraph-font-size: 1.3em;
 // Lists
 
 // $list-style-position: outside;
-// $list-side-margin: emCalc(20px);
-// $list-nested-margin: emCalc(20px);
+$list-side-margin: emCalc(0px);
+$list-nested-margin: emCalc(0px);
 // $definition-list-header-weight: bold;
 // $definition-list-header-margin-bottom: .3em;
 // $definition-list-margin-bottom: emCalc(12px);
@@ -395,13 +395,13 @@ $paragraph-font-size: 1.3em;
 // $microformat-abbr-font-weight: bold;
 // $microformat-abbr-font-decoration: none;
 
-//      `7MM"""YMM                                         
-//        MM    `7                                         
-//        MM   d  ,pW"Wq.`7Mb,od8 `7MMpMMMb.pMMMb. ,pP"Ybd 
-//        MM""MM 6W'   `Wb MM' "'   MM    MM    MM 8I   `" 
-//        MM   Y 8M     M8 MM       MM    MM    MM `YMMMa. 
-//        MM     YA.   ,A9 MM       MM    MM    MM L.   I8 
-//      .JMML.    `Ybmd9'.JMML.   .JMML  JMML  JMMLM9mmmP' 
+//  `7MM"""YMM                                         
+//    MM    `7                                         
+//    MM   d  ,pW"Wq.`7Mb,od8 `7MMpMMMb.pMMMb. ,pP"Ybd 
+//    MM""MM 6W'   `Wb MM' "'   MM    MM    MM 8I   `" 
+//    MM   Y 8M     M8 MM       MM    MM    MM `YMMMa. 
+//    MM     YA.   ,A9 MM       MM    MM    MM L.   I8 
+//  .JMML.    `Ybmd9'.JMML.   .JMML  JMML  JMMLM9mmmP' 
 
 //
 // Form Variables
@@ -1411,11 +1411,11 @@ $paragraph-font-size: 1.3em;
 
 // Background color for the top bar
 
-$topbar-bg:                              #eee !default;
+$topbar-bg:                              $body-bg;
 // Height and margin
 
 $topbar-height:                           55px;
-$topbar-margin-bottom:                 emCalc(30px);
+$topbar-margin-bottom:                    emCalc(30px);
 
 // Control Input height for top bar
 
@@ -1424,11 +1424,11 @@ $topbar-margin-bottom:                 emCalc(30px);
 // Controlling the styles for the title in the top bar
 
 $topbar-title-weight:                     normal;
-$topbar-title-font-size:               emCalc(45px);
+$topbar-title-font-size:                  emCalc(45px);
 
 // Style the top bar dropdown elements
 
-$topbar-dropdown-bg:                      #eee;
+$topbar-dropdown-bg:                      $body-bg;
 $topbar-dropdown-link-color:              $body-bg;
 // $topbar-dropdown-link-bg:              lighten($topbar-bg, 5%);
 // $topbar-dropdown-toggle-size:          5px;
@@ -1440,8 +1440,8 @@ $topbar-dropdown-toggle-alpha:            0.3;
 $topbar-link-color:                       $darkBlue;
 // $topbar-link-color-hover:              #fff;
 // $topbar-link-color-active:             #fff;
-$topbar-link-weight:                   normal;
-$topbar-link-font-size:                emCalc(22px);
+$topbar-link-weight:                      normal;
+$topbar-link-font-size:                   emCalc(22px);
 // $topbar-link-hover-lightness:          -30%; // Darken by 30%
 // $topbar-link-bg-hover:                 darken($topbar-bg, 3%);
 // $topbar-link-bg-active:                darken($topbar-bg, 3%);
@@ -1454,17 +1454,17 @@ $topbar-link-font-size:                emCalc(22px);
 // Top menu icon styles
 
 // $topbar-menu-link-transform:           uppercase;
-$topbar-menu-link-font-size:           emCalc(22px);
+$topbar-menu-link-font-size:              emCalc(22px);
 // $topbar-menu-link-weight:              bold;
 $topbar-menu-link-color:                  $darkBlue;
 $topbar-menu-icon-color:                  $darkBlue;
-$topbar-menu-link-color-toggled:       turquoise;
-$topbar-menu-icon-color-toggled:       turquoise;
+$topbar-menu-link-color-toggled:          turquoise;
+$topbar-menu-icon-color-toggled:          turquoise;
 
 // Transitions and breakpoint styles
 
 // $topbar-transition-speed:              300ms;
-$topbar-breakpoint:                    emCalc(481px); // Change to 9999px for always mobile layout
+$topbar-breakpoint:                       emCalc(381px); // Change to 9999px for always mobile layout
 // $topbar-media-query:                   "only screen and (min-width: #{$topbar-breakpoint})";
 
 // Divider Styles

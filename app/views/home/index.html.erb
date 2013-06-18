@@ -1,10 +1,11 @@
 
 <!-- BOSS HEADER -->
 
+<!-- 
 <div class="row headerWrapper">
-	<div class="large-12 large-centered columns topRow">
+	<div class="large-9 large-centered small-8 small-centered columns topRow redBorder">
 		<nav class="top-bar navWrap">
-			<div class="sahmBlock">
+			<div class="sahmBlock row">
 	 			<ul class="title-area">
 		 			<li class="name">
 		 				<h1 class="name" id="logoHeader">
@@ -21,8 +22,8 @@
 				</ul>
 			</div>
 			<section class="top-bar-section navBlock">
-				<div class="">
-			  	<ul class="left">
+				<div class="row greenBorder">
+			  	<ul class="centeredList large-11 large-centered small-10 small-centered columns">
 			  	  <li><a href="#">work</a></li>
 			  	  <li><a href="#">about</a></li>
 			  	  <li><a href="#">contact</a></li>
@@ -31,16 +32,50 @@
 			</section>
 		</nav>
 	</div>
-</div><!--  end row header wrapper -->
+</div> -->
+<!--  end row header wrapper -->
+
+<div class="row headerWrapper">
+	<nav class="top-bar bgCol">
+		<div class="row">
+	 		<ul class="title-area large-9 large-centered small-9 small-centered columns bgCol">
+	 			<li class="name">
+	 				<h1 class="name" id="logoHeader">
+	 					<a href="#">
+	 						Robert Sahm
+	 					</a>
+	 				</h1>
+	 			</li>
+	 			<li class="toggle-topbar menu-icon">
+	 				<a href="#">
+	 					<span></span>
+	 				</a>
+	 			</li>
+			</ul>
+		</div>
+		
+		<section class="top-bar-section">
+			<div class="row navRow">
+				<div class="large-12 large-centered small-12 small-centered columns">
+			  	<ul class="left navUl">
+			    	<li class="navLi"><a class="bgCol navLink workLink" href="#">work</a></li>
+			    	<li class="navLi"><a class="bgCol navLink aboutLink" href="#">about</a></li>
+			    	<li class="navLi"><a class="bgCol navLink contactLink" href="#">contact</a></li>
+			  	</ul>
+				</div>
+			</div>
+		</section>
+	</nav>
+</div>
 
 <!-- Title Row ('web design and programmer') -->
-<div class="row titleRow">
+<div class="row descRow">
 	<div class="row greyRow">
-		<div class="greyLine large-8 large-centered columns">
+		<div class="greyLine large-5 large-centered columns">
 		</div>
 	</div>
 	<div class="row descRow">
-		<div class="descWrap large-8 large-centered columns">
+		<div class="descWrap large-5 large-centered columns">
 			<h4 class="desc">web design &amp; code</h4>
 		</div>
 	</div>
@@ -53,7 +88,9 @@
 	<div class="large-8 large-centered columns">
 		<!-- <h1 class="biggest">I've probably though a little <span class="ital">too</span> much about pixels.</h1> -->
 		<!-- <h1 class="biggest">one man band</h1> -->
-		<h1 class="biggest">Let's create something<span class="ital"></span>wonderful</h1>
+		<!-- <h1 class="biggest">Let's create something<span class="ital"></span>wonderful</h1>
+ -->	
+ 		<h1 class="biggest">Allow me to <span class="ital">catch</span>your eye.</h1>
 	</div>
 </div>
 
@@ -125,10 +162,8 @@
 .JMMmmmd9  .JMML.`Ybmd9'   YMbmd'.JMML. YAM9mmmP'  -->
 
 <!-- Block Row 1 -->
-<div class="row blockRow1">
-
-
-	<div id="portaBlockWrapper" class="large-4 medium-6 small-12 columns blockWrapper">
+<div class="row blockWrapper">
+	<div id="portaBlockWrapper" class="large-4 small-6 columns blockWrapper">
 		<div id="portaClick" class="imgClick">
 			<div class="hoverFade">
 				<%= image_tag "portaBlockCol.png", :class => "portaBlockCol top blockImg" %>
@@ -143,7 +178,7 @@
 		</div>
 	</div>
 
-	<div id="ketchBlockWrapper" class="large-4 small-12 columns blockWrapper">
+	<div id="ketchBlockWrapper" class="large-4 small-6 columns blockWrapper">
 		<div id="ketchClick" class="imgClick">
 			<div class="hoverFade">
 		  	<%= image_tag "ketchBlockCol.png", :class => "ketchBlockCol top blockImg" %>
@@ -158,7 +193,7 @@
 		</div>
 	</div>
 
-	<div id="carolBlockWrapper" class="large-4 small-12 columns blockWrapper">
+	<div id="carolBlockWrapper" class="large-4 small-6 columns blockWrapper">
 		<div id="carolClick" class="imgClick">
 			<div class="hoverFade">
 				<%= image_tag "carolBlockCol.png", :class => "carolBlockCol centered top blockImg" %>
@@ -172,10 +207,19 @@
 			<p><a href="">more...</a></p>
 		</div>
 	</div>
-</div>
+<!-- </div> -->
+
+
+
+
+
+
+
+
+
 	<!-- Block Row 2 -->
-<div class="row blockRow2">
-	<div id="c2cBlockWrapper" class="large-4 small-12 columns blockWrapper">
+<!-- <div class="row blockRow2"> -->
+	<div id="c2cBlockWrapper" class="large-4 small-6 columns blockWrapper">
 		<div id="c2cClick" class="imgClick">
 			<div class="hoverFade">
 				<%= image_tag "c2cBlockCol.png", :class => "c2cBlockCol centered top blockImg" %>
@@ -190,7 +234,7 @@
 		</div>
 	</div>
 
-	<div id="crawBlockWrapper" class="large-4  small-12 columns blockWrapper">
+	<div id="crawBlockWrapper" class="large-4  small-6 columns blockWrapper">
 		<div id="crawClick" class="imgClick">
 			<div class="hoverFade">
 				<%= image_tag "crawBlockCol.png", :class => "crawBlockCol centered top blockImg" %>
@@ -205,7 +249,7 @@
 		</div>
 	</div>
 
-	<div id="candlBlockWrapper" class="large-4 small-12 columns blockWrapper">
+	<div id="candlBlockWrapper" class="large-4 small-6 columns blockWrapper">
 		<div id="candlClick" class="imgClick">
 			<div class="hoverFade">
 				<%= image_tag "candlBlockCol.png", :class => "candlBlockCol centered top blockImg" %>
@@ -219,7 +263,7 @@
 			<p><a href="">more...</a></p>
 		</div>
 	</div>
-</div>
+<!-- </div> -->
 
 
 <!-- Portarock Section old -->

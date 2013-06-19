@@ -104,7 +104,146 @@ body {
 }
 
 
+.headerWrapper {
+	position: relative;
+	top: 0;
+	left: 0;
+	min-height: 30px;
+	margin-top: 3%;
 
+	nav.top-bar {
+	  margin-bottom: 0px !important;
+	  position: relative;
+	  display: block;
+	  min-height: 30px;
+
+		.titleRow {
+			position: relative;
+			top: 0;
+			left: 0;
+
+			ul.titleUl {
+				padding-bottom: 0 !important;
+
+				li.name {
+
+					h1.name {
+						@include fontMed;
+						font-weight: 400;
+						white-space: nowrap;
+						overflow: show;
+						background-color: $body-bg;
+						color: lighten($body-bg, 50%);
+						text-align: center;
+						position: relative;
+						top: 0;
+						left: 0;
+					
+						//Header Title Kearning fixes
+						.loosen1 {
+							letter-spacing: .02em;
+						}
+						.tighten1 {
+							letter-spacing: -.015em;
+						}
+						.tighten2 {
+							letter-spacing: -.01em;
+						}
+						.loosen2 {
+							letter-spacing: .012em;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	section.top-bar-section { // must be block level (height in this case)
+		height: 1%;
+		//border: 1px solid red;
+		.navRow {
+	
+			div {
+
+		
+				ul.navUl {
+					background-color: $body-bg;
+  				width: 100%;
+  				display: block;
+					margin: 0% auto !important;
+  				text-align: center;
+				
+					li.navLi {
+						display: inline-block;
+						margin: 0 !important;
+						float: none;
+				
+						a.navLink {
+  					  @include fontBook;
+  					  width: 100%;
+  					  height: 100%;
+  					  margin-top: 30%; // nav push up
+  					  margin-bottom: 10%; //nav push down
+  					  line-height: .2em; // height of links
+  					  // margin: 0 !important;
+  					  // padding: 0 !important;
+  					}
+					}
+				}
+			}
+		}
+	}
+}
+
+.descWrapper {
+	position: relative;
+	background-color: $body-bg;
+	margin-top: 20px;
+	max-height: 10px;
+
+	.topLineRow {
+		position: relative;
+		top: 0;
+		left: 0;
+
+		.topLine {
+			position: relative;
+			top: 0;
+			left: 0;
+			height: 10%;
+			border-bottom: 1px solid $yellow;
+		}
+	}
+
+	.descRow {
+
+		.descWrap {
+			position: relative;
+			top: 0px;
+			left: 0;
+			margin: 0 auto;
+			top: -13px; // moves words up
+			line-height: 0;
+			height: .5em;
+			//width: 40%;
+			margin-top: 10px;
+
+			h4.desc {
+				color: $yellow;
+				text-align: center;
+				@include fontBookIt;
+				padding: 0;
+				background-color: $body-bg;
+				line-height: .4em;
+				font-size: 1.2em;
+				width: 49%;
+				min-width: 100px;
+				height: auto;
+				margin: 0 auto;
+			}
+		}
+	}
+}
 //                              ,,                  
 // `7MMF'  `7MMF'             `7MM                  
 //   MM      MM                 MM                  
@@ -114,100 +253,36 @@ body {
 //   MM      MM YM.    , `Mb    MM   MM     
 // .JMML.  .JMML.`Mbmmd'  `Wbmd"MML.JMML.   
 
-.top-bar, .expanded {
-  background: $body-bg; 
-  margin-bottom: 10px !important;
-}
+
 
 .bgCol {
 	background-color: $body-bg !important;
 }
 
+
+ul.titleUl {
+	padding-bottom: 3%; // protects header text blocking
+}
+
 //Robert Sahm type
-h1.name {
-	@include fontMed;
-	font-weight: 400;
-	font-size: 2.1em !important;
-	white-space: nowrap;
-	overflow: show;
-	background-color: $body-bg;
-	color: lighten($body-bg, 20%);
-	text-align: center;
+
+
+
+// Nav
+@media only screen and (min-width: 800px) { 
+
 }
 
 // Nav
-
-.navRow {
-	position: relative;
-	top: -5px;
-}
-
-ul.navUl {
-	background-color: $body-bg;
-  width: 100%;
-  display: block;
-  margin: 0 auto !important;
-  text-align: center;
-
-	li.navLi {
-		display: inline-block;
-		float: none;
-
-		a.navLink {
-  	  @include fontBook;
-  	  width: 100%;
-  	  height: 100%;
-  	}
-	}
-}
-
-.titleRow {
-	margin-bottom: 40px;
-}
-
-.greyRow {
-	position: relative;
-	top: 10px;
-	left: 0;
-
-	.greyLine {
+@media only screen and (max-width: 800px) { 
+	.navRow {
 		position: relative;
-		top: 0px;
-		left: 0;
-		border-bottom: 1px solid $yellow;
-		z-index: -100;
-		//margin-bottom: 90px;
+		//top: -29px;
 	}
 }
 
-.descRow {
-	margin-top: 0px;
 
-	.descWrap {
-		position: relative;
-		margin: 0 auto;
-		top: -3px;
-		line-height: 0;
-		height: .5em;
-		//width: 40%;
-		margin-top: 10px;
-	
-		h4.desc {
-			color: $yellow;
-			text-align: center;
-			position: relative;
-			@include fontBookIt;
-			padding: 0;
-			background-color: $body-bg;
-			line-height: .4em;
-			font-size: 1.2em;
-			width: 49%;
-			min-width: 100px;
-			height: auto;
-			margin: 0 auto;
-		}
-	}
-}
+
 
 
 //   ,,                                   
@@ -225,7 +300,7 @@ ul.navUl {
 }
 
 .rowIntro {
-	margin-top: 6%;
+	margin-top: 4%;
 	text-align: center;
 	margin-bottom: 100px;
 }
@@ -263,6 +338,7 @@ img.c2cBlockCol,
 img.crawBlockCol,
 img.candlBlockCol {
 	opacity: 0;
+	width: 120%;
 }
 
 .dispNone {
@@ -270,7 +346,7 @@ img.candlBlockCol {
 }
 
 .blockWrapper {
-	margin-top: 4% !important;
+	margin-top: 2% !important;
 }
 
 

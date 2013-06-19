@@ -17,9 +17,11 @@
 // .JMML.  .JMML.`Ybmd9'     W     `Mbmmd'.JMML.   
 
 //Porta hover
+
 $(function () {
   $('.portaBlockBW').mouseenter( function () {
-    $('.portaHoverText').stop(true, true).show(500).fadeIn(1000);
+    // $('.portaHoverText').stop(true, true).slideIn(500);
+    $('.portaHoverText').show("slide", {direction: "left" }, 1000);
     $('#portaBlockWrapper').stop(true, true).animate ({
       'background-color' : '#444'
     }, 300);
@@ -43,6 +45,34 @@ $(function () {
     }, 1800);
   });
 });
+
+
+// $(function () {
+//   $('.portaBlockBW').mouseenter( function () {
+//     $('.portaHoverText').stop(true, true).show(500).fadeIn(1000);
+//     $('#portaBlockWrapper').stop(true, true).animate ({
+//       'background-color' : '#444'
+//     }, 300);
+//     $('img.portaBlockCol').stop(true, true).animate({
+//       opacity : '1'
+//     }, 200);
+//     $(this).stop(true, true).animate({
+//       opacity : '0' 
+//     }, 200);
+//   });
+//   $('#portaBlockWrapper').mouseleave( function () {
+//     $('.portaHoverText').hide(500).fadeOut(1000);
+//     $('#portaBlockWrapper').stop(true, true).animate ({
+//       'background-color' : 'transparent'
+//     }, 300);
+//     $('img.portaBlockBW').stop(true, true).animate({
+//       opacity : '1'
+//     }, 1800);
+//     $('img.portaBlockCol').stop(true, true).animate({
+//       opacity : '0'
+//     }, 1800);
+//   });
+// });
 
 // Ketch Hover
 $(function () {

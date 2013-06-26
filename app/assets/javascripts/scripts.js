@@ -17,204 +17,188 @@
 // .JMML.  .JMML.`Ybmd9'     W     `Mbmmd'.JMML.   
 
 //Porta hover
-
+//$('.portaHoverText').show();
 $(function () {
-  $('.portaBlockBW').mouseenter( function () {
-    // $('.portaHoverText').stop(true, true).slideIn(500);
-    $('.portaHoverText').show("slide", {direction: "left" }, 1000);
+  $('#portaBlockWrapper').mouseenter( function () {
+    $('.portaHoverText').stop(true, true).fadeIn(500);
     $('#portaBlockWrapper').stop(true, true).animate ({
-      'background-color' : '#444'
+      'background-color' : '#000'
     }, 300);
-    $('img.portaBlockCol').stop(true, true).animate({
+    $('img.portaBlockCol').animate({
       opacity : '1'
-    }, 200);
-    $(this).stop(true, true).animate({
+    }, 400);
+    $('img.portaBlockBW').animate({
       opacity : '0' 
     }, 200);
   });
   $('#portaBlockWrapper').mouseleave( function () {
-    $('.portaHoverText').hide(500).fadeOut(1000);
+    $('.portaHoverText').stop(true, true).fadeOut(500);
+
+    //color fade Stuff
     $('#portaBlockWrapper').stop(true, true).animate ({
       'background-color' : 'transparent'
-    }, 300);
+    }, 500);
     $('img.portaBlockBW').stop(true, true).animate({
       opacity : '1'
-    }, 1800);
+    }, 500);
     $('img.portaBlockCol').stop(true, true).animate({
       opacity : '0'
-    }, 1800);
+    }, 500);
   });
 });
 
-
-// $(function () {
-//   $('.portaBlockBW').mouseenter( function () {
-//     $('.portaHoverText').stop(true, true).show(500).fadeIn(1000);
-//     $('#portaBlockWrapper').stop(true, true).animate ({
-//       'background-color' : '#444'
-//     }, 300);
-//     $('img.portaBlockCol').stop(true, true).animate({
-//       opacity : '1'
-//     }, 200);
-//     $(this).stop(true, true).animate({
-//       opacity : '0' 
-//     }, 200);
-//   });
-//   $('#portaBlockWrapper').mouseleave( function () {
-//     $('.portaHoverText').hide(500).fadeOut(1000);
-//     $('#portaBlockWrapper').stop(true, true).animate ({
-//       'background-color' : 'transparent'
-//     }, 300);
-//     $('img.portaBlockBW').stop(true, true).animate({
-//       opacity : '1'
-//     }, 1800);
-//     $('img.portaBlockCol').stop(true, true).animate({
-//       opacity : '0'
-//     }, 1800);
-//   });
-// });
-
 // Ketch Hover
 $(function () {
-  $('.ketchBlockBW').mouseenter( function () {
-    $('.ketchHoverText').stop(true, true).show(500).fadeIn(1000);
+  $('#ketchBlockWrapper').mouseenter( function () {
+    $('.ketchHoverText').stop(true, true).fadeIn(500);
     $('#ketchBlockWrapper').stop(true, true).animate ({
-      'background-color' : '#DFDDB4'
+      'background-color' : '#CAC9AA'
     }, 300);
     $('img.ketchBlockCol').stop(true, true).animate({
       opacity : '1'
-    }, 200);
-    $(this).stop(true, true).animate({
+    }, 400);
+    $('img.ketchBlockBW').stop(true, true).animate({
       opacity : '0' 
     }, 200);
   });
   $('#ketchBlockWrapper').mouseleave( function () {
-    $('.ketchHoverText').hide(500).fadeOut(1000);
+    $('.ketchHoverText').stop(true, true).fadeOut(500);
+
+    //color fade Stuff
     $('#ketchBlockWrapper').stop(true, true).animate ({
       'background-color' : 'transparent'
-    }, 300);
+    }, 500);
     $('img.ketchBlockBW').stop(true, true).animate({
       opacity : '1'
-    }, 1800);
+    }, 500);
     $('img.ketchBlockCol').stop(true, true).animate({
       opacity : '0'
-    }, 1800);
+    }, 500);
   });
 });
 
 // Carol Hover
 $(function () {
-  $('.carolBlockBW').mouseenter( function () {
-    $('.carolHoverText').stop(true, true).show(500).fadeIn(1000);
+  $('#carolBlockWrapper').mouseenter( function () {
+    $('.carolHoverText').stop(true, true).fadeIn(500);
     $('#carolBlockWrapper').stop(true, true).animate ({
-      'background-color' : '#ffffff'
+      'background-color' : '#fff'
     }, 300);
     $('img.carolBlockCol').stop(true, true).animate({
-      opacity : '1',
-      'margin-left' : '+=30'
-    }, 200);
-    $(this).stop(true, true).animate({
-      opacity : '0',
-      'margin-left' : '+=30'
-    }, 200);
-  });
-  $('#carolBlockWrapper').mouseleave( function () {
-    $('.carolHoverText').hide(500).fadeOut(1000);
-    $('#carolBlockWrapper').stop(true, true).animate ({
-      'background-color' : 'transparent'
-    }, 300);
+      opacity : '1'
+    }, 400);
     $('img.carolBlockBW').stop(true, true).animate({
-      opacity : '1',
-      'margin-left' : '0'
-    }, 700);
+      opacity : '0' 
+    }, 200);
+  });
+  $('#carolBlockWrapper').stop(true, true).mouseleave( function () {
+    $('.carolHoverText').stop(true, true).fadeOut(500);
+
+    //color fade Stuff
+    $('#carolBlockWrapper').animate ({
+      'background-color' : 'transparent'
+    }, 500);
+    $('img.carolBlockBW').stop(true, true).animate({
+      opacity : '1'
+    }, 500);
     $('img.carolBlockCol').stop(true, true).animate({
-      opacity : '0',
-      'margin-left' : '0'
-    }, 700);
+      opacity : '0'
+    }, 500);
   });
 });
 
-// Carol Hover
+// c2c Hover
 $(function () {
-  $('.c2cBlockBW').mouseenter( function () {
-    $('.c2cHoverText').stop(true, true).show(500).fadeIn(1000);
-    $('#c2cBlockWrapper').stop(true, true).animate ({
-      'background-color' : '#DFDDB4'
-    }, 300);
+  $('#c2cBlockWrapper').mouseenter( function () {
+    $('.c2cHoverText').stop(true, true).fadeIn(500);
+
+    $('#c2cBlockWrapper').addClass('bricksBG');
+    // $('#c2cBlockWrapper').stop(true, true).animate ({
+    //   'background-image' : '#000'
+    // }, 300);
     $('img.c2cBlockCol').stop(true, true).animate({
       opacity : '1'
-    }, 200);
-    $(this).stop(true, true).animate({
+    }, 400);
+    $('img.c2cBlockBW').stop(true, true).stop(true, true).animate({
       opacity : '0' 
     }, 200);
   });
   $('#c2cBlockWrapper').mouseleave( function () {
-    $('.c2cHoverText').hide(500).fadeOut(1000);
+    $('.c2cHoverText').stop(true, true).fadeOut(500);
+    $('#c2cBlockWrapper').removeClass('bricksBG');
+    //color fade Stuff
     $('#c2cBlockWrapper').stop(true, true).animate ({
       'background-color' : 'transparent'
-    }, 300);
+    }, 500);
     $('img.c2cBlockBW').stop(true, true).animate({
       opacity : '1'
-    }, 1800);
+    }, 500);
     $('img.c2cBlockCol').stop(true, true).animate({
       opacity : '0'
-    }, 1800);
+    }, 500);
   });
 });
 
+
+
 // Crawfest Hover
 $(function () {
-  $('.crawBlockBW').mouseenter( function () {
-    $('.crawHoverText').stop(true, true).show(500).fadeIn(1000);
+  $('#crawBlockWrapper').mouseenter( function () {
+    $('.crawHoverText').stop(true, true).fadeIn(500);
+
     $('#crawBlockWrapper').stop(true, true).animate ({
-      'background-color' : '#DFDDB4'
+      'background-color' : '#BDD9F0'
     }, 300);
     $('img.crawBlockCol').stop(true, true).animate({
       opacity : '1'
-    }, 200);
-    $(this).stop(true, true).animate({
+    }, 400);
+    $('img.crawBlockBW').stop(true, true).stop(true, true).animate({
       opacity : '0' 
     }, 200);
   });
   $('#crawBlockWrapper').mouseleave( function () {
-    $('.crawHoverText').hide(500).fadeOut(1000);
+    $('.crawHoverText').stop(true, true).fadeOut(500);
+
+    //color fade Stuff
     $('#crawBlockWrapper').stop(true, true).animate ({
       'background-color' : 'transparent'
-    }, 300);
+    }, 500);
     $('img.crawBlockBW').stop(true, true).animate({
       opacity : '1'
-    }, 1800);
+    }, 500);
     $('img.crawBlockCol').stop(true, true).animate({
       opacity : '0'
-    }, 1800);
+    }, 500);
   });
 });
 
 // C and L Hover
 $(function () {
-  $('.candlBlockBW').mouseenter( function () {
-    $('.candlHoverText').stop(true, true).show(500).fadeIn(1000);
+  $('#candlBlockWrapper').mouseenter( function () {
+    $('.candlHoverText').stop(true, true).fadeIn(500);
     $('#candlBlockWrapper').stop(true, true).animate ({
-      'background-color' : '#DFDDB4'
+      'background-color' : '#fff'
     }, 300);
     $('img.candlBlockCol').stop(true, true).animate({
       opacity : '1'
-    }, 200);
-    $(this).stop(true, true).animate({
+    }, 400);
+    $('img.candlBlockBW').stop(true, true).stop(true, true).animate({
       opacity : '0' 
     }, 200);
   });
   $('#candlBlockWrapper').mouseleave( function () {
-    $('.candlHoverText').hide(500).fadeOut(1000);
+    $('.candlHoverText').stop(true, true).fadeOut(500);
+
+    //color fade Stuff
     $('#candlBlockWrapper').stop(true, true).animate ({
       'background-color' : 'transparent'
-    }, 300);
+    }, 500);
     $('img.candlBlockBW').stop(true, true).animate({
       opacity : '1'
-    }, 1800);
+    }, 500);
     $('img.candlBlockCol').stop(true, true).animate({
       opacity : '0'
-    }, 1800);
+    }, 500);
   });
 });
 

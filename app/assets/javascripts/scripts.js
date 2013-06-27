@@ -19,8 +19,8 @@
 //Porta hover
 //$('.portaHoverText').show();
 $(function () {
-  $('#portaBlockWrapper').mouseenter( function () {
-    $('.portaHoverText').stop(true, true).show(200);
+  $('#portaBlockWrapper').mouseenter( function() {
+    $('.portaHoverText').show( 'fold', 1000 );
     $('#portaBlockWrapper').stop(true, true).animate ({
       'background-color' : '#000'
     }, 200);
@@ -32,7 +32,7 @@ $(function () {
     }, 200);
   });
   $('#portaBlockWrapper').mouseleave( function () {
-    $('.portaHoverText').stop(true, true).hide(200);
+    $('.portaHoverText').hide(200);
 
     //color fade Stuff
     $('#portaBlockWrapper').stop(true, true).animate ({

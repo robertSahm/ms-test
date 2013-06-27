@@ -20,122 +20,118 @@
 //$('.portaHoverText').show();
 $(function () {
   $('#portaBlockWrapper').mouseenter( function () {
-    $('.portaHoverText').stop(true, true).fadeIn(500);
+    $('.portaHoverText').stop(true, true).show(200);
     $('#portaBlockWrapper').stop(true, true).animate ({
       'background-color' : '#000'
-    }, 300);
+    }, 200);
     $('img.portaBlockCol').animate({
       opacity : '1'
-    }, 400);
+    }, 200);
     $('img.portaBlockBW').animate({
-      opacity : '0' 
+      opaci2y : '0' 
     }, 200);
   });
   $('#portaBlockWrapper').mouseleave( function () {
-    $('.portaHoverText').stop(true, true).fadeOut(500);
+    $('.portaHoverText').stop(true, true).hide(200);
 
     //color fade Stuff
     $('#portaBlockWrapper').stop(true, true).animate ({
       'background-color' : 'transparent'
-    }, 500);
+    }, 200);
     $('img.portaBlockBW').stop(true, true).animate({
       opacity : '1'
-    }, 500);
+    }, 200);
     $('img.portaBlockCol').stop(true, true).animate({
       opacity : '0'
-    }, 500);
+    }, 200);
   });
 });
 
 // Ketch Hover
 $(function () {
   $('#ketchBlockWrapper').mouseenter( function () {
-    $('.ketchHoverText').stop(true, true).fadeIn(500);
+    $('.ketchHoverText').stop(true, true).show(200);
     $('#ketchBlockWrapper').stop(true, true).animate ({
       'background-color' : '#CAC9AA'
-    }, 300);
+    }, 200);
     $('img.ketchBlockCol').stop(true, true).animate({
       opacity : '1'
-    }, 400);
+    }, 200);
     $('img.ketchBlockBW').stop(true, true).animate({
       opacity : '0' 
     }, 200);
   });
   $('#ketchBlockWrapper').mouseleave( function () {
-    $('.ketchHoverText').stop(true, true).fadeOut(500);
+    $('.ketchHoverText').stop(true, true).hide(200);
 
     //color fade Stuff
     $('#ketchBlockWrapper').stop(true, true).animate ({
       'background-color' : 'transparent'
-    }, 500);
+    }, 200);
     $('img.ketchBlockBW').stop(true, true).animate({
       opacity : '1'
-    }, 500);
+    }, 200);
     $('img.ketchBlockCol').stop(true, true).animate({
       opacity : '0'
-    }, 500);
+    }, 200);
   });
 });
 
 // Carol Hover
 $(function () {
   $('#carolBlockWrapper').mouseenter( function () {
-    $('.carolHoverText').stop(true, true).fadeIn(500);
+    $('.carolHoverText').stop(true, true).show(200);
     $('#carolBlockWrapper').stop(true, true).animate ({
       'background-color' : '#fff'
-    }, 300);
+    }, 200);
     $('img.carolBlockCol').stop(true, true).animate({
       opacity : '1'
-    }, 400);
+    }, 200);
     $('img.carolBlockBW').stop(true, true).animate({
       opacity : '0' 
     }, 200);
   });
   $('#carolBlockWrapper').stop(true, true).mouseleave( function () {
-    $('.carolHoverText').stop(true, true).fadeOut(500);
+    $('.carolHoverText').stop(true, true).hide(200);
 
     //color fade Stuff
     $('#carolBlockWrapper').animate ({
       'background-color' : 'transparent'
-    }, 500);
+    }, 200);
     $('img.carolBlockBW').stop(true, true).animate({
       opacity : '1'
-    }, 500);
+    }, 200);
     $('img.carolBlockCol').stop(true, true).animate({
       opacity : '0'
-    }, 500);
+    }, 200);
   });
 });
 
 // c2c Hover
 $(function () {
   $('#c2cBlockWrapper').mouseenter( function () {
-    $('.c2cHoverText').stop(true, true).fadeIn(500);
-
+    $('.c2cHoverText').stop(true, true).show(200);
     $('#c2cBlockWrapper').addClass('bricksBG');
-    // $('#c2cBlockWrapper').stop(true, true).animate ({
-    //   'background-image' : '#000'
-    // }, 300);
     $('img.c2cBlockCol').stop(true, true).animate({
       opacity : '1'
-    }, 400);
+    }, 200);
     $('img.c2cBlockBW').stop(true, true).stop(true, true).animate({
       opacity : '0' 
     }, 200);
   });
   $('#c2cBlockWrapper').mouseleave( function () {
-    $('.c2cHoverText').stop(true, true).fadeOut(500);
+    $('.c2cHoverText').stop(true, true).hide(200);
     $('#c2cBlockWrapper').removeClass('bricksBG');
     //color fade Stuff
     $('#c2cBlockWrapper').stop(true, true).animate ({
       'background-color' : 'transparent'
-    }, 500);
+    }, 200);
     $('img.c2cBlockBW').stop(true, true).animate({
       opacity : '1'
-    }, 500);
+    }, 200);
     $('img.c2cBlockCol').stop(true, true).animate({
       opacity : '0'
-    }, 500);
+    }, 200);
   });
 });
 
@@ -144,61 +140,61 @@ $(function () {
 // Crawfest Hover
 $(function () {
   $('#crawBlockWrapper').mouseenter( function () {
-    $('.crawHoverText').stop(true, true).fadeIn(500);
+    $('.crawHoverText').stop(true, true).show(200);
 
     $('#crawBlockWrapper').stop(true, true).animate ({
       'background-color' : '#BDD9F0'
-    }, 300);
+    }, 200);
     $('img.crawBlockCol').stop(true, true).animate({
       opacity : '1'
-    }, 400);
+    }, 200);
     $('img.crawBlockBW').stop(true, true).stop(true, true).animate({
       opacity : '0' 
     }, 200);
   });
   $('#crawBlockWrapper').mouseleave( function () {
-    $('.crawHoverText').stop(true, true).fadeOut(500);
+    $('.crawHoverText').stop(true, true).hide(200);
 
     //color fade Stuff
     $('#crawBlockWrapper').stop(true, true).animate ({
       'background-color' : 'transparent'
-    }, 500);
+    }, 200);
     $('img.crawBlockBW').stop(true, true).animate({
       opacity : '1'
-    }, 500);
+    }, 200);
     $('img.crawBlockCol').stop(true, true).animate({
       opacity : '0'
-    }, 500);
+    }, 200);
   });
 });
 
 // C and L Hover
 $(function () {
   $('#candlBlockWrapper').mouseenter( function () {
-    $('.candlHoverText').stop(true, true).fadeIn(500);
+    $('.candlHoverText').stop(true, true).show(200);
     $('#candlBlockWrapper').stop(true, true).animate ({
       'background-color' : '#fff'
-    }, 300);
+    }, 200);
     $('img.candlBlockCol').stop(true, true).animate({
       opacity : '1'
-    }, 400);
+    }, 200);
     $('img.candlBlockBW').stop(true, true).stop(true, true).animate({
       opacity : '0' 
     }, 200);
   });
   $('#candlBlockWrapper').mouseleave( function () {
-    $('.candlHoverText').stop(true, true).fadeOut(500);
+    $('.candlHoverText').stop(true, true).hide(200);
 
     //color fade Stuff
     $('#candlBlockWrapper').stop(true, true).animate ({
       'background-color' : 'transparent'
-    }, 500);
+    }, 200);
     $('img.candlBlockBW').stop(true, true).animate({
       opacity : '1'
-    }, 500);
+    }, 200);
     $('img.candlBlockCol').stop(true, true).animate({
       opacity : '0'
-    }, 500);
+    }, 200);
   });
 });
 

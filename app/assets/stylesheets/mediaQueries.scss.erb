@@ -8,7 +8,7 @@
   }
 
   .blockWrapper {
-    margin: 0 auto !important;
+    //margin: 0 auto !important;
     padding: 0 !important;
     max-width: 100%;
 
@@ -21,7 +21,7 @@
       width: 100% !important;
       height: auto;
       margin: 0 auto !important;
-      padding: 0 !important;
+      padding: 5% 0 !important;
       
     }
   }
@@ -58,172 +58,260 @@
     top: 5px !important;
   }
 
-
   .top-bar {
     min-height: 70px;
   }
 
 
 
+
+
 } //CLOSE 380 and under
 
-@media only screen and (min-width: 420px) { // Between 381 and 768
+@media only screen and (min-width: 420px) { // Between 420 and 800
 
-  // img.portaBlockBW, img.portaBlockCol {
-  //   min-width: 180px !important;
-    
-  //  }
-
-
-
-  // body {
-  //   border: 5px solid red;
-  // }
 
 }//end
 
-// 769 down to 381
-//cancels out above section
-
 @media only screen and (max-width: 800px) { // 800 and under
+
+  #ketchBlockWrapper, 
+#portaBlockWrapper, 
+#carolBlockWrapper, 
+#c2cBlockWrapper, 
+#crawBlockWrapper, 
+.candlBlockWrapper {
+  min-height: 120px;
+  max-height: 330px;
+}
+
+  .blockWrapper {
+
+    //max-height: 290px; 
+    margin-bottom: 0 !important;
+    //border-bottom: 1px solid grey;
+  
+    .imgClick {
+  
+      .hoverFade {
+        position: relative;
+        top: 0;
+        left: 0;
+        
+        .hoverText {
+          margin: 0;
+        }
+  
+        img {
+          margin: 0 auto;
+          padding-top: 15px;
+            
+        }
+      }
+    }
+  }
 
   #portaBlockWrapper {
 
     img {
-      margin: 8% 0 !important;
+      margin: 2% auto !important;
+    }
+
+    .portaHoverText {
+      text-align: right;
+
+      p {
+        margin: 0;
+      }
+
+      a {
+        margin-bottom: 13px;
+      }
     }
   }
-
+  
   #ketchBlockWrapper {
+    margin-top: 30px;
+    padding-bottom: 9px;
 
     img {
-      margin: 8% 0 !important;
+      margin: 2% 0 !important;
+    }
+
+    .ketchHoverText {
+      position: relative;
+      top: -70px;
+      right: 23%;
+      text-align: right;
+      height: 20px;
+
+      p {
+        margin: 0;
+      }
+
+      a {
+        //margin-bottom: 13px;
+      }
     }
   }
 
   #carolBlockWrapper {
 
     img {
-      margin: 18% 0 !important;
+      margin: 18% 0 10% 0 !important;
+    }
+
+    .carolHoverText {
+      text-align: center;
+      top: -13px;
+
+      p {
+        margin: 0;
+      }
+
+      a {
+        margin-bottom: 7%;
+      }
     }
   }
 
   #c2cBlockWrapper {
 
     img {
-      margin: 11% 0 !important;
+      margin: 8% 0 20% 0 !important;
+    }
+
+    .c2cHoverText {
+      text-align: center;
+      top: -13px;
+
+      p {
+        margin: 0;
+      }
+
+      a {
+        margin-bottom: 7%;
+      }
+    }
+  }  
+
+  #crawBlockWrapper {
+    
+
+    img {
+      margin: 8% 0% 2% 0% !important;
+      padding: 0 10%;
+    }
+
+    .crawHoverText {
+
+ 
+
+      p {
+        margin: 0;
+      }
+
+      a {
+        margin-bottom: 7%;
+      }
     }
   }
 
-  #crawBlockWrapper {
-
-    img {
-      margin: 10% 0 !important;
-    }
-  }  
-
   #candlBlockWrapper {
-  
+    margin-bottom: 15%;
+
     img {
-      margin: 20% 0 !important;
+      margin: 18% 0 10% 0 !important;
     }
-  }  
 
-.hoverFade {
+    .candlHoverText {
+      text-align: center;
+      top: -13px;
 
-  // img.portaBlockBW, img.portaBlockCol {
-  //   margin: 0 auto !important;
+      p {
+        margin: 0;
+      }
 
-  //   //padding: 4% 7% !important;
-  //  }
+      a {
+        margin-bottom: 7%;
+      }
+    }
+  }
 
-  //  img.ketchBlockBW, img.ketchBlockCol {
-  //   margin: 0 auto;
-  //   padding: 2% 7% !important;
-  //  }
-
-  //  img.carolBlockBW, img.carolBlockCol {
-  //   margin: 0 auto;
-  //   padding: 8% 5% !important;
-  //  }
-
-  //  img.c2cBlockBW, img.c2cBlockCol {
-  //   margin: 0 auto;
-  //   //padding: 1% 25% !important;
-  
-  //  }
-
-  //  img.crawBlockBW, img.crawBlockCol {
-  //   margin: 0 auto;
-  //   padding: 2% 15% !important;
-  //  }
-
-  //  img.candlBlockBW, img.candlBlockCol {
-  //   margin: 0 auto;
-  //   padding: 11% 29% !important;
-  // }
-} 
 
   .name h1 a {
     font-size: 1.1em;
     padding-top: 1%;
   }
-
-
-  .name h1 a {
-    //
-  }
-
-
-
-
 } ////////// CLOSE larger then 768
 
 @media only screen and (min-width: 800px) { 
 
-.hoverFade {
+.name h1 a {
+  font-size: 1.5em;
+  padding-top: 1%;
+}
 
-  .blocskWrapper {
-    // width: 100%;
-  }
 
-  // img.portaBlockBW, img.portaBlockCol {
-  //   margin: 0 auto;
-  //   padding: 5% 10% !important;
-  //   //max-width: 200px;
-  //  }
-
-  //  img.ketchBlockBW, img.ketchBlockCol {
-  //   margin: 0 auto;
-  //   padding: 2% 10% !important;
-  //  }
-
-  //  img.carolBlockBW, img.carolBlockCol {
-  //   margin: 0 auto;
-  //   padding: 18% 10% !important;
-  //  }
-
-  //  img.c2cBlockBW, img.c2cBlockCol {
-  //   margin: 0 auto;
-  //   padding: 9% 25% !important;
+.blockWrapper {
+  //min-height: 210px;
   
-  //  }
+}
 
-  //  img.crawBlockBW, img.crawBlockCol {
-  //   margin: 0 auto;
-  //   padding: 2% 15% !important;
-  //  }
+.portaHoverText, .portaHoverP {
+  margin-top: -10px;
 
-  //  img.candlBlockBW, img.candlBlockCol {
-  //   margin: 0 auto;
-  //   padding: 11% 29% !important;
-  // }
-} 
-
-  .name h1 a {
-    font-size: 1.5em;
-    padding-top: 1%;
+  a {
+    top: -10px;
   }
+}
+
+#ketchBlockWrapper, 
+#portaBlockWrapper, 
+#carolBlockWrapper, 
+#c2cBlockWrapper, 
+#crawBlockWrapper, 
+.candlBlockWrapper {
+  min-height: 210px;
+  max-height: 210px;
+}
+
+
+.ketchHoverText, .ketchHoverP {
+  //float: right !important;
+  top: -67px;
+  left: 30%;
+  margin: 0;
+  padding-right: 4%;
+  text-align: center;
+  max-width: 220px;
+
+
+  a {
+    //left: 50px;
+    top: -10px;
+    left: -11px;
+    text-align: right;
+  }
+}
+
+#carolBlockWrapper {
+  padding-top: 45px;
+}
+
+#candlBlockWrapper {
+  padding-top: 50px;
+}
+
+.crawHoverText, .crawHoverP {
+  top: -20px;
+  
+  a {
+    top: -23px;
+  }
+}
+
+
 
 }
 

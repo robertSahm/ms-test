@@ -380,9 +380,8 @@ img.candlBlockCol {
 }
 
 .blockWrapper {
-	// 
 	z-index: 100;
-	margin-bottom: 5%;
+	margin-bottom: 0;
 
 	.imgClick {
 
@@ -390,13 +389,9 @@ img.candlBlockCol {
 			position: relative;
 			top: 0;
 			left: 0;
-			//width: 100%;
-			//min-height: 140px;
 
 			img {
   			margin: 0 auto;
-  			padding-top: 15px;
-    			
     	}
     }
 	}
@@ -409,7 +404,7 @@ img.candlBlockCol {
 //HOVER WORDS
 
 .hoverText {
-	//display: none;
+	display: none;
 	font-size: .9em !important;
 	@include fontBook;
 	text-align: center;
@@ -440,12 +435,10 @@ img.candlBlockCol {
 
 .ketchHoverText, .ketchHoverP {
 	color: $brownKetch;
+	@include fontBold;
 }
 
 p.carolHoverP {
-	padding-top: 0px;
-	font-size: 1.2em;
-	@include fontBook;
 	color: $blueCarol;
 
 	a {

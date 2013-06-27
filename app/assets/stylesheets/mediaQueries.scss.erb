@@ -113,10 +113,6 @@
 
   #portaBlockWrapper {
 
-    img {
-      margin: 2% auto !important;
-    }
-
     .portaHoverText {
       text-align: right;
 
@@ -179,6 +175,7 @@
 
     img {
       margin: 8% 0 20% 0 !important;
+      padding-top: 50px !important;
     }
 
     .c2cHoverText {
@@ -252,68 +249,88 @@
   padding-top: 1%;
 }
 
-
-.blockWrapper {
-  //min-height: 210px;
-  
-}
-
-.portaHoverText, .portaHoverP {
-  margin-top: -10px;
-
-  a {
-    top: -10px;
-  }
-}
-
 #ketchBlockWrapper, 
 #portaBlockWrapper, 
 #carolBlockWrapper, 
 #c2cBlockWrapper, 
 #crawBlockWrapper, 
-.candlBlockWrapper {
+#candlBlockWrapper {
   min-height: 210px;
   max-height: 210px;
 }
 
+#portaBlockWrapper {
+  padding-top: 2%;
 
-.ketchHoverText, .ketchHoverP {
-  //float: right !important;
-  top: -67px;
-  left: 30%;
-  margin: 0;
-  padding-right: 4%;
-  text-align: center;
-  max-width: 220px;
+  .portaHoverText, .portaHoverP {
+    margin-top: 2px;
+    margin-left: 10px;
+  
+    a {
+      top: -10px;
+    }
+  }
+}
 
+#ketchBlockWrapper {
+  padding-top: 1.5%;
 
-  a {
-    //left: 50px;
-    top: -10px;
-    left: -11px;
-    text-align: right;
+  .ketchHoverText, .ketchHoverP {
+    top: -90px;
+    left: 30px;
+    
+    a {
+      top: -23px;
+    }
   }
 }
 
 #carolBlockWrapper {
-  padding-top: 45px;
+  padding-top: 6%;
+
+    .carolHoverText, .carolHoverP {
+      top: -10px;
+      font-size: 1.12em;
+  
+    a {
+      top: -20px;
+    }
+  }
+}
+
+#crawBlockWrapper {
+  padding-top: 1%;
+
+  .crawHoverText, .crawHoverP {
+    top: -23px;
+  
+    a {
+      top: -27px;
+    }
+  }
+}
+
+#c2cBlockWrapper {
+  padding-top: 1.8%;
+  
+  p.c2cHoverP {
+
+      a {
+        top: -20px;
+      }
+    }
 }
 
 #candlBlockWrapper {
-  padding-top: 50px;
-}
+  padding-top: 65px;
 
-.crawHoverText, .crawHoverP {
-  top: -20px;
-  
   a {
-    top: -23px;
+    top: -20px;
   }
 }
 
 
-
-}
+} //end 800 and up
 
 
 

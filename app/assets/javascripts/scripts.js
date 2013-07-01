@@ -5,7 +5,10 @@
 //   });
 // });
 
-
+// $('.portaHoverText').hide( 'scale', {
+//   duration: 900,
+//   easing: 'easeOutQuart'
+// });
 
 
 // `7MMF'  `7MMF'                                  
@@ -20,19 +23,30 @@
 //$('.portaHoverText').show();
 $(function () {
   $('#portaBlockWrapper').mouseenter( function() {
-    $('.portaHoverText').show( 'fold', 1000 );
+
+    //show Text
+    $('.portaHoverText').stop(true, true).show(200);
+
+    // animate background color 
     $('#portaBlockWrapper').stop(true, true).animate ({
       'background-color' : '#000'
     }, 200);
+
+    // show color image
     $('img.portaBlockCol').animate({
       opacity : '1'
     }, 200);
+
+    // hide b & w image
     $('img.portaBlockBW').animate({
-      opaci2y : '0' 
+      opacity : '0' 
     }, 200);
   });
+
+  // mouseleave
   $('#portaBlockWrapper').mouseleave( function () {
-    $('.portaHoverText').hide(200);
+    $('.portaHoverText').hide(500);
+
 
     //color fade Stuff
     $('#portaBlockWrapper').stop(true, true).animate ({
@@ -62,7 +76,7 @@ $(function () {
     }, 200);
   });
   $('#ketchBlockWrapper').mouseleave( function () {
-    $('.ketchHoverText').stop(true, true).hide(200);
+    $('.ketchHoverText').stop(true, true).hide(500);
 
     //color fade Stuff
     $('#ketchBlockWrapper').stop(true, true).animate ({
@@ -92,7 +106,7 @@ $(function () {
     }, 200);
   });
   $('#carolBlockWrapper').stop(true, true).mouseleave( function () {
-    $('.carolHoverText').stop(true, true).hide(200);
+    $('.carolHoverText').stop(true, true).hide(500);
 
     //color fade Stuff
     $('#carolBlockWrapper').animate ({
@@ -120,7 +134,7 @@ $(function () {
     }, 200);
   });
   $('#c2cBlockWrapper').mouseleave( function () {
-    $('.c2cHoverText').stop(true, true).hide(200);
+    $('.c2cHoverText').stop(true, true).hide(500);
     $('#c2cBlockWrapper').removeClass('bricksBG');
     //color fade Stuff
     $('#c2cBlockWrapper').stop(true, true).animate ({
@@ -153,7 +167,7 @@ $(function () {
     }, 200);
   });
   $('#crawBlockWrapper').mouseleave( function () {
-    $('.crawHoverText').stop(true, true).hide(200);
+    $('.crawHoverText').stop(true, true).hide(500);
 
     //color fade Stuff
     $('#crawBlockWrapper').stop(true, true).animate ({
@@ -183,7 +197,7 @@ $(function () {
     }, 200);
   });
   $('#candlBlockWrapper').mouseleave( function () {
-    $('.candlHoverText').stop(true, true).hide(200);
+    $('.candlHoverText').stop(true, true).hide(500);
 
     //color fade Stuff
     $('#candlBlockWrapper').stop(true, true).animate ({
@@ -200,28 +214,38 @@ $(function () {
 
 //Clicks 
 $(function () {
-  $('.portaBlockBW').click(function() {
+  $('.blocksWrapper').hide();
+  $('a.portaReveal').click(function() {
+    $('#portaRow').show(200);
+    $('.blocksWrapper').hide(0);
+    return false;
     //$('body').css('background-color', '#000000');
-    $('.portaHide').fadeIn(500);
-    $('img.shrinkMe').fadeIn(500).addClass('click2Hide');
-    $('#portaRow').fadeIn(500).addClass('large-12');
-    $('.portaLogoRow').fadeIn(4000);
-    $('#portaBlockWrapper').hide();  
+    //$('img.shrinkMe').fadeIn(500).addClass('click2Hide');
+
+    //$('.portaLogoRow').fadeIn(4000);
+    //$('#portaBlockWrapper').hide();  
   });
 });
 
-$(function () {
-  $('img.shrinkMe').click( function () {
-    //$(this).hide("slide", {direction: "left" }, "slow");
-    $('#portaRow').hide("slide", {direction: "left" }, 1000);
-    $(this).hide("slide", {direction: "down" }, 500);
-    $('#portaRow').hide("slide", {direction: "up" }, 500);
-    $('#portaBlockWrapper').fadeIn(500).animate({
-      'margin-top' : ""
-    },500);
-    $('.blockRow1').css('margin-top', '0')  
-  });
+$(function() {
+  $('.sc-player').addClass('large-12 columns row');
+  $('ol.sc-artwork-list').addClass('three mobile-zero columns');
+  $('.sc-controls').addClass('one mobile-one columns');
+  $('.sc-scrubber').addClass('eight mobile-four columns');
 });
+
+// $(function () {
+//   $('img.shrinkMe').click( function () {
+//     //$(this).hide("slide", {direction: "left" }, "slow");
+//     $('#portaRow').hide("slide", {direction: "left" }, 1000);
+//     $(this).hide("slide", {direction: "down" }, 500);
+//     $('#portaRow').hide("slide", {direction: "up" }, 500);
+//     $('#portaBlockWrapper').fadeIn(500).animate({
+//       'margin-top' : ""
+//     },500);
+//     $('.blockRow1').css('margin-top', '0')  
+//   });
+// });
 
 // $(function () {
 //   $('.portaTop').clickToggl(function() {

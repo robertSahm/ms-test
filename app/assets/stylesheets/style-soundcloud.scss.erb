@@ -1,0 +1,443 @@
+//  .M"""bgd `7MN.   `7MF`7MM"""Yb.     .g8"""bgd `7MMF'      `7MM"""Yb.   
+// ,MI    "Y   MMN.    M   MM    `Yb. .dP'     `M   MM          MM    `Yb. 
+// `MMb.       M YMb   M   MM     `Mb dM'       `   MM          MM     `Mb 
+//   `YMMNq.   M  `MN. M   MM      MM MM            MM          MM      MM 
+// .     `MM   M   `MM.M   MM     ,MP MM.           MM      ,   MM     ,MP 
+// Mb     dM   M     YMM   MM    ,dP' `Mb.     ,'   MM     ,M   MM    ,dP' 
+// P"Ybmmd"  .JML.    YM .JMMmmmdP'     `"bmmmd'  .JMMmmmmMMM .JMMmmmdP'  
+
+// colors
+$red: #BE4D4B;
+$blue: #00BFFF;
+$greenHot: #58F802;
+$grey1: #333333;
+$bgColor1: #161B1E;
+$bgColor2: #1B1519;
+
+// fonts
+$blogPfont: 'Raleway', sans-serif;
+
+// start soundcloud custom player
+
+.hidden {
+  display: none;
+}
+
+.sc-player-engine-container { //must not be hidden or tracks don't play!
+ height: 0px;
+ width: 0px;
+}
+
+
+//                            ,,                                  
+//                          `7MM                                  
+//                            MM                                  
+// ,pP"Ybd  ,p6"bo `7MMpdMAo. MM  ,6"Yb`7M'   `MF'.gP"Ya `7Mb,od8 
+// 8I   `" 6M'  OO   MM   `Wb MM 8)   MM VA   ,V ,M'   Yb  MM' "' 
+// `YMMMa. 8M        MM    M8 MM  ,pm9MM  VA ,V  8M""""""  MM     
+// L.   I8 YM.    ,  MM   ,AP MM 8M   MM   VVV   YM.    ,  MM     
+// M9mmmP'  YMbmd'   MMbmmd'.JMML`Moo9^Yo. ,V     `Mbmmd'.JMML.   
+//                   MM                   ,V                      
+//                 .JMML.              OOb"                     
+
+.sc-player {
+  height: 50px;
+  position: relative;
+  //padding: 10px;
+  top: 0;
+  left: 0;
+  //margin-bottom: 20px !important;
+  margin-right: 0;
+  padding-right: 0;
+  width: 80%;
+  list-style-type: none !important;
+  color: red;
+  border: 1px solid red;
+}
+
+ol li {
+  list-style-type: none !important;
+}
+
+//   __  ____ ____ ____ _  _  __ ____ __ _ 
+//  / _\(  _ (_  _(  _ / )( \/  (  _ (  / )
+// /    \)   / )(  )   \ /\ (  O )   /)  ( 
+// \_/\_(__\_)(__)(__\_(_/\_)\__(__\_(__\_)
+
+.sc-artwork-list { // ul
+  float: left;
+  width: 20%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none !important;
+
+
+  .active {
+    list-style-type: none !important;
+
+    img {
+      //max-width: 162px;
+      width: 100%;
+      max-height: 161px;
+      max-width: 161px;
+      //width: 100%;
+
+    }
+  }
+}
+
+//   ,,                ,...       
+//   db              .d' ""       
+//                   dM`          
+// `7MM `7MMpMMMb.  mMMmm,pW"Wq.  
+//   MM   MM    MM   MM 6W'   `Wb 
+//   MM   MM    MM   MM 8M     M8 
+//   MM   MM    MM   MM YA.   ,A9 
+// .JMML.JMML  JMML.JMML.`Ybmd9'  
+
+
+
+.sc-info {
+  position: relative;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  margin-top: 20px;
+  padding-left: 0px;
+  display: none;
+
+  h3 {
+ 
+    a {
+      margin-left: 20px;
+      display: block;
+      color: $blue;
+      font-family: $blogPfont;
+      font-weight: 100;
+      font-size: .65em;
+      //margin-top: 20px;
+    }
+  }
+
+  h4 {
+    display: none;
+
+    a {
+
+    }
+  }
+
+  p {
+    display: none;
+    color: white;
+    font-family: $blogPfont;
+    font-weight: 100;
+    font-size: .8em;
+  }
+
+  a.sc-info-close {
+    ////display: none;
+  }
+}
+
+//                                    ,,         
+//                    mm          `7MM         
+//                    MM            MM         
+//  ,p6"bo `7MMpMMMbmmMMmm `7Mb,od8 MM ,pP"Ybd 
+// 6M'  OO   MM    MM MM     MM' "' MM 8I   `" 
+// 8M        MM    MM MM     MM     MM `YMMMa. 
+// YM.    ,  MM    MM MM     MM     MM L.   I8 
+//  YMbmd' .JMML  JMML`Mbmo.JMML. .JMMLM9mmmP' 
+
+
+.sc-controls {
+  //width: 100%;
+  //float: left;
+  position: realtive;
+  top: 0;
+  left: 0;
+  z-index: 200;
+
+  a.sc-play {
+    background-image: url('buttonPlayBig.png');
+    background-size: cover;
+    display: block !important;
+    width: 40px;
+    min-height: 60px;
+  }
+
+  a.sc-pause {
+    background-image: url('buttonPause.png');
+    background-size: cover;
+    width: 40px;
+    min-height: 60px;
+  }
+}
+
+a.sc-info-toggle {
+  display: none;
+}
+
+//                            ,,        ,,               
+//                         *MM       *MM               
+//                          MM        MM               
+// ,pP"Ybd  ,p6"bo `7Mb,od8 MM,dMMb.  MM,dMMb.`7Mb,od8 
+// 8I   `" 6M'  OO   MM' "' MM    `Mb MM    `Mb MM' "' 
+// `YMMMa. 8M        MM     MM     M8 MM     M8 MM     
+// L.   I8 YM.    ,  MM     MM.   ,M9 MM.   ,M9 MM     
+// M9mmmP'  YMbmd' .JMML.   P^YbmdP'  P^YbmdP'.JMML. 
+
+.sc-trackslist {
+  display: none;
+
+  .active
+
+  a {
+
+  }
+
+  .sc-track-duration {
+  }
+}  
+
+.sc-scrubber { // includes volume, wav image and time display
+  position: relative;
+  //top: -45px;
+  left: 0;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+//  _  _  __  __   _  _ _  _ ____ 
+// / )( \/  \(  ) / )( ( \/ (  __)
+// \ \/ (  O / (_/) \/ / \/ \) _) 
+//  \__/ \__/\____\____\_)(_(____)
+
+.sc-volume-slider {
+  position: relative;
+  top: 5px;
+  left: -13%;
+  float: left;
+  height: 20px;
+  //margin-bottom: -25px;
+  border: 2px solid $red;
+  opacity: 1;
+  width: 25%;
+  margin-bottom: 0px;
+ 
+  .sc-volume-status {
+    height: 100%;
+    float: left;
+    width: 100%;
+    background-color: $blue;
+    border: 3px solid black;
+    width: 200px;
+  }
+}
+
+// _  _  __  _  _ ____ ____ __ ____ _  _ 
+//  )( \/ _\/ )( (  __(  __/  (  _ ( \/ )
+//  /\ /    \ \/ /) _) ) _(  O )   / \/ \
+// _/\_\_/\_/\__/(____(__) \__(__\_\_)(_/
+
+.sc-time-span { // waveform color
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  margin-bottom: 0;
+  //height: 100px;
+
+  .sc-waveform-container {
+    position: relative;
+    top: -50px;
+    width: 100%;
+    height: 70px;
+    
+    img {
+      //position: absolute;
+      min-height: 70px;
+      width: 100%;
+      background-color: $red !important;
+      opacity: 1;
+
+      //height: 90px;
+    }
+  }
+}
+
+// ____ _  _ ____ ____ ____ ____ 
+//   _ / )( (  __(  __(  __(  _ \
+// ) _ ) \/ () _) ) _) ) _) )   /
+// ____\____(__) (__) (____(__\_)
+
+
+.sc-buffer  {
+  position: relative;
+  //height: 13%;
+  background-color: $blue;
+  opacity: .6;
+  bottom: 2px;
+  left: 0;
+}
+
+.sc-played { 
+  position: absolute;
+  top: 0px;
+  left: 0;
+  height: 98%;
+  border-right: 3px solid $blue;
+  // min-height: 100px;
+  // border-right: 2px solid $blue;
+  // opacity: 1;
+  // z-index: -10;
+}
+
+
+// ____ __ _  _ ____ 
+// _  _(  ( \/ (  __)
+//  )(  )(/ \/ \) _) 
+// (__)(__\_)(_(____)
+
+.sc-time-indicators {
+  position: relative;
+  top: 0;
+  left: 0;
+  color: $blue;
+  float: left;
+  margin-left: -35px;
+}
+
+.sc-position {
+  margin: 7px 7px 7px 7px;
+  padding-right: 7px;
+  float: left;
+  border-right: 2px solid $red;
+}
+
+.sc-duration {
+  margin: 7px 0;
+  float: left;
+}
+
+.playing {
+
+  a.sc-play {
+    display: none !important;
+  }
+
+  .sc-pause {
+    display: block !important;
+  }
+
+}
+
+// .sc-scrubber .sc-played {
+//     background-color: #999 !important;
+//     opacity: .3 !important;
+// }
+
+@media only screen and (max-width: 768px) {
+
+  .sc-artwork-list { // ol
+
+  
+    .active {
+  
+      img {
+
+  
+      }
+    }
+  }
+
+  .sc-time-span { // waveform color
+    left: 0 !important;
+    top: -60px !important;
+    margin-bottom: -60px !important;
+    width: 98% !important;
+
+  
+    .sc-waveform-container {
+      width: 104%;
+   
+      img {
+
+      }
+    }
+  }
+
+  .sc-volume-slider { 
+    left: 0 !important;
+  }
+
+  .sc-time-indicators {
+    margin-left: 5px;
+  }
+} // end 768 break rules
+
+// .sc-time-span { // waveform color
+//   position: relative;
+//   top: 0;
+//   left: -13%;
+//   width: 113%;
+//   z-index: 0;
+//   margin-bottom: 0;
+//   //height: 100px;
+
+//   .sc-waveform-container {
+//     width: 100%;
+    
+//     img {
+//       //position: absolute;
+//       min-height: 100px;
+//       width: 100%;
+//       background-color: $red !important;
+//       opacity: 1;
+//       //height: 90px;
+//     }
+//   }
+// }
+
+//   ,,     ,...                                          
+//   db   .d' ""                                          
+//        dM`                                             
+// `7MM  mMMm`7Mb,od8 ,6"Yb. `7MMpMMMb.pMMMb.  .gP"Ya     
+//   MM   MM   MM' "'8)   MM   MM    MM    MM ,M'   Yb    
+//   MM   MM   MM     ,pm9MM   MM    MM    MM 8M""""""    
+//   MM   MM   MM    8M   MM   MM    MM    MM YM.    ,    
+// .JMML.JMML.JMML.  `Moo9^Yo.JMML  JMML  JMML.`Mbmmd'    
+//                          ,,                        ,,  
+//                         *MM                      `7MM  
+//                          MM                        MM  
+//  .gP"Ya `7MMpMMMb.pMMMb. MM,dMMb.   .gP"Ya    ,M""bMM  
+// ,M'   Yb  MM    MM    MM MM    `Mb ,M'   Yb ,AP    MM  
+// 8M""""""  MM    MM    MM MM     M8 8M"""""" 8MI    MM  
+// YM.    ,  MM    MM    MM MM.   ,M9 YM.    , `Mb    MM  
+//  `Mbmmd'.JMML  JMML  JMMLP^YbmdP'   `Mbmmd'  `Wbmd"MML.
+
+iframe.iframeRadio {
+  float: left;
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.blockerRadio {
+  width: 100%;
+  height: 20px;
+  float: left;
+}
+
+.iframeBox {
+  float: left;
+  margin-bottom: 13px;
+}
+
+.radioWrapper {
+
+  h2 {
+    color: $blue !important;
+  }
+}

@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require jquery.ui.all
 //= require foundation
+//= require soundcloud.player.api
+//= require sc-player
 //= require turbolinks
 //= require_tree .
 

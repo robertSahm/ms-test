@@ -228,10 +228,17 @@ $(function () {
 });
 
 $(function() {
-  $('.sc-player').addClass('large-12 columns row');
-  $('ol.sc-artwork-list').addClass('three mobile-zero columns');
-  $('.sc-controls').addClass('one mobile-one columns');
-  $('.sc-scrubber').addClass('eight mobile-four columns');
+  $('.sc-player').addClass('large-12 small-12 columns');
+
+  $('.sc-volume-slider').addClass('large-5 small-5 columns');
+
+  $('ol.sc-artwork-list').addClass('large-3 small-3 columns');
+
+  $('.sc-controls').addClass('large-1 small-1 columns');
+
+
+  // includes volume, wav image and time display
+  $('.sc-scrubber').addClass('large-9 small-9 columns');
 });
 
 // $(function () {

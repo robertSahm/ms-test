@@ -41,18 +41,17 @@ $blogPfont: 'Raleway', sans-serif;
 //                 .JMML.              OOb"                     
 
 .sc-player {
-  height: 50px;
+  max-height: 140px;
   position: relative;
-  //padding: 10px;
   top: 0;
   left: 0;
-  //margin-bottom: 20px !important;
   margin-right: 0;
   padding-right: 0;
-  width: 80%;
+  width: 100%;
   list-style-type: none !important;
   color: red;
-  border: 1px solid red;
+  margin-top: 10%;
+  //margin-bottom: 5%;
 }
 
 ol li {
@@ -64,24 +63,28 @@ ol li {
 // /    \)   / )(  )   \ /\ (  O )   /)  ( 
 // \_/\_(__\_)(__)(__\_(_/\_)\__(__\_(__\_)
 
-.sc-artwork-list { // ul
-  float: left;
-  width: 20%;
-  padding: 0;
+.sc-artwork-list { // ol
+  //float: left;
+  //width: 20%;
+  padding: 0 !important;
   margin: 0;
   list-style-type: none !important;
+  min-height: 100px;
 
 
   .active {
     list-style-type: none !important;
 
     img {
-      //max-width: 162px;
-      width: 100%;
-      max-height: 161px;
-      max-width: 161px;
+      margin: 0;
+      padding: 0;
+      min-width: 100px;
       //width: 100%;
-
+      //width: 100%;
+      max-height: 131px;
+      float: right;
+      //max-width: 161px;
+      //width: 100%;
     }
   }
 }
@@ -102,7 +105,7 @@ ol li {
   top: 0px;
   left: 0;
   width: 100%;
-  margin-top: 20px;
+  //margin-top: 20px;
   padding-left: 0px;
   display: none;
 
@@ -112,7 +115,7 @@ ol li {
       margin-left: 20px;
       display: block;
       color: $blue;
-      font-family: $blogPfont;
+      //font-family: $blogPfont;
       font-weight: 100;
       font-size: .65em;
       //margin-top: 20px;
@@ -151,11 +154,10 @@ ol li {
 
 
 .sc-controls {
-  //width: 100%;
-  //float: left;
-  position: realtive;
+  position: relative !important;
   top: 0;
   left: 0;
+  margin-bottom: -100px;
   z-index: 200;
 
   a.sc-play {
@@ -215,23 +217,20 @@ a.sc-info-toggle {
 
 .sc-volume-slider {
   position: relative;
-  top: 5px;
-  left: -13%;
   float: left;
   height: 20px;
-  //margin-bottom: -25px;
   border: 2px solid $red;
-  opacity: 1;
-  width: 25%;
-  margin-bottom: 0px;
+  margin: 0px;
+  padding: 0 !important;
  
   .sc-volume-status {
     height: 100%;
     float: left;
+    margin-left: 0;
     width: 100%;
     background-color: $blue;
     border: 3px solid black;
-    width: 200px;
+    //width: 200px;
   }
 }
 
@@ -243,21 +242,20 @@ a.sc-info-toggle {
 .sc-time-span { // waveform color
   position: relative;
   top: 0;
-  left: 0;
-  width: 100%;
   z-index: 0;
-  margin-bottom: 0;
-  //height: 100px;
+  margin-bottom: 2%;
+  height: 100px;
+  width: 100%;
 
   .sc-waveform-container {
     position: relative;
-    top: -50px;
+    //top: -50px;
     width: 100%;
-    height: 70px;
+    height: 100px;
     
     img {
       //position: absolute;
-      min-height: 70px;
+      min-height: 100px;
       width: 100%;
       background-color: $red !important;
       opacity: 1;
@@ -275,21 +273,23 @@ a.sc-info-toggle {
 
 .sc-buffer  {
   position: relative;
-  //height: 13%;
+  height: 16px;
+  margin-top: -16px;
+  //width: auto !important;
   background-color: $blue;
   opacity: .6;
-  bottom: 2px;
+  bottom: 0px;
   left: 0;
 }
 
 .sc-played { 
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
-  height: 98%;
+  height: 100%;
   border-right: 3px solid $blue;
   // min-height: 100px;
-  // border-right: 2px solid $blue;
+  //border-right: 2px solid $blue;
   // opacity: 1;
   // z-index: -10;
 }
@@ -306,18 +306,18 @@ a.sc-info-toggle {
   left: 0;
   color: $blue;
   float: left;
-  margin-left: -35px;
+  //margin-left: -35px;
 }
 
 .sc-position {
-  margin: 7px 7px 7px 7px;
+  margin: 2px 7px 7px 7px;
   padding-right: 7px;
   float: left;
   border-right: 2px solid $red;
 }
 
 .sc-duration {
-  margin: 7px 0;
+  margin: 2px 0;
   float: left;
 }
 
@@ -338,44 +338,44 @@ a.sc-info-toggle {
 //     opacity: .3 !important;
 // }
 
-@media only screen and (max-width: 768px) {
+// @media only screen and (max-width: 768px) {
 
-  .sc-artwork-list { // ol
-
-  
-    .active {
-  
-      img {
+//   .sc-artwork-list { // ol
 
   
-      }
-    }
-  }
-
-  .sc-time-span { // waveform color
-    left: 0 !important;
-    top: -60px !important;
-    margin-bottom: -60px !important;
-    width: 98% !important;
+//     .active {
+  
+//       img {
 
   
-    .sc-waveform-container {
-      width: 104%;
+//       }
+//     }
+//   }
+
+//   .sc-time-span { // waveform color
+//     left: 0 !important;
+//     top: -60px !important;
+//     margin-bottom: -60px !important;
+//     width: 98% !important;
+
+  
+//     .sc-waveform-container {
+//       width: 104%;
    
-      img {
+//       img {
 
-      }
-    }
-  }
+//       }
+//     }
+//   }
 
-  .sc-volume-slider { 
-    left: 0 !important;
-  }
+//   .sc-volume-slider { 
+//     left: 0 !important;
+//   }
 
-  .sc-time-indicators {
-    margin-left: 5px;
-  }
-} // end 768 break rules
+//   .sc-time-indicators {
+//     margin-left: 5px;
+//   }
+// } // end 768 break rules
 
 // .sc-time-span { // waveform color
 //   position: relative;

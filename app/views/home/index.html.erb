@@ -41,7 +41,7 @@
 	 		<ul class="title-area titleUl large-9 large-centered small-9 small-centered columns bgCol">
 	 			<li class="name">
 	 				<h1 class="name" id="logoHeader">
-	 					<a href="#">
+	 					<a class="headerClick" href="#">
 	 						<span class="tighten1">R</span><span class="tighten2">ob</span>e<span class="loosen1">r</span>t <span class="loosen2">S</span>a<span class="loosen2">hm</span>
 	 					</a>
 	 				</h1>
@@ -84,26 +84,30 @@
 
 <!-- Intro Row -->
 <div class="row rowIntro introHide">
-	<div class="large-8 large-centered columns">
+	<div class="large-12 small-12 small-centered large-centered columns">
 		<!-- <h1 class="biggest">I've probably though a little <span class="ital">too</span> much about pixels.</h1> -->
 		<!-- <h1 class="biggest">one man band</h1> -->
-		<!-- <h1 class="biggest">Let's create something<span class="ital"></span>wonderful</h1>
- -->	
- 		<h1 class="biggest">Allow me to <span class="ital">catch</span>your eye.</h1>
+		<h1 class="biggest">Let's create something</h1>
+		<h1 class="biggestItal">wonderful</h1>
+ 		
+<!--  		<h1 class="biggest">Allow me to <span class="ital">catch</span> your eye.</h1> -->
+	</div>
+	<div class="row introLine">
+		<div class="orangeLine large-8 small-9 large-centered small-centered columns"></div>
 	</div>
 </div>
 
 
-
-
-
-
-<!-- Portarock Big Block -->
-<!-- <div class="row portaTop portaHide">
-	<div class="large-3 small-6 small-centered large-centered columns">
-		<%= image_tag "portaBlockCol.png", :class => "shrinkMe" %>
-	</div>
-</div> -->
+<!--              ,,                            ,,                                   
+`7MM"""Yp,   db               `7MM"""Yp, `7MM`7MM             
+  MM    Yb                      MM    Yb   MM  MM             
+  MM    dP `7MM  .P"Ybmmm       MM    dP   MM  MM  ,MP,pP"Ybd 
+  MM"""bg.   MM :MI  I8         MM"""bg.   MM  MM ;Y  8I   `" 
+  MM    `Y   MM  WmmmP"         MM    `Y   MM  MM;Mm  `YMMMa. 
+  MM    ,9   MM 8M              MM    ,9   MM  MM `Mb.L.   I8 
+.JMMmmmd9  .JMML.YMMMMMb      .JMMmmmd9  .JMMLJMML. YAM9mmmP' 
+                6'     dP                                                       
+                Ybmmmd'                                       -->                   
 
 <div id="portaRow" class="bgBlack">
 	<div class="row spinPicRow">
@@ -112,55 +116,134 @@
 		</div>
 	</div>
 	<div class="row portaLogoRow">
+		<div class="large-3 small-5 small-centered columns">
+			<%= image_tag "portaHomeOf.png", :class => "portaHomeOf" %>
+		</div>
 		<div class="large-5 small-8 small-centered large-centered columns">
 			<%= image_tag "portaLogo.png", :class => "portaLogo" %>
 		</div>
+	</div>
+	<div class="commentText row">
+		<h2 class="portaComment large-7 small-11 large-centered small-centered columns">
+			Fully-responsive blogging platform for the Manhattan based DJ Portarock
+		</h2>
 	</div>
 	<div class="row portaDevicesRow">
 		<div class='large-8 small-12 large-centered small-centered columns'>
 			<%= image_tag "portaDevices.png", :class => "portaDevices" %>
 		</div>
 	</div>
-	<div class="row">
+	<div class="commentText tech row">
+		<h4 class="portaComment large-7 small-11 large-centered small-centered columns">
+			<span class="biggerText">
+				Tech details:
+			</span><br /> 
+			Ruby on Rails<br />
+			Refinery blog engine<br />
+			Zurb Foundation front-end framework<br />
+			Facebook and SoundCloud API authentication<br />
+			customized SoundCloud player
+		</h4>
+	</div>
+<!-- 	<div class="commentText row">
+		<h4 class="portaComment large-7 small-11 large-centered small-centered columns">
+			<span class="commentTextSmall">give 'er a whirl!</span>
+		</h4>
+	</div> -->
+	<div class="row playerRow">
 		<div class='large-8 large-centered small-12 columns'>
 			<!-- %= image_tag "portaPlayer.png", :class => "portaPlayer" % -->
 			<a href="https://soundcloud.com/portarock/errolsstunset" class="sc-player"></a>
 		</div>
 	</div>
-	<div class="row portaIconsRow">
-		<div class='large-9 small-12 large-centered small-centered columns'>
-			<%= image_tag "portaPlayer.png", :class => "portaIcons" %>
+	<div class="row portaPostRow">
+		<div class='large-8 small-12 large-centered small-centered columns'>
+			<%= image_tag "portaBlog.jpg", :class => "portaPost" %>
 		</div>
 	</div>
 	<div class="row portaIconsRow">
-		<div class='large-4 small-10 large-centered small-centered columns'>
+		<div class='large-3 small-10 large-centered small-centered columns'>
 			<%= image_tag "portaIcons.png", :class => "portaIcons" %>
 		</div>
 	</div>
+	<div class="commentText viewLive row">
+		<h4 class="portaComment large-7 small-11 large-centered small-centered columns">
+			<a class="viewLiveSite" href="http://portarock.com" target="_blank">view live site</a>
+			<a class="homeLink">back</a><br />
+		</h4>
+	</div>
+</div> <!-- end #portaRow -->
 
-	<!-- bottom info section -->
-	<!-- <div class="screenStrech portaInfo">
-		<div class="row">
-			<div class="large-8 large-centered columns">
-				<p1 class="portaText">
-					Portarock.com - rails, html, sass, and js.
-				</p1>
-			</div>
-		</div>
+
+
+
+
+
+
+
+
+
+
+<!-- 	Ketchum Row -->
+<div id="ketchRow" class="fullBlock">
+	<div class="hide-for-small ketchHider">
+		<iframe class="ketchIframe" src="http://ketchumlabs.com" frameBorder="0"></iframe> 
 	</div>
 
+	<%= image_tag "copyjunk.png", :class => "copyjunk1" %>
+	<%= image_tag "copyjunk.png", :class => "copyjunk2" %>
+	<%= image_tag "copyjunk.png", :class => "copyjunk3" %>
 
-	<div class="screenStrech portaInfo">
-		<div class="row">
-			<div class="large-8 large-centered columns">
-				<p1 class="portaText portaRed">
-					I did mad stuff for this, yo!
-				</p1>
+	<div class="row ketchTexture"></div>
+
+	<div class="row hide-for-large-up">
+
+		<!--  %= image_tag "ketchumBG.png", :class => "ketchumBG" % -->
+		<div class="large-4 small-6 columns">
+			<%= image_tag "ketchumLogo.png", :class => "ketchumLogo" %>
+		</div>
+		<div class="large-12 small-12 columns ketchThing">
+			<%= image_tag "ketchBIG.png", :class => "ketchBIG" %>
+		</div>
+		
+	</div>
+	<div class="large-12 small-12 columns">
+			<div class="commentText row">
+				<h2 class="ketchComment large-7 small-11 large-centered small-centered columns">
+					Animated concepts brought to life for Ketchum Labs production house
+				</h2>
 			</div>
 		</div>
-	</div> -->
+</div>
 
-</div> <!-- end #portaRow -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -204,7 +287,7 @@
 			<p class="ketchHoverP">
 				HTML, CSS, JS, design
 			</p>
-			<p class="ketchHoverP"><a href="">see more</a></p>
+			<p class="ketchHoverP"><a class="ketchReveal">see more</a></p>
 		</div>
 	</div>
 
@@ -287,24 +370,6 @@
 
 
 
-<!-- 	Ketchum Section -->
-
-<div class="ketchumWrapper fullBlock ketchBigBlock">
-	<%= image_tag "copyjunk.png", :class => "copyjunk" %>
-
-	<div class="row ketchTexture">
-	</div>
-
-	<div class="row">
-		<!--  %= image_tag "ketchumBG.png", :class => "ketchumBG" % -->
-		<div class="large-4 small-4 columns">
-			<%= image_tag "ketchumLogo.png", :class => "ketchumLogo" %>
-		</div>
-		<div class="large-12 small-12 columns ketchThing">
-			<%= image_tag "ketchBIG.png", :class => "ketchShape" %>
-		</div>
-	</div>
-</div>
 
 <!-- Carol Beehler Section -->
 

@@ -46,8 +46,6 @@ $(function () {
   // mouseleave
   $('#portaBlockWrapper').mouseleave( function () {
     $('.portaHoverText').hide(500);
-
-
     //color fade Stuff
     $('#portaBlockWrapper').stop(true, true).animate ({
       'background-color' : 'transparent'
@@ -214,16 +212,63 @@ $(function () {
 
 //Clicks 
 $(function () {
-  $('.blocksWrapper').hide();
-  $('a.portaReveal').click(function() {
-    $('#portaRow').show(200);
-    $('.blocksWrapper').hide(0);
-    return false;
-    //$('body').css('background-color', '#000000');
-    //$('img.shrinkMe').fadeIn(500).addClass('click2Hide');
 
-    //$('.portaLogoRow').fadeIn(4000);
-    //$('#portaBlockWrapper').hide();  
+  // work link
+  $('a.workLink').click( function() {
+    $(this).addClass('navSelected');
+    $('a.aboutLink, a.contactLink').removeClass('navSelected');
+    $('.blocksWrapper').fadeIn(300);
+    $('.rowIntro').hide(300);
+    $('#portaRow').fadeOut(300);
+    return false;
+  });
+
+  //about link
+  $('a.aboutLink').click( function() {
+    $(this).addClass('navSelected');
+    $('.rowIntro, .blocksWrapper, .aboutWrapper, .contactWrapper').hide(300);
+    $('a.workLink, a.contactLink').removeClass('navSelected');
+    return false;
+  });
+
+  // contact link
+  $('a.contactLink').click( function() {
+    $(this).addClass('navSelected');
+    $('.rowIntro').hide(300);
+    $('a.workLink, a.aboutLink').removeClass('navSelected');
+    return false;
+  });
+
+  // header link
+  $('a.headerClick').click( function() {
+    $('a.workLink, a.aboutLink, a.contactLink').removeClass('navSelected');
+    $('.rowIntro').fadeIn(300);
+    $('.blocksWrapper, .aboutWrapper, .contactWrapper').hide(0);
+    return false;
+  });
+
+  $('a.homeLink').click(function() {
+    $('.blocksWrapper').fadeIn(300);
+    $('#portaRow, #aboutRow, #contactRow').fadeOut(300);
+  });
+});
+
+$('iframe').load(function() {
+    $('iframe').contents().find('a').each(function(index) {
+        $(this).on('click', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+        });
+    });
+});
+
+$(function() {
+  // ketch Row Reveal
+  $('#ketchRow').show(0);
+  $('a.ketchReveal').click(function() {
+    $('#ketchRow').fadeIn(300);
+    $('.blocksWrapper').fadeOut(0);
+    return false;
   });
 });
 
@@ -241,6 +286,11 @@ $(function() {
   $('.sc-scrubber').addClass('large-9 small-9 columns');
 });
 
+// $(function() {
+//   $('h1.biggest').animate({
+//     'line-height': '.8em'
+//   }, 2000);
+// });
 // $(function () {
 //   $('img.shrinkMe').click( function () {
 //     //$(this).hide("slide", {direction: "left" }, "slow");

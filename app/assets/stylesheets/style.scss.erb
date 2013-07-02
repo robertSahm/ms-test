@@ -170,8 +170,6 @@ body {
 		.navRow {
 	
 			div {
-
-		
 				ul.navUl {
 					background-color: $body-bg;
   				width: 100%;
@@ -183,9 +181,14 @@ body {
 						display: inline-block;
 						margin: 0 !important;
 						float: none;
+						@include fontBook;
+
+						:hover, :active, :target {
+  					  color: $yellow;
+  					  @include fontBookIt;
+  					}
 				
 						a.navLink {
-  					  @include fontBook;
   					  width: 100%;
   					  height: 100%;
   					  margin-top: 30%; // nav push up
@@ -199,6 +202,11 @@ body {
 			}
 		}
 	}
+}
+
+.navSelected {
+	@include fontBookIt;
+	color: $yellow !important;
 }
 
 .descWrapper {
@@ -306,22 +314,23 @@ ul.titleUl {
 }
 
 .rowIntro {
-	margin-top: 4%;
 	text-align: center;
-	margin-bottom: 100px;
+	margin-bottom: 0%;
 }
 
 h1.biggest {
 	@include fontMed;
-	font-size: 80px;
-			color: $orange;
-
-	span.ital {
-		@include fontMedIt;
-		color: $blueLight;
-	}
+	color: $orange;
 }
 
+.biggestItal {
+	@include fontMedIt;
+	color: $blueLight;
+}
+
+.orangeLine {
+	border-bottom: 1px solid $orange;
+}
 
 //  ,,        ,,                            
 // *MM      `7MM                            
@@ -377,6 +386,7 @@ img.candlBlockCol {
 
 .blocksWrapper {
 	margin-top: 2% !important;
+display: none;
 }
 
 .blockWrapper {
@@ -486,6 +496,52 @@ p.c2cHoverP {
 //               Ybmmmd'                                                
 
 
+.commentText {
+	margin-top: 2%;
+	text-align: center;
+	@include fontBook;
+	margin-bottom: 2%;
+
+	h2 {
+		font-size: 1.6em;
+	}
+
+	span.biggerText {
+		font-size: 1.8em;
+		text-align: center;
+		color: $bluePorta;
+	}
+
+	h4 {
+		font-size: 1.4em;
+	}
+}
+
+.viewLive {
+
+	a {
+		text-decoration: underline;
+		@include fontMed;
+		display: block;
+		font-weight: 400 !important;
+	}
+}
+
+span.commentTextSmall {
+	display: block;
+	margin-top: 5%;
+	text-align: center;
+	padding: 0;
+	@include fontBookIt;
+	color: $redPorta;
+	//opacity: .75;
+	font-size: 1em;
+}
+
+.portaComment {
+	color: #999;
+}
+
 /////////////////////////////////////////////////////////////////////////////////////
 
 // `7MM"""Mq.                   mm                                            
@@ -497,11 +553,13 @@ p.c2cHoverP {
 // .JMML.     `Ybmd9'.JMML.     `Mbm`Moo9^Yo.JMML.   `Ybmd9'     W      W     
 
 #portaRow {
-	//display: none;
+
+	display: none;
 	background-color: black;
 	position: relative;
 	top: 50px;
 	left: 0;
+	padding-top: 6%;
 
 	.portaInfo {
 
@@ -520,7 +578,13 @@ p.c2cHoverP {
 	}
 }
 
+.playerRow {
 
+}
+
+.portaPostRow {
+	margin-top: 5%;
+}
 
 // .spinPicRow {
 
@@ -553,37 +617,56 @@ p.c2cHoverP {
 //   MM `MbYM.    ,  MM  YM.    , MM    MM   MM    MM    MM  
 // .JMML. YA`Mbmmd'  `MbmoYMbmd'.JMML  JMML.JMML  JMML  JMML.
 
-.ketchBigBlock {
-	display: none;
-}
-
-.ketchumWrapper {
-	background-color: $yellowKetch;
-	position: relative;
-	max-height: 400px;
-	margin-top: 3%;
+#ketchRow {
+	margin-top: 5%;
+	//background-color: $yellowKetch;
 	overflow: hidden;
 }
 
+
 .ketchTexture {
 	background-image: url('ketchumBG.png');
+	opacity: .75;
+	background-repeat: no-repeat;
+	//background-size: cover;
 	height: 100%;
+	max-height: 500px;
 	min-width: 100%;
 	position: absolute;
-	top: 0;
-	left: 0;
-	//z-index: 20;
+	//left: -20%;
 }
 
-.copyjunk {
+img.copyjunk1, img.copyjunk2, img.copyjunk3 {
 	position: absolute;
-	top: 0;
 	left: 0;
 	z-index: 100;
-	min-width: 100%;
-	max-height: 400px;
+	min-width: 120%;
 	opacity: .5;
 	min-height: 100%;
+	max-height: 600px;
+	display: none;
+}
+
+img.copyjunk2 {
+	top: 100%;
+}
+img.copyjunk3 {
+	top: 200%;
+}
+
+.ketchIframe {
+	padding-left: 0%;
+	//margin-left: 25%;
+	width: 100%;
+	min-height: 680px;
+	overflow: hidden;
+	border: none;
+	z-index: 200;
+	//zoom: 0.75
+}
+
+.ketchHider {
+	height: 680px;
 }
 
 .ketchumLogo {
@@ -595,13 +678,30 @@ p.c2cHoverP {
 	margin-left: 13%;
 }
 
-.ketchShape {
-	position: relative;
-	max-width: 900px;
-	width: 100%;
-	margin-top: 2%;
-	margin-bottom: 2%;
-	margin-left: 20%;
+.ketchThing {
+
+	img.ketchBIG {
+		position: relative;
+		width: 900px !important;
+		//width: 100%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		margin-left: 20%;
+		}
+	img.slideBlock {
+		position: absolute;
+		max-width: 202px;
+		top: 137px;
+		left: 629px;
+	}
+}
+
+h2.ketchComment {
+	color: $blueKetch;
+	@include fontBook;
+	font-size: 2.4em;
+	font-weight: 400;
+	text-align: left;
 }
 
 //                                     ,,  

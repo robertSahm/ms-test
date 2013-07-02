@@ -76,6 +76,7 @@
 
 $body-bg: #EFECCA;
 $body-font-color: #444;
+$darkBlue: #5D718C;
 
 //Home Colors
 $orange		 :#DE5605;
@@ -97,6 +98,7 @@ $blueKetch: #47BCBA;
 //Carol Colors
 $blueCarol: #71B4C9;
 $redCarol: #CD3529;
+$greyCarol: #C4C0B6;
 
 //c2c Colors
 $redC2C: #FF2B0B;
@@ -316,16 +318,37 @@ ul.titleUl {
 .rowIntro {
 	text-align: center;
 	margin-bottom: 0%;
+
 }
 
 h1.biggest {
 	@include fontMed;
 	color: $orange;
+	position: relative;
+	line-height: .5em;
+}
+
+h3.biggest {
+	font-size: 1.3em;
+	color: $orange;
+}
+
+.def {
+	margin-top: -1%;
 }
 
 .biggestItal {
 	@include fontMedIt;
 	color: $blueLight;
+	background-color: $darkBlue;
+	//font-size: 6em;
+}
+
+.medItal {
+	@include fontMedIt;
+	color: $orange;
+	font-size: 1.6em;
+	//margin-bottom: -10px;
 }
 
 .orangeLine {
@@ -385,8 +408,8 @@ img.candlBlockCol {
 }
 
 .blocksWrapper {
-	margin-top: 2% !important;
-display: none;
+	margin-top: 2%;
+	//display: none;
 }
 
 .blockWrapper {
@@ -538,28 +561,20 @@ span.commentTextSmall {
 	font-size: 1em;
 }
 
-.portaComment {
-	color: #999;
-}
 
-/////////////////////////////////////////////////////////////////////////////////////
+// Porta Row ///////////////////
 
-// `7MM"""Mq.                   mm                                            
-//   MM   `MM.                  MM                                            
-//   MM   ,M9 ,pW"Wq.`7Mb,od8 mmMMmm ,6"Yb. `7Mb,od8 ,pW"Wq.`7M'    ,A    `MF'
-//   MMmmdM9 6W'   `Wb MM' "'   MM  8)   MM   MM' "'6W'   `Wb VA   ,VAA   ,V  
-//   MM      8M     M8 MM       MM   ,pm9MM   MM    8M     M8  VA ,V  VA ,V   
-//   MM      YA.   ,A9 MM       MM  8M   MM   MM    YA.   ,A9   VVV    VVV    
-// .JMML.     `Ybmd9'.JMML.     `Mbm`Moo9^Yo.JMML.   `Ybmd9'     W      W     
+
 
 #portaRow {
-
 	display: none;
 	background-color: black;
 	position: relative;
 	top: 50px;
 	left: 0;
 	padding-top: 6%;
+
+
 
 	.portaInfo {
 
@@ -578,30 +593,87 @@ span.commentTextSmall {
 	}
 }
 
-.playerRow {
-
+.portaComment {
+	color: #999;
 }
 
 .portaPostRow {
 	margin-top: 5%;
 }
 
-// .spinPicRow {
 
-// 	img {
-// 		margin-top: 15%;
-// 	}
-// }
+// Carol Row /////////////////////
 
-// .portaLogoRow {
-// 	margin-top: -20%;
-// }
+#carolRow {
+	display: none;
+	margin-top: 5%;
+	padding-top: 5%;
+	padding: 5%;
+	background-color: white;
 
-// .portaDevicesRow {
-// 	margin-top: 40px;
-// }
+	h2.carolComment {
+		@include fontBold;
+		color: $greyCarol;
+		font-size: 3.7em;
+		text-align: center;
+		padding: 0;
+		margin: 0;
+		//background-color: $greyCarol;
+	}
 
+	img {
+		display: block;
+		margin: 0 auto;
+	}
 
+	.carolCommentDark {
+		background-color: $greyCarol;
+		margin: 7% 0;
+		padding: 5% 0;
+	}
+
+	h4.carolComment {
+		text-align: center;
+		//background-color: $greyCarol;
+
+		a {
+			font-size: 2.5em;
+		}
+	}
+
+	img.carolLogoSmall {
+		margin-top: 3%;
+	}
+
+	img.indiaSmall {
+		padding: 5% 0;
+	}
+
+	img.devi {
+		margin-top: 5%;
+	}
+
+	img.carolBar {
+		padding: 7% 0;
+		width: 100%;
+		max-width: 1216px;
+	}
+	
+	img.anatsui {
+			padding-top: 5%;
+	}
+
+	img.carolFull {
+		margin-top: 8%;
+		border: 1px solid black;
+	}
+}
+
+.carolInteractive {
+	background-color: $greyCarol;
+	min-width: 1000px;
+
+}
 
 
 
@@ -645,7 +717,7 @@ img.copyjunk1, img.copyjunk2, img.copyjunk3 {
 	opacity: .5;
 	min-height: 100%;
 	max-height: 400px;
-	//display: none;
+	display: none;
 }
 
 img.copyjunk2 {
@@ -732,25 +804,7 @@ h2.ketchComment {
 // `Mb.     ,8M   MM   MM    YA.   ,A9 MM  
 //   `"bmmmd'`Moo9^Yo.JMML.   `Ybmd9'.JMML.
 
-.carolBigBlock {
-	display: none;
-}
 
-
-.carolWrapper {
-	margin-top: 3%;
-	background-color: #fff;
-	max-height: 400px;
-}
-
-.carolLogo {
-	margin-left: 15%;
-	padding: 13% 0 0 0;
-}
-
-.carolContentTop {
-	padding: 5% 3% 7% 3%;
-}
                                                      
 //                                               ,,   ,,  
 //                         `7MM"""Yb.          `7MM   db  

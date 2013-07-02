@@ -1,5 +1,7 @@
             @media only screen and (max-width: 420px) { //420 and under
 
+
+
             .ketchHider {
               display: none;
             }
@@ -9,14 +11,24 @@
             }
 
             h1.biggest {
-              font-size: 3.9em !important;
-              line-height: 1em;
+              font-size: 2.2em !important;
+              line-height: 1.1em !important;
               margin-bottom: 0;
+            }
+
+            h3.biggest {
+              font-size: 1em !important;
             }
             
             .biggestItal {
-              line-height: 1em;
-              font-size: 4.1em !important;
+              margin: 0;
+              padding-top: 5px;
+              line-height: 1.2em;
+              font-size: 2.9em !important;
+            }
+
+            .medItal {
+              margin-top: 0% !important;
             }
 
             .introLine {
@@ -120,6 +132,7 @@
             
               .blocksWrapper {
                 margin-top: 77px;
+                display: none;
               }
             
               .blockWrapper {
@@ -172,6 +185,7 @@
               .descWrapper {
                 position: relative;
                 top: 5px !important;
+                margin-bottom: 5%;
               }
             
               .top-bar {
@@ -185,11 +199,18 @@
             } //CLOSE 380 and under
 
 @media only screen and (min-width: 420px) { // Between 420 and 800
+      .biggestItal {
 
+        font-size: 4.9em !important;
+      }
 
 }//end
 
       @media only screen and (max-width: 800px) { // 800 and under
+
+      .descWrapper {
+        margin-bottom: 2%;
+      }
 
       .ketchThing {
         margin-top: 19%;
@@ -198,14 +219,18 @@
 
       
       h1.biggest {
-        font-size: 4.9em;
-        line-height: 1em;
+        font-size: 2.9em;
+        line-height: .9em !important;
         margin-bottom: 0;
       }
       
       .biggestItal {
         line-height: 1em;
-        font-size: 5.5em;
+        //font-size: 6.9em !important;
+      }
+
+      .medItal {
+        margin-top: -5%;
       }
 
       .introLine {
@@ -443,6 +468,10 @@
 
 @media only screen and (min-width: 800px) { 
 
+  img.carolLogoSmall {
+    min-width: 507px;
+  }
+
   .introLine {
     position: relative;
     top: -70px;
@@ -458,12 +487,14 @@
   h1.biggest {
     font-size: 4em;
     line-height: 1em;
-    margin-bottom: 0;
+    margin-bottom: 3%;
   }
 
   .biggestItal {
-    line-height: .8em;
-    font-size: 8.9em;
+    line-height: 1em;
+    padding: 2% 0;
+    font-size: 8.9em !important;
+    margin: 0% 0 1% 0 !important;
   }
   
 .viewLive {

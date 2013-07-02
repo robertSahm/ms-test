@@ -310,7 +310,7 @@ ul.titleUl {
 // Intro stuff
 
 .introHide {
-	display: none;
+	//display: none;
 }
 
 .rowIntro {
@@ -618,9 +618,10 @@ span.commentTextSmall {
 // .JMML. YA`Mbmmd'  `MbmoYMbmd'.JMML  JMML.JMML  JMML  JMML.
 
 #ketchRow {
-	margin-top: 5%;
+	margin-top: 0%;
 	//background-color: $yellowKetch;
 	overflow: hidden;
+	display: none;
 }
 
 
@@ -643,18 +644,19 @@ img.copyjunk1, img.copyjunk2, img.copyjunk3 {
 	min-width: 120%;
 	opacity: .5;
 	min-height: 100%;
-	max-height: 600px;
-	display: none;
+	max-height: 400px;
+	//display: none;
 }
 
 img.copyjunk2 {
 	top: 100%;
 }
 img.copyjunk3 {
-	top: 200%;
+	top: 20%;
+
 }
 
-.ketchIframe {
+#ketchIframe {
 	padding-left: 0%;
 	//margin-left: 25%;
 	width: 100%;
@@ -686,7 +688,7 @@ img.copyjunk3 {
 		//width: 100%;
 		margin-top: 2%;
 		margin-bottom: 2%;
-		margin-left: 20%;
+		//margin-left: 20%;
 		}
 	img.slideBlock {
 		position: absolute;
@@ -701,7 +703,24 @@ h2.ketchComment {
 	@include fontBook;
 	font-size: 2.4em;
 	font-weight: 400;
-	text-align: left;
+	text-align: center;
+}
+
+.ketchComment2 {
+	color: $blueKetch;
+	@include fontBook;
+	font-size: 2em;
+	font-weight: 400;
+	text-align: center;
+	z-index: 300;
+}
+
+.ketchMakingRow {
+	padding-top: 5%;
+}
+
+.ketchMakingRow2 {
+	margin-top: 0%;
 }
 
 //                                     ,,  

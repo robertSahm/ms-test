@@ -225,6 +225,14 @@ $(function () {
 
 //Clicks 
 $(function () {
+    // header link
+  $('a.headerClick').click( function() {
+    $('a.workLink, a.aboutLink, a.contactLink').removeClass('navSelected');
+    $('.rowIntro, .blocksWrapper').fadeIn(300);
+    $('.aboutWrapper, .contactWrapper, #ketchRow, #portaRow, #carolRow').hide(0);
+    return false;
+  });
+
   // work link
   $('a.workLink').click( function() {
     $(this).addClass('navSelected');
@@ -248,14 +256,6 @@ $(function () {
     $(this).addClass('navSelected');
     $('.rowIntro').hide(300);
     $('a.workLink, a.aboutLink').removeClass('navSelected');
-    return false;
-  });
-
-  // header link
-  $('a.headerClick').click( function() {
-    $('a.workLink, a.aboutLink, a.contactLink').removeClass('navSelected');
-    $('.rowIntro').fadeIn(300);
-    $('.blocksWrapper, .aboutWrapper, .contactWrapper, #ketchRow').hide(0);
     return false;
   });
 

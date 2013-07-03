@@ -112,12 +112,19 @@ body {
 	background-color: $body-bg;
 }
 
+
+
+a:hover {
+	cursor: pointer;
+}
+
 .headerWrapper {
 	position: relative;
 	top: 0;
 	left: 0;
 	min-height: 30px;
 	margin-top: 3%;
+
 
 	nav.top-bar {
 	  margin-bottom: 0px !important;
@@ -339,8 +346,11 @@ h3.biggest {
 
 .biggestItal {
 	@include fontMedIt;
-	color: $blueLight;
-	background-color: $darkBlue;
+	color: $blueDark;
+	//background-image: url('frillyPattern@2x.png');
+	//background-color: $blueDark;
+	padding-bottom: 4%;
+	z-index: 200;
 	//font-size: 6em;
 }
 
@@ -348,7 +358,35 @@ h3.biggest {
 	@include fontMedIt;
 	color: $orange;
 	font-size: 1.6em;
+	z-index: 100;
 	//margin-bottom: -10px;
+}
+
+.pattern1 {
+	background-image: url('pattern1@2x.png');
+	opacity: .27;
+	z-index: -100;
+	display: block;
+	position: absolute !important;
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	width: 100%;
+	//margin-top: 20%;
+}
+
+span.pattern2 {
+	background-image: url('pattern2@2x.png');
+	opacity: .29;
+	z-index: 100;
+	display: block;
+	position: relative !important;
+	top: 0;
+	left: 0;
+	min-height: 100%;
+	width: 100%;
+	padding: 2% 0 3% 0;
+	//margin-top: 20%;
 }
 
 .orangeLine {
@@ -372,8 +410,8 @@ h3.biggest {
 img.portaBlockBW,
 img.ketchBlockBW,
 img.carolBlockBW,
-  img.c2cBlockBW,
- img.crawBlockBW,
+img.c2cBlockBW,
+img.crawBlockBW,
 img.candlBlockBW {
 	width: 100%;
 	position: relative;
@@ -381,6 +419,7 @@ img.candlBlockBW {
 	left: 0;
 	//min-height: 50px;
 	margin: 0 auto;
+	z-index: 100;
 }
 
 // Hover state images
@@ -397,6 +436,9 @@ img.candlBlockCol {
 	left: 0;
 	z-index: 100;
 }
+
+
+
 
 .bricksBG {
 	background-image: url('bricksBG.jpg');

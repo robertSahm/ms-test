@@ -1,6 +1,8 @@
             @media only screen and (max-width: 420px) { //420 and under
 
-
+            .logoBorder {
+              display: none !important;
+            }
 
             .ketchHider {
               display: none;
@@ -166,13 +168,14 @@
             
               ul.title-area {
                 li.toggle-topbar {
-                  height: 35px;
-                  //top: 29px !important;
+                  height: 39px;
+
                   a {
-                    top: 5px;
+                    top: 4px; // pushes down nav dropdown icon
+                    min-height: 40px;
                     span {
                       width: 31px !important;
-                      //height: 2px !important;
+                      height: 40px;
                     }
                   }
                 }
@@ -180,6 +183,7 @@
             
               .headerWrapper {
                 max-height: 119px;
+                margin-top: 31px !important;
               }
             
               .descWrapper {
@@ -200,8 +204,11 @@
 
 @media only screen and (min-width: 420px) { // Between 420 and 800
       .biggestItal {
-
         font-size: 4.9em !important;
+      }
+
+      .logoRSMobile {
+        display: none;
       }
 
 }//end
@@ -469,6 +476,15 @@
 
 @media only screen and (min-width: 800px) { 
 
+  .logoRSRow {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .titleRow {
+    margin-bottom: -6px;
+  }
+
   img.carolLogoSmall {
     min-width: 507px;
   }
@@ -480,7 +496,7 @@
   }
 
   .rowIntro {
-    margin-top: 5%;
+    margin-top: 4%;
     text-align: center;
     margin-bottom: 100px;
   }
@@ -534,7 +550,7 @@
 }
 
 .name h1 a {
-  font-size: 1.5em;
+  font-size: 1.1em;
   padding-top: 1%;
 }
 

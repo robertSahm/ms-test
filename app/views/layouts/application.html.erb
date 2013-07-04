@@ -25,9 +25,11 @@
     <%= javascript_include_tag "jquery.scrollorama.js" %> 
   -->
 
+
     <%= csrf_meta_tags %>
       <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
          
+
   </head>
 
   <body>
@@ -35,6 +37,14 @@
     <%= yield %>
 
     <%= javascript_include_tag "application" %>
-
+    <script>
+      window.addEventListener("load",function() {
+        // Set a timeout...
+        setTimeout(function(){
+          // Hide the address bar!
+          if(navigator.userAgent.match(/Android/iPhone/)){
+          window.scrollTo(0, 0)};
+      });
+    </script>
   </body>
 </html>

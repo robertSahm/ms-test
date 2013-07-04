@@ -1,14 +1,3 @@
-// $(function () {
-//   $('#logoHeader').click(function () {
-//     $('.introHide').show(2000);
-
-//   });
-// });
-
-// $('.portaHoverText').hide( 'scale', {
-//   duration: 900,
-//   easing: 'easeOutQuart'
-// });
 
 
 // `7MMF'  `7MMF'                                  
@@ -25,7 +14,7 @@ $(function () {
   $('#portaBlockWrapper').mouseenter( function() {
 
     //show Text
-    $('.portaHoverText').stop(true, true).show(200);
+    $('.portaHoverText').stop(true, true).fadeIn(500);
 
     // animate background color 
     $('#portaBlockWrapper').stop(true, true).animate ({
@@ -45,7 +34,7 @@ $(function () {
 
   // mouseleave
   $('#portaBlockWrapper').mouseleave( function () {
-    $('.portaHoverText').hide(500);
+    $('.portaHoverText').fadeOut(500);
     //color fade Stuff
     $('#portaBlockWrapper').stop(true, true).animate ({
       'background-color' : 'transparent'
@@ -62,7 +51,7 @@ $(function () {
 // Ketch Hover
 $(function () {
   $('#ketchBlockWrapper').mouseenter( function () {
-    $('.ketchHoverText').stop(true, true).show(200);
+    $('.ketchHoverText').stop(true, true).fadeIn(600);
     $('#ketchBlockWrapper').stop(true, true).animate ({
       'background-color' : '#CAC9AA'
     }, 200);
@@ -74,7 +63,7 @@ $(function () {
     }, 200);
   });
   $('#ketchBlockWrapper').mouseleave( function () {
-    $('.ketchHoverText').stop(true, true).hide(500);
+    $('.ketchHoverText').stop(true, true).fadeOut(500);
 
     //color fade Stuff
     $('#ketchBlockWrapper').stop(true, true).animate ({
@@ -92,7 +81,7 @@ $(function () {
 // Carol Hover
 $(function () {
   $('#carolBlockWrapper').mouseenter( function () {
-    $('.carolHoverText').stop(true, true).show(200);
+    $('.carolHoverText').stop(true, true).fadeIn(200);
     $('#carolBlockWrapper').stop(true, true).animate ({
       'background-color' : '#fff'
     }, 200);
@@ -104,7 +93,7 @@ $(function () {
     }, 200);
   });
   $('#carolBlockWrapper').stop(true, true).mouseleave( function () {
-    $('.carolHoverText').stop(true, true).hide(500);
+    $('.carolHoverText').stop(true, true).fadeOut(500);
 
     //color fade Stuff
     $('#carolBlockWrapper').animate ({

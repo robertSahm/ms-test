@@ -110,6 +110,7 @@ $blueC2C: #67A5CE;
 
 body {
 	background-color: $body-bg;
+		overflow-x: hidden;
 }
 
 
@@ -276,7 +277,25 @@ a:hover {
 //   MM      MM YM.    , `Mb    MM   MM     
 // .JMML.  .JMML.`Mbmmd'  `Wbmd"MML.JMML.   
 
+.logoBorder {
+	width: 133px;
+	max-height: 130px;
+	margin: 0 auto;
+	position: relative !important;
+	display: block;
+	top: 0;
+	padding: 11px 0 0 5px;
+	box-sizing: border-box;
+	border-radius: 30px;
+	border: 6px solid $orange;
+	margin-bottom: 3%;
 
+	img.logoRS {
+		margin: 0;
+		padding: 0;
+		width: 111px;
+	}
+}
 
 .bgCol {
 	background-color: $body-bg !important;
@@ -452,6 +471,11 @@ img.candlBlockCol {
 .blocksWrapper {
 	margin-top: 2%;
 	//display: none;
+
+}
+
+#candlBlockWrapper {
+	margin: 0 auto;
 }
 
 .blockWrapper {

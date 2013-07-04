@@ -105,15 +105,24 @@ $redC2C: #FF2B0B;
 $blueC2C: #67A5CE;
 
 
+
+
 // :before, :after { -webkit-transform: translateZ(0); }
 //   -webkit-transform: translate3d(0, 0, 0) !important;
 
 body {
 	background-color: $body-bg;
-		overflow-x: hidden;
+	overflow-x: hidden;
+}
+
+a.f {
+
 }
 
 
+a.introLetter:hover {
+	cursor: default;
+}
 
 a:hover {
 	cursor: pointer;
@@ -125,7 +134,6 @@ a:hover {
 	left: 0;
 	min-height: 30px;
 	margin-top: 3%;
-
 
 	nav.top-bar {
 	  margin-bottom: 0px !important;
@@ -189,21 +197,27 @@ a:hover {
 				
 					li.navLi {
 						display: inline-block;
+						position: relative;
 						margin: 0 !important;
 						float: none;
 						@include fontBook;
+						line-height: 1em;
+						height: 44px;
 
 						:hover, :active, :target {
-  					  color: $yellow;
-  					  @include fontBookIt;
+							transition: color .4s;
+  					  color: $orange;
+  					  @include fontMed;
   					}
 				
 						a.navLink {
   					  width: 100%;
-  					  height: 100%;
+  					  width: 96px;
+  					  height: 44px;
   					  margin-top: 30%; // nav push up
   					  margin-bottom: 10%; //nav push down
   					  line-height: .2em; // height of links
+  					  
   					  // margin: 0 !important;
   					  // padding: 0 !important;
   					}
@@ -215,8 +229,8 @@ a:hover {
 }
 
 .navSelected {
-	@include fontBookIt;
-	color: $yellow !important;
+	@include fontMed;
+	color: $orange !important;
 }
 
 .descWrapper {
@@ -366,12 +380,17 @@ h3.biggest {
 .biggestItal {
 	@include fontMedIt;
 	color: $blueDark;
-	//background-image: url('frillyPattern@2x.png');
-	//background-color: $blueDark;
 	padding-bottom: 4%;
 	z-index: 200;
-	//font-size: 6em;
+
 }
+
+// fixes flickering issue
+a.dot2 {
+	z-index: 400;
+	-webkit-backface-visibility: hidden;
+}
+
 
 .medItal {
 	@include fontMedIt;
@@ -384,7 +403,7 @@ h3.biggest {
 .pattern1 {
 	background-image: url('pattern1@2x.png');
 	opacity: .27;
-	z-index: -100;
+	z-index: -200;
 	display: block;
 	position: absolute !important;
 	top: 0;
@@ -396,16 +415,11 @@ h3.biggest {
 
 span.pattern2 {
 	background-image: url('pattern2@2x.png');
-	opacity: .29;
-	z-index: 100;
-	display: block;
-	position: relative !important;
-	top: 0;
-	left: 0;
-	min-height: 100%;
-	width: 100%;
-	padding: 2% 0 3% 0;
-	//margin-top: 20%;
+	opacity: 1;
+	z-index: 200;
+	left: -2000px;
+	border: 5px solid transparent;
+
 }
 
 .orangeLine {

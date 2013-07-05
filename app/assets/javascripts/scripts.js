@@ -298,13 +298,12 @@ $(function() {
     }, 2100, function() {
       $(item).animate({
         'color': '#65ABA6'
-      }, 3100).delay(2000).fadeOut(00);
-      // .animate({
-      //   'opacity': '0'
-      // }, 1500);
+      }, 3100);
       endless(item);
     });
   };
+
+  // Animate "Wonderful" letter colors
      endless($('a.w').delay( 400  ));
      endless($('a.o').delay( 600  ));
      endless($('a.n').delay( 800  ));
@@ -313,38 +312,98 @@ $(function() {
      endless($('a.e').delay( 1200 ));
      endless($('a.r').delay( 1400 ));
   endless($('a.dot2').delay( 1500 ));
-     endless($('a.f').delay( 1700 ));
-     endless($('a.u').delay( 1900 ));
-     endless($('a.l').delay( 2100 ));
+     endless($('a.f').delay( 1600 ));
+     endless($('a.u').delay( 1800 ));
+     endless($('a.l').delay( 2000 ));
 });  
 
+
+// Intro word 2 color animations
 $(function() {  
   function endless2(item) {
     $(item).css('display', 'inline-block').animate({
-      'color': '#65ABA6',
+      'color': '#C4590E',
       'opacity': '1'
-    }, 2100, function() {
+    }, 500, function() {
       $(item).animate({
-        'color': '#F7A035'
-      }, 1100).delay(3000).fadeOut(0);
-      // .animate({
-      //   'opacity': '0'
-      // }, 1500);
+        //'color': '#F7A035'
+        'color': '#333'
+      }, 500).delay(500);
       endless2(item);
     });
   };
-     endless2($('a.e2').delay( 2100 ));
-     endless2($('a.x2').delay( 2300 ));
-  endless2($('a.dot1b').delay( 2500 ));
-     endless2($('a.c2').delay( 2700 ));
-     endless2($('a.i2').delay( 2900 ));
-     endless2($('a.t2').delay( 3100 ));
-  endless2($('a.dot2b').delay( 3300 ));
-    endless2($('a.i2b').delay( 3500 ));
-     endless2($('a.n2').delay( 3700 ));
-     endless2($('a.g2').delay( 3900 ));
-     endless2($('a.chk').delay( 4100 ));
+     endless2($('a.e2').delay( 400  ));
+     endless2($('a.x2').delay( 600  ));
+  endless2($('a.dot1b').delay( 700  ));
+     endless2($('a.c2').delay( 800  ));
+     endless2($('a.i2').delay( 1000 ));
+     endless2($('a.t2').delay( 1200 ));
+  endless2($('a.dot2b').delay( 1300 ));
+    endless2($('a.i2b').delay( 1400 ));
+     endless2($('a.n2').delay( 1600 ));
+     endless2($('a.g2').delay( 1800 ));
+    endless2($('a.chk').delay( 2000 ));
 }); 
+
+
+
+// Intro word 1 move in/out
+//$('#introWord1').hide(0);
+
+$(function() {
+  $('#introWord1').delay(5000).animate({
+    'left': '-=1000',
+    'opacity': '0'
+  }, 1000, 'easeInCubic', function() {
+    $('#introWord1').delay(8000).animate({
+      'left': '+=1000',
+      'opacity': '1'
+    }, 700, 'easeOutCubic');
+  });
+});
+
+// Intro word 2 move in/out
+$(function() {
+  $('#introWord2').delay(7000).fadeIn(10).animate({
+    'left': '+=2000'
+  }, 700, 'easeOutElastic', function() {
+    $('#introWord2').delay(5000).animate({
+      'left': '+=2000'
+    }, 500, 'easeInBack');
+  });
+});
+
+// dev script for aligning words
+// $(function() {
+//   $('#introWord2').fadeIn(10).animate({
+//     'left': '+=2000'
+//   }, 2000, 'easeOutElastic');
+// });
+
+
+// $(function() {
+  // $('#introWord1').delay(9000).animate ({
+  //   'left': '-=1000',
+  //   'opacity': '0'
+  // }, 1000, function() {
+  //   $(this).delay(2000).animate({
+  //     'left': '-=0',
+  //     'opacity': '0'
+  //   }, 1000, function() {
+
+  //   } 
+  // });
+
+// $(function() {
+//   $('#introWord2 ').delay(9000).animate ({
+//     'left': '-=1000',
+//     'opacity': '0'
+
+//   }, 1000, 'easeInCubic');
+// });
+
+
+
 
 
 

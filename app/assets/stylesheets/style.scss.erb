@@ -358,6 +358,7 @@ ul.titleUl {
 .rowIntro {
 	text-align: center;
 	margin-bottom: 0%;
+	margin-top: 1%;
 
 }
 
@@ -380,27 +381,47 @@ h3.biggest {
 .biggestItal {
 	@include fontMedIt;
 	color: $blueDark;
-	padding-bottom: 4%;
+	padding-bottom: 0%;
 	z-index: 200;
-
-	a {
-		opacity: 0;
-		display: none;
-	}
 }
 
 .hider {
-	display:none;
+	//display: none;
 }
 
-// fixes flickering issue
-a.dot2 {
+// fixes webkit letter flickering
+a.dot2, a.u {
 	z-index: 400;
-	-webkit-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden !important;
 }
 
 a.n2 {
 	letter-spacing: -.03em;
+}
+
+#introWord1, #introWord2 {
+	position: relative;
+	top: 0;
+	padding: 0;
+	font-size: 1em;
+}
+
+#introWord1 {
+	//display: none;
+	margin: 0 0 5% 0;
+}
+
+#fittext {
+	margin-top: -5%;
+}
+
+#introWord2 {
+	@include fontMed;
+	position: relative;
+	left: -2000px;
+	margin: -25% 0 0 0;
+	padding: 1% 0 0 0;
+	line-height: 1em;
 }
 
 .introLetter2 {
@@ -485,22 +506,13 @@ img.candlBlockCol {
 	z-index: 100;
 }
 
-
-
-
 .bricksBG {
 	background-image: url('bricksBG.jpg');
-
-}
-
-.dispNone {
-	display: none !important;
 }
 
 .blocksWrapper {
 	margin-top: 2%;
 	//display: none;
-
 }
 
 #candlBlockWrapper {

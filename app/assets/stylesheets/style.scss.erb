@@ -383,6 +383,14 @@ h3.biggest {
 	padding-bottom: 4%;
 	z-index: 200;
 
+	a {
+		opacity: 0;
+		display: none;
+	}
+}
+
+.hider {
+	display:none;
 }
 
 // fixes flickering issue
@@ -391,6 +399,13 @@ a.dot2 {
 	-webkit-backface-visibility: hidden;
 }
 
+a.n2 {
+	letter-spacing: -.03em;
+}
+
+.introLetter2 {
+	text-transform: uppercase;
+}
 
 .medItal {
 	@include fontMedIt;

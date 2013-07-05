@@ -292,12 +292,16 @@ $(function() {
 // dots 100ms apart, letters 200ms apart
 $(function() {  
   function endless(item) {
-    $(item).animate({
-      "color": '#DE5605'
+    $(item).css('display', 'inline-block').animate({
+      'color': '#DE5605',
+      'opacity': '1'
     }, 2100, function() {
       $(item).animate({
         'color': '#65ABA6'
-      }, 2100);
+      }, 3100).delay(2000).fadeOut(00);
+      // .animate({
+      //   'opacity': '0'
+      // }, 1500);
       endless(item);
     });
   };
@@ -313,6 +317,35 @@ $(function() {
      endless($('a.u').delay( 1900 ));
      endless($('a.l').delay( 2100 ));
 });  
+
+$(function() {  
+  function endless2(item) {
+    $(item).css('display', 'inline-block').animate({
+      'color': '#65ABA6',
+      'opacity': '1'
+    }, 2100, function() {
+      $(item).animate({
+        'color': '#F7A035'
+      }, 1100).delay(3000).fadeOut(0);
+      // .animate({
+      //   'opacity': '0'
+      // }, 1500);
+      endless2(item);
+    });
+  };
+     endless2($('a.e2').delay( 2100 ));
+     endless2($('a.x2').delay( 2300 ));
+  endless2($('a.dot1b').delay( 2500 ));
+     endless2($('a.c2').delay( 2700 ));
+     endless2($('a.i2').delay( 2900 ));
+     endless2($('a.t2').delay( 3100 ));
+  endless2($('a.dot2b').delay( 3300 ));
+    endless2($('a.i2b').delay( 3500 ));
+     endless2($('a.n2').delay( 3700 ));
+     endless2($('a.g2').delay( 3900 ));
+     endless2($('a.chk').delay( 4100 ));
+}); 
+
 
 
 // function endlessBG(item) {

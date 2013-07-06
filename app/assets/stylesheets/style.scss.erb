@@ -113,6 +113,7 @@ $blueC2C: #67A5CE;
 body {
 	background-color: $body-bg;
 	overflow-x: hidden;
+	//border: 1px solid red;
 }
 
 a.f {
@@ -257,13 +258,12 @@ a:hover {
 
 		.descWrap {
 			position: relative;
-			top: 0px;
+			top: 0;
 			left: 0;
 			margin: 0 auto;
-			top: -13px; // moves words up
+			top: -13px; // moves description words up
 			line-height: 0;
 			height: .5em;
-			//width: 40%;
 			margin-top: 10px;
 
 			h4.desc {
@@ -351,14 +351,20 @@ ul.titleUl {
 // .JMML.JMML  JMML`Mbmo.JMML.   `Ybmd9'  
 // Intro stuff
 
+.introWrapper {
+	margin: 0;
+	padding: 0 0 5% 0;
+}
+
 .introHide {
 	//display: none;
 }
 
 .rowIntro {
 	text-align: center;
-	margin-bottom: 0%;
+	margin-bottom: 10px;
 	margin-top: 3%;
+	overflow: hidden;
 
 }
 
@@ -504,11 +510,6 @@ img.candlBlockCol {
 
 .bricksBG {
 	background-image: url('bricksBG.jpg');
-}
-
-.blocksWrapper {
-	margin-top: 2%;
-	//display: none;
 }
 
 #candlBlockWrapper {

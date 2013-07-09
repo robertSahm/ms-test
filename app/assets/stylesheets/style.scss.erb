@@ -163,6 +163,11 @@ a:hover {
 						position: relative;
 						top: 0;
 						left: 0;
+						text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3),
+												 2px 2px 0px rgba(0, 0, 0, 0.3);
+												 // 3px 3px 0px rgba(0, 0, 0, 0.3),
+												 // 4px 4px 0px rgba(0, 0, 0, 0.3),
+												 // 5px 5px 0px rgba(0, 0, 0, 0.3);
 					
 						//Header Title Kearning fixes
 						.loosen1 {
@@ -175,7 +180,7 @@ a:hover {
 							letter-spacing: -.01em;
 						}
 						.loosen2 {
-							letter-spacing: .012em;
+							letter-spacing: .008em;
 						}
 					}
 				}
@@ -187,7 +192,6 @@ a:hover {
 		height: 1%;
 		//border: 1px solid red;
 		.navRow {
-	
 			div {
 				ul.navUl {
 					background-color: $body-bg;
@@ -232,6 +236,7 @@ a:hover {
 .navSelected {
 	@include fontMed;
 	color: $orange !important;
+
 }
 
 .descWrapper {
@@ -249,8 +254,9 @@ a:hover {
 			position: relative;
 			top: 0;
 			left: 0;
-			height: 10%;
-			border-bottom: 1px solid $yellow;
+			height: 1px;
+			border-bottom: 1px solid $yellow
+
 		}
 	}
 
@@ -292,22 +298,87 @@ a:hover {
 // .JMML.  .JMML.`Mbmmd'  `Wbmd"MML.JMML.   
 
 .logoBorder {
+	box-shadow: 5px 6px 0px 0px rgba(0, 0, 0, 0.25);
 	width: 133px;
-	max-height: 130px;
+	height: 133px;
 	margin: 0 auto;
 	position: relative !important;
 	display: block;
 	top: 0;
 	padding: 11px 0 0 5px;
 	box-sizing: border-box;
-	border-radius: 30px;
+	border-radius: 35px;
 	border: 6px solid $orange;
 	margin-bottom: 3%;
+   -webkit-transition:color 1s ease-in;  
+      -moz-transition:color 1s ease-in;  
+        -o-transition:color 1s ease-in;  
+           transition:color 1s ease-in; 
+
+	&:hover {
+		border: 6px solid $blueLight;				
+	}
 
 	img.logoRS {
 		margin: 0;
 		padding: 0;
 		width: 111px;
+	}
+
+	a.braceLeft {
+		position: absolute;
+		@include fontLight;
+		font-size: 4.9em;
+		top: 36px;
+		left: 5px;
+		color: $yellow;
+
+		&:hover {
+			color: $blueLight;
+
+		}
+	}
+
+	a.logoR {
+		@include fontBook;
+		font-size: 5.9em;
+		position: absolute;
+		top: 15px;
+		left: 21px;
+		text-shadow: 3px 0px 0 $body-bg,
+								-3px 0px 0 $body-bg;
+		z-index: 100;
+		color: $orange;
+
+		&:hover {
+			color: $blueDark;
+		}
+	}
+
+	a.logoS {
+		@include fontBook;
+		font-size: 6em;
+		position: absolute;
+		top: 58px;
+		left: 48px;
+		color: $orange;
+
+		&:hover {
+			color: $blueDark;
+		}
+	}
+
+	a.braceRight {
+		position: absolute;
+		@include fontLight;
+		font-size: 4.9em;
+		top: 36px;
+		left: 97px;
+		color: $yellow;
+
+		&:hover {
+			color: $blueDark;
+		}
 	}
 }
 
@@ -514,6 +585,14 @@ img.candlBlockCol {
 
 #candlBlockWrapper {
 	margin: 0 auto;
+}
+
+.blocksWrapper {
+	margin-top: 2%;
+	background-color: lighten($body-bg, 1%);
+	border: 1px solid #ddd;
+  box-shadow: 0px 0px 0px -6px $body-bg, 
+  						0px -3px 6px rgba(100, 50, 0, 0.1);
 }
 
 .blockWrapper {
@@ -776,9 +855,116 @@ span.commentTextSmall {
 .carolInteractive {
 	background-color: $greyCarol;
 	min-width: 1000px;
-
 }
 
+//c2c Row
+// Carol Row /////////////////////
+
+#c2cRow {
+	display: none;
+	position: relative;
+	width: 100%;
+	margin-top: 2%;
+	padding-top: 0%;
+	padding: 0%;
+
+	.bricksBigBG {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		min-height: 1000px;
+		height: 100%;
+		background-image: url('bricksBG3.png');
+	}
+
+	.bricksBG2 {
+		//background-image: url('bricksBG3.png');
+		padding: 2% 0;
+	}
+
+	.bricksBGStrong {
+		padding: 8% 0;
+		background-image: url('bricksBGStrong.png');
+		///opacity: .5;
+	}
+
+	.c2cContentWrapper {
+		z-index: 100;
+	}
+
+	h2.c2cComment {
+		@include fontBold;
+		color: #333;
+		font-size: 3.7em;
+		text-align: center;
+		padding: 0;
+		margin: 0 0 3% 0;
+		text-shadow: 2px 2px 0 $redC2C;
+		//background-color: $greyCarol;
+	}
+
+	p.c2cComment {
+		@include fontMed;
+		text-align: center;
+		color: #777;
+		margin-top: 3%;
+		//text-shadow: 1px 1px 0 $blueC2C;
+	}
+
+	h4.c2cBigText {
+		text-align: center;
+		color: $blueC2C;
+		font-size: 2.3em;
+		@include fontMed;
+		padding: 0;
+		text-shadow: 1px 1px 0 $redC2C;
+		//background-color: $greyCarol;
+
+		a {
+			font-size: 2.5em;
+		}
+	}
+
+	.signBigRow {
+		margin: 3% auto;
+	}
+
+	.c2cIphoneRow {
+		margin: 3% auto;
+	}
+
+	.oldSignWrap {
+		padding: 2% 0 0 0;
+
+		img {
+			padding: 0;
+		}
+	}
+
+	.oldSignWrap2 {
+
+		padding: 0;
+		img {
+			padding: 0 0 8% 0;
+
+		}
+	}
+
+	img {
+		display: block;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	img.oldSign {
+		margin-bottom: 15%;
+	}
+
+	img.c2cPinBig {
+		//max-width: 250px;
+	}
+}
 
 
 
@@ -967,9 +1153,34 @@ h2.ketchComment {
 	padding-bottom: 7%;
 }
 
+.footerBlocker {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+}
 
-
-
+#sticky_footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: darken($body-bg, 6%);
+  height: 2.5em;
+  z-index: 500;
+  opacity: .9;
+  box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.45);
+  padding-right: 5%;
+ 	font-size: .8em;
+  
+  p.footer1 {
+  	padding-top: .1em;
+  	@include fontMed;
+  	color: #666;
+  	text-align: right;
+  }
+}
 
 
 

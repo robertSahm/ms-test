@@ -16,7 +16,6 @@
   	<title><%= content_for?(:title) ? yield(:title) : "Robert Sahm" %></title>
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "jquery.js" %>
-  	
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
 
     <%= csrf_meta_tags %>
@@ -42,5 +41,11 @@
       //     window.scrollTo(0, 0)};
       // });
     </script>
+    <div class='row footerBlocker'></div>
+    <div id="sticky_footer" class="text-center">
+      <p class="footer1">
+        Footer Stuff ~ More footer stuff ~ Fun Copyright by me forever
+      </p>
+    </div>
   </body>
 </html>

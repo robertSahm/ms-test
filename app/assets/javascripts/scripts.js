@@ -228,14 +228,14 @@ $(function () {
     $('a.aboutLink, a.contactLink').removeClass('navSelected');
     $('.blocksWrapper').fadeIn(300).css('margin-top', '77px !important');
     $('.rowIntro').hide(300);
-    $('#portaRow, #ketchRow, #carolRow').fadeOut(300);
+    $('#portaRow, #ketchRow, #carolRow, #c2cRow').fadeOut(300);
     return false;
   });
 
   //about link
   $('a.aboutLink').click( function() {
     $(this).addClass('navSelected');
-    $('.rowIntro, .blocksWrapper, .aboutWrapper, .contactWrapper, #ketchRow, #portaRow').hide(300);
+    $('.rowIntro, .blocksWrapper, .aboutWrapper, .contactWrapper, #ketchRow, #portaRow').fadeOut(300);
     $('a.workLink, a.contactLink').removeClass('navSelected');
     return false;
   });
@@ -270,7 +270,15 @@ $(function () {
     $('.blocksWrapper, .rowIntro').hide(300);
     return false;
   });
+
+  $('a.c2cReveal').click(function() {
+    $('#c2cRow').fadeIn(300);
+    $('.blocksWrapper, .rowIntro').hide(300);
+    return false;
+  });
 });
+
+ //$('.blocksWrapper, .rowIntro').hide(300);
 
 //SoundCloud player styling
 

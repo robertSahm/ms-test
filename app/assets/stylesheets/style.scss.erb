@@ -208,24 +208,26 @@ a:hover {
 						@include fontBook;
 						line-height: 1em;
 						height: 44px;
+						transition: all .2s linear;
 
 						:hover, :active, :target {
-							transition: color .4s;
-  					  color: $orange;
-  					  @include fontMed;
-  					}
+							transition: all .2s linear;
+  					  		color: $orange;
+  					  		@include fontMed;
+  					  		text-shadow: 1px 1px 0 #aaa;
+  						}
 				
 						a.navLink {
-  					  width: 100%;
-  					  width: 96px;
-  					  height: 44px;
-  					  margin-top: 30%; // nav push up
-  					  margin-bottom: 10%; //nav push down
-  					  line-height: .2em; // height of links
-  					  
-  					  // margin: 0 !important;
-  					  // padding: 0 !important;
-  					}
+  					  		width: 100%;
+  					 		width: 96px;
+  					 		height: 44px;
+  					 		margin-top: 30%; // nav push up
+  					 		margin-bottom: 10%; //nav push down
+  					 		line-height: .2em; // height of links
+  					 		
+  					 		// margin: 0 !important;
+  					 		// padding: 0 !important;
+  						}
 					}
 				}
 			}
@@ -298,25 +300,26 @@ a:hover {
 // .JMML.  .JMML.`Mbmmd'  `Wbmd"MML.JMML.   
 
 .logoBorder {
-	box-shadow: 5px 6px 0px 0px rgba(0, 0, 0, 0.25);
 	width: 133px;
 	height: 133px;
 	margin: 0 auto;
 	position: relative !important;
 	display: block;
 	top: 0;
+	left: 0;
 	padding: 11px 0 0 5px;
 	box-sizing: border-box;
 	border-radius: 35px;
 	border: 6px solid $orange;
 	margin-bottom: 3%;
-   -webkit-transition:color 1s ease-in;  
-      -moz-transition:color 1s ease-in;  
-        -o-transition:color 1s ease-in;  
-           transition:color 1s ease-in; 
+    transition: all .1s linear;
 
 	&:hover {
-		border: 6px solid $blueLight;				
+		border: 6px solid $blueLight;
+		box-shadow: 5px 6px 0px 0px rgba(0, 0, 0, 0.25);
+		left: -6px;
+		top: -6px;
+
 	}
 
 	img.logoRS {
@@ -335,7 +338,6 @@ a:hover {
 
 		&:hover {
 			color: $blueLight;
-
 		}
 	}
 
@@ -424,7 +426,7 @@ ul.titleUl {
 
 .introWrapper {
 	margin: 0;
-	padding: 0 0 5% 0;
+	padding: 0 0 2% 0;
 }
 
 .introHide {
@@ -535,6 +537,18 @@ span.pattern2 {
 	border-bottom: 1px solid $orange;
 }
 
+.workIntroText h1 {
+	position: relative;
+	font-size: 1.4em !important;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	top: 10px;
+	@include fontBookIt;
+	color: $yellow;
+}
+
 //  ,,        ,,                            
 // *MM      `7MM                            
 //  MM        MM                            
@@ -589,15 +603,24 @@ img.candlBlockCol {
 
 .blocksWrapper {
 	margin-top: 2%;
-	background-color: lighten($body-bg, 1%);
-	border: 1px solid #ddd;
-  box-shadow: 0px 0px 0px -6px $body-bg, 
-  						0px -3px 6px rgba(100, 50, 0, 0.1);
+	background-color: rgba(222, 86, 5, .05);
+	//background-color: rgba(100, 50, 0, 0.1);
+	//border: 1px solid #ddd;
+    box-shadow: 0px 0px 0px -6px $body-bg, 
+  			    0px -3px 6px rgba(100, 50, 0, 0.1);
 }
 
 .blockWrapper {
 	z-index: 100;
 	margin-bottom: 0;
+	border: 1px solid rgba(103,165,206, .3);
+
+	&:hover {
+		border: 0 !important;
+		//background-color: rgba(101,171,166, .3);
+		box-shadow: 0px 0px 0px -6px $body-bg, 
+  		0px 3px 6px rgba(100, 50, 0, 0.0);
+	}
 
 	.imgClick {
 

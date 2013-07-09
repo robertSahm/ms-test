@@ -202,22 +202,12 @@ $(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
 //Clicks 
 $(function () {
     // header link
   $('a.headerClick').click( function() {
     $('a.workLink, a.aboutLink, a.contactLink').removeClass('navSelected');
-    $('.rowIntro, .blocksWrapper').fadeIn(300);
+    $('.rowIntro, .workIntroText, .blocksWrapper').fadeIn(300);
     $('.aboutWrapper, .contactWrapper, #ketchRow, #portaRow, #carolRow').hide(0);
     return false;
   });
@@ -227,7 +217,7 @@ $(function () {
     $(this).addClass('navSelected');
     $('a.aboutLink, a.contactLink').removeClass('navSelected');
     $('.blocksWrapper').fadeIn(300).css('margin-top', '77px !important');
-    $('.rowIntro').hide(300);
+    $('.rowIntro .workIntroText').hide(300);
     $('#portaRow, #ketchRow, #carolRow, #c2cRow').fadeOut(300);
     return false;
   });
@@ -235,7 +225,7 @@ $(function () {
   //about link
   $('a.aboutLink').click( function() {
     $(this).addClass('navSelected');
-    $('.rowIntro, .blocksWrapper, .aboutWrapper, .contactWrapper, #ketchRow, #portaRow').fadeOut(300);
+    $('.rowIntro, .workIntroText, .blocksWrapper, .aboutWrapper, .contactWrapper, #ketchRow, #portaRow').fadeOut(300);
     $('a.workLink, a.contactLink').removeClass('navSelected');
     return false;
   });
@@ -243,37 +233,37 @@ $(function () {
   // contact link
   $('a.contactLink').click( function() {
     $(this).addClass('navSelected');
-    $('.rowIntro').hide(300);
+    $('.rowIntro .workIntroText').hide(300);
     $('a.workLink, a.aboutLink').removeClass('navSelected');
     return false;
   });
 
   $('a.homeLink').click(function() {
-    $('.blocksWrapper').fadeIn(300);
+    $('.blocksWrapper, .workIntroText').fadeIn(300);
     $('#portaRow, #ketchRow #aboutRow, #contactRow').fadeOut(300);
   });
 
   $('a.portaReveal').click(function() {
     $('#portaRow').fadeIn(300);
-    $('.blocksWrapper').fadeOut(300);
+    $('.blocksWrapper, .workIntroText, .rowIntro').hide(300);
     return false;
   });
 
   $('a.ketchReveal').click(function() {
     $('#ketchRow').fadeIn(300);
-    $('.blocksWrapper, .rowIntro').hide(300);
+    $('.blocksWrapper, .rowIntro, .workIntroText').hide(300);
     return false;
   });
 
   $('a.carolReveal').click(function() {
     $('#carolRow').fadeIn(300);
-    $('.blocksWrapper, .rowIntro').hide(300);
+    $('.blocksWrapper, .rowIntro, .workIntroText').hide(300);
     return false;
   });
 
   $('a.c2cReveal').click(function() {
     $('#c2cRow').fadeIn(300);
-    $('.blocksWrapper, .rowIntro').hide(300);
+    $('.blocksWrapper, .rowIntro, .workIntroText').hide(300);
     return false;
   });
 });

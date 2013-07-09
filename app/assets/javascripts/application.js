@@ -13,9 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.ui.all
+//= require fittext
 //= require foundation
 //= require foundation.topbar.js
-//= require fittext
 //= require soundcloud.player.api
 //= require sc-player
 //= require_tree .

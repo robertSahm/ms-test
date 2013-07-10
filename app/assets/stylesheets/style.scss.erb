@@ -79,11 +79,13 @@ $body-font-color: #444;
 $darkBlue: #5D718C;
 
 //Home Colors
-$orange		 :#DE5605;
-$yellow		 :#F7A035;	
-$blueLight :#B1DEB5;
-$blueDark  :#65ABA6;
-$white     :#EFECCA;
+$orange:    #DE5605;
+$yellow:    #F7A035;	
+$blueLight: #B1DEB5;
+$blueDark:  #65ABA6;
+$white:     #EFECCA;
+
+
 
 //Porta Colors
 $bluePorta: #00BDFF;
@@ -158,17 +160,12 @@ a:hover {
 						white-space: nowrap;
 						overflow: show;
 						background-color: $body-bg;
-						color: lighten($body-bg, 50%);
+						//color: lighten($body-bg, 50%);
 						text-align: center;
 						position: relative;
 						top: 0;
 						left: 0;
-						text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3),
-												 2px 2px 0px rgba(0, 0, 0, 0.3);
-												 // 3px 3px 0px rgba(0, 0, 0, 0.3),
-												 // 4px 4px 0px rgba(0, 0, 0, 0.3),
-												 // 5px 5px 0px rgba(0, 0, 0, 0.3);
-					
+
 						//Header Title Kearning fixes
 						.loosen1 {
 							letter-spacing: .02em;
@@ -195,10 +192,10 @@ a:hover {
 			div {
 				ul.navUl {
 					background-color: $body-bg;
-  				width: 100%;
-  				display: block;
+  					width: 100%;
+  					display: block;
 					margin: 0% auto !important;
-  				text-align: center;
+  					text-align: center;
 				
 					li.navLi {
 						display: inline-block;
@@ -316,9 +313,9 @@ a:hover {
 
 	&:hover {
 		border: 6px solid $blueLight;
-		box-shadow: 5px 6px 0px 0px rgba(0, 0, 0, 0.25);
+		box-shadow: 5px 6px 1px 0px rgba(0, 0, 0, 0.25);
 		left: -6px;
-		top: -6px;
+		top: -5px;
 
 	}
 
@@ -569,7 +566,7 @@ img.carolBlockBW,
 img.c2cBlockBW,
 img.crawBlockBW,
 img.candlBlockBW {
-	width: 100%;
+	//width: 100%;
 	position: relative;
 	top: 0;
 	left: 0;
@@ -610,6 +607,10 @@ img.candlBlockCol {
   			    0px -3px 6px rgba(100, 50, 0, 0.1);
 }
 
+.basicTextShadow {
+	text-shadow: 4px 4px 0 rgba(100, 50, 0, 0.5);
+}
+
 .blockWrapper {
 	z-index: 100;
 	margin-bottom: 0;
@@ -619,7 +620,7 @@ img.candlBlockCol {
 		border: 0 !important;
 		//background-color: rgba(101,171,166, .3);
 		box-shadow: 0px 0px 0px -6px $body-bg, 
-  		0px 3px 6px rgba(100, 50, 0, 0.0);
+  		           0px 3px 6px rgba(100, 50, 0, 0.3);
 	}
 
 	.imgClick {
@@ -1176,6 +1177,53 @@ h2.ketchComment {
 	padding-bottom: 7%;
 }
 
+//         ,,                                   
+//        *MM                             mm    
+//         MM                             MM    
+//  ,6"Yb. MM,dMMb.   ,pW"Wq.`7MM  `7MM mmMMmm  
+// 8)   MM MM    `Mb 6W'   `Wb MM    MM   MM    
+//  ,pm9MM MM     M8 8M     M8 MM    MM   MM    
+// 8M   MM MM.   ,M9 YA.   ,A9 MM    MM   MM    
+// `Moo9^YoP^YbmdP'   `Ybmd9'  `Mbod"YML. `Mbmo
+
+#aboutRow {
+	margin-top: 5%;
+	display: none;
+
+	h1 {
+		@include fontMed;
+		font-size: 4em;
+		padding: 0;
+		margin: 0;
+		position: relative;
+		top: -20px;
+	}
+
+	h2 {
+		@include fontBook;	
+	}
+
+	p {
+		@include fontLight;
+		display: block;
+	}
+
+	.mePic1 {
+		float: left !important;
+		max-width: 290px;
+		margin-right: 5%;
+	}
+}
+
+//     ,...                                      
+//   .d' ""                 mm                   
+//   dM`                    MM                   
+//  mMMmm,pW"Wq.   ,pW"Wq.mmMMmm .gP"Ya `7Mb,od8 
+//   MM 6W'   `Wb 6W'   `Wb MM  ,M'   Yb  MM' "' 
+//   MM 8M     M8 8M     M8 MM  8M""""""  MM     
+//   MM YA.   ,A9 YA.   ,A9 MM  YM.    ,  MM     
+// .JMML.`Ybmd9'   `Ybmd9'  `Mbmo`Mbmmd'.JMML.  
+
 .footerBlocker {
 	position: relative;
 	bottom: 0;
@@ -1185,28 +1233,24 @@ h2.ketchComment {
 }
 
 #sticky_footer {
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  width: 100%;
-  background-color: darken($body-bg, 6%);
-  height: 2.5em;
-  z-index: 500;
-  opacity: .9;
-  box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.45);
-  padding-right: 5%;
+ 	position: fixed;
+ 	bottom: 0px;
+ 	left: 0px;
+ 	width: 100%;
+ 	background-color: $darkBlue;
+ 	height: 2.5em;
+ 	z-index: 500;
+ 	opacity: 1;
+ 	box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.45);
+ 	padding-right: 5%;
  	font-size: .8em;
   
-  p.footer1 {
-  	padding-top: .1em;
-  	@include fontMed;
-  	color: #666;
-  	text-align: right;
-  }
+  	p.footer1 {
+  		padding-top: .1em;
+  		@include fontMed;
+  		color: $yellow;
+  		text-align: right;
+  	}
 }
-
-
-
-
 
 

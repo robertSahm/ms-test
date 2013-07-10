@@ -1,4 +1,71 @@
 
+//Clicks 
+
+$(function () {
+    // header link
+  $('a.headerClick').click( function() {
+    $('a.workLink, a.aboutLink, a.contactLink').removeClass('navSelected');
+    $('.rowIntro, .workIntroText, .blocksWrapper').fadeIn(300);
+    $('.aboutWrapper, .contactWrapper, #ketchRow, #portaRow, #carolRow, #aboutRow').hide(0);
+    return false;
+  });
+
+  // work link
+  $('a.workLink').click( function() {
+    $(this).addClass('navSelected');
+    $('a.aboutLink, a.contactLink').removeClass('navSelected');
+    $('.blocksWrapper').show(300).css('margin-top', '77px !important');
+    $('.rowIntro, .workIntroText, #aboutRow').hide(300);
+    $('#portaRow, #ketchRow, #carolRow, #c2cRow').hide(300);
+    return false;
+  });
+
+  //about link
+  $('a.aboutLink').click( function() {
+    $(this).addClass('navSelected');
+    $('#aboutRow').fadeIn(400);
+    $('.rowIntro, .workIntroText, .blocksWrapper, .aboutWrapper, .contactWrapper, #ketchRow, #portaRow').hide(300);
+    $('a.workLink, a.contactLink').removeClass('navSelected');
+    return false;
+  });
+
+  // contact link
+  $('a.contactLink').click( function() {
+    $(this).addClass('navSelected');
+    $('.rowIntro .workIntroText').hide(300);
+    $('a.workLink, a.aboutLink').removeClass('navSelected');
+    return false;
+  });
+
+  $('a.homeLink').click(function() {
+    $('.blocksWrapper, .workIntroText').fadeIn(300);
+    $('#portaRow, #ketchRow #aboutRow, #contactRow').fadeOut(300);
+  });
+
+  $('a.portaReveal').click(function() {
+    $('#portaRow').fadeIn(300);
+    $('.blocksWrapper, .workIntroText, .rowIntro').hide(300);
+    return false;
+  });
+
+  $('a.ketchReveal').click(function() {
+    $('#ketchRow').fadeIn(300);
+    $('.blocksWrapper, .rowIntro, .workIntroText').hide(300);
+    return false;
+  });
+
+  $('a.carolReveal').click(function() {
+    $('#carolRow').fadeIn(300);
+    $('.blocksWrapper, .rowIntro, .workIntroText').hide(300);
+    return false;
+  });
+
+  $('a.c2cReveal').click(function() {
+    $('#c2cRow').fadeIn(300);
+    $('.blocksWrapper, .rowIntro, .workIntroText').hide(300);
+    return false;
+  });
+});
 
 // `7MMF'  `7MMF'                                  
 //   MM      MM                                    
@@ -34,7 +101,7 @@ $(function () {
 
   // mouseleave
   $('#portaBlockWrapper').mouseleave( function () {
-    $('.portaHoverText').fadeOut(500);
+    $('.portaHoverText').hide(300);
     //color fade Stuff
     $('#portaBlockWrapper').stop(true, true).animate ({
       'background-color' : 'transparent'
@@ -63,7 +130,7 @@ $(function () {
     }, 200);
   });
   $('#ketchBlockWrapper').mouseleave( function () {
-    $('.ketchHoverText').stop(true, true).fadeOut(500);
+    $('.ketchHoverText').stop(true, true).hide(300);
 
     //color fade Stuff
     $('#ketchBlockWrapper').stop(true, true).animate ({
@@ -93,7 +160,7 @@ $(function () {
     }, 200);
   });
   $('#carolBlockWrapper').stop(true, true).mouseleave( function () {
-    $('.carolHoverText').stop(true, true).fadeOut(500);
+    $('.carolHoverText').stop(true, true).hide(300);
 
     //color fade Stuff
     $('#carolBlockWrapper').animate ({
@@ -199,75 +266,6 @@ $(function () {
   });
 });
 
-
-
-
-//Clicks 
-$(function () {
-    // header link
-  $('a.headerClick').click( function() {
-    $('a.workLink, a.aboutLink, a.contactLink').removeClass('navSelected');
-    $('.rowIntro, .workIntroText, .blocksWrapper').fadeIn(300);
-    $('.aboutWrapper, .contactWrapper, #ketchRow, #portaRow, #carolRow').hide(0);
-    return false;
-  });
-
-  // work link
-  $('a.workLink').click( function() {
-    $(this).addClass('navSelected');
-    $('a.aboutLink, a.contactLink').removeClass('navSelected');
-    $('.blocksWrapper').fadeIn(300).css('margin-top', '77px !important');
-    $('.rowIntro .workIntroText').hide(300);
-    $('#portaRow, #ketchRow, #carolRow, #c2cRow').fadeOut(300);
-    return false;
-  });
-
-  //about link
-  $('a.aboutLink').click( function() {
-    $(this).addClass('navSelected');
-    $('.rowIntro, .workIntroText, .blocksWrapper, .aboutWrapper, .contactWrapper, #ketchRow, #portaRow').fadeOut(300);
-    $('a.workLink, a.contactLink').removeClass('navSelected');
-    return false;
-  });
-
-  // contact link
-  $('a.contactLink').click( function() {
-    $(this).addClass('navSelected');
-    $('.rowIntro .workIntroText').hide(300);
-    $('a.workLink, a.aboutLink').removeClass('navSelected');
-    return false;
-  });
-
-  $('a.homeLink').click(function() {
-    $('.blocksWrapper, .workIntroText').fadeIn(300);
-    $('#portaRow, #ketchRow #aboutRow, #contactRow').fadeOut(300);
-  });
-
-  $('a.portaReveal').click(function() {
-    $('#portaRow').fadeIn(300);
-    $('.blocksWrapper, .workIntroText, .rowIntro').hide(300);
-    return false;
-  });
-
-  $('a.ketchReveal').click(function() {
-    $('#ketchRow').fadeIn(300);
-    $('.blocksWrapper, .rowIntro, .workIntroText').hide(300);
-    return false;
-  });
-
-  $('a.carolReveal').click(function() {
-    $('#carolRow').fadeIn(300);
-    $('.blocksWrapper, .rowIntro, .workIntroText').hide(300);
-    return false;
-  });
-
-  $('a.c2cReveal').click(function() {
-    $('#c2cRow').fadeIn(300);
-    $('.blocksWrapper, .rowIntro, .workIntroText').hide(300);
-    return false;
-  });
-});
-
  //$('.blocksWrapper, .rowIntro').hide(300);
 
 //SoundCloud player styling
@@ -366,7 +364,7 @@ $(function() {
   });
 });
 
-
+// $('#rowIntro, .blocksWrapper, .workIntroText').hide();
 
 
 

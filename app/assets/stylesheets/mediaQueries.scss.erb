@@ -1,5 +1,10 @@
           @media only screen and (max-width: 420px) { //420 and under
 
+            .workIntroText {
+              margin-bottom: 8% !important;
+              padding: 0 5%;
+            }
+
             body {
               margin-right:0px;
               padding-right: 0px;
@@ -187,19 +192,12 @@
                     margin: 0 !important;
                   }
                 }
-            
-
               }
             
               h4.desc {
                 font-size: 1em !important;
                 min-width: 135px !important;
-
-                li {
-
-                }
               }
-            
             
               ul.title-area {
                 li.toggle-topbar {
@@ -216,21 +214,21 @@
                 }
               }
             
-            .headerWrapper {
-              max-height: 119px;
-              margin-top: 31px !important;
-            }
-            
-            .descWrapper {
-              position: relative;
-              top: 5px !important;
-              margin-bottom: 5%;
-            }
-            
-            .top-bar {
-              min-height: 70px;
-            }
-          } //CLOSE 380 and under
+              .headerWrapper {
+                max-height: 119px;
+                margin-top: 31px !important;
+              }
+              
+              .descWrapper {
+                position: relative;
+                top: 5px !important;
+                margin-bottom: 5%;
+              }
+              
+              .top-bar {
+                min-height: 70px;
+              }
+            } //CLOSE 380 and under
 
 @media only screen and (min-width: 420px) { // Between 420 and 800
       .biggestItal {
@@ -244,10 +242,20 @@
 }//end
 
       @media only screen and (max-width: 800px) { // 800 and under
-    
-        #fittext {
-          margin-top: 1% !important;
-        }
+
+      .workIntroText {
+        margin-bottom: 5%;
+        padding: 0 5%;
+        font-size: .9em;
+      }
+      
+      #sticky_footer {
+        position: relative !important;
+      }
+
+      #fittext {
+        margin-top: 1% !important;
+      }
 
       span.pattern2 {
         display: block;
@@ -368,8 +376,8 @@
       }
       
         .blockWrapper {
-      
-          //max-height: 290px; 
+          border: 0 !important;
+          //max-heig ht: 290px; 
           margin-bottom: 0 !important;
           //border-bottom: 1px solid grey;
         
@@ -394,6 +402,7 @@
         }
       
         #portaBlockWrapper {
+          padding: 3% 0;
       
           .portaHoverText {
             text-align: right;
@@ -634,15 +643,20 @@
 #c2cBlockWrapper, 
 #crawBlockWrapper, 
 #candlBlockWrapper {
-  min-height: 210px;
-  max-height: 210px;
+  height: 210px;
 }
 
 #portaBlockWrapper {
   padding-top: 2%;
 
+  img {
+    max-width: 240px;
+    margin-top: 10%;
+    padding-left: 20px;
+  }
+
   .portaHoverText, .portaHoverP {
-    margin-top: 2px;
+    margin-top: -3px;
     margin-left: 10px;
   
     a {
@@ -653,6 +667,11 @@
 
 #ketchBlockWrapper {
   padding-top: 1.5%;
+
+  img {
+    height: 167px;
+    min-width: 243px !important;
+  }
 
   .ketchHoverText, .ketchHoverP {
     top: -90px;
@@ -665,10 +684,21 @@
 }
 
 #carolBlockWrapper {
-  padding-top: 6%;
+  padding: 6% 0 0 0;
+
+  #carolClick {
+    min-width: 243px;
+    padding: 0;
+  }
+
+  img {
+    min-width: 243px;
+    margin-top: 65px%;
+
+  }
 
     .carolHoverText, .carolHoverP {
-      top: -10px;
+      top: -20px;
       font-size: 1.12em;
   
     a {
@@ -677,36 +707,41 @@
   }
 }
 
-#crawBlockWrapper {
-  padding-top: 1%;
+// #crawBlockWrapper {
+//   padding-top: 1%;
 
-  .crawHoverText, .crawHoverP {
-    top: -23px;
+//   .crawHoverText, .crawHoverP {
+//     top: -23px;
   
-    a {
-      top: -27px;
-    }
-  }
-}
+//     a {
+//       top: -27px;
+//     }
+//   }
+// }
 
 #c2cBlockWrapper {
   padding-top: 1.8%;
-  
-  p.c2cHoverP {
 
+  img {
+    margin-top: 20%;
+    max-width: 165px;
+  }
+  
+  p.c2cHoverP, .c2cHoverText {
+    top: -23px;
       a {
         top: -20px;
       }
     }
-}
-
-#candlBlockWrapper {
-  padding-top: 65px;
-
-  a {
-    top: -20px;
   }
-}
+
+// #candlBlockWrapper {
+//   padding-top: 65px;
+
+//   a {
+//     top: -20px;
+//   }
+// }
 
 
 

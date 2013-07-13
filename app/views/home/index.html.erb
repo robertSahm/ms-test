@@ -1,9 +1,13 @@
 
 <!-- BOSS HEADER -->
-
+<div class="ribbonWrapper">
+	<div class="gitRibbon">
+		<a href="https://github.com/robertSahm" target="_blank">
+			Fork me on GitHub
+		</a>
+	</div>
+</div>
 <div class="row headerWrapper">
-<!-- <div class="pattern1">
-    </div> -->
 	<nav class="top-bar bgCol">
 		<div class="row logoRSRow">
 			<!-- Header Logo (all css!) -->
@@ -82,18 +86,71 @@
 	<h1 class="">Please enjoy a choice selection of my recent work:</h2>
 </div>
 
+<!--  ,,        ,,                                                     
+*MM        db          `7MM"""Mq.                                 
+ MM                      MM   `MM.                                
+ MM,dMMb.`7MM  .P"Ybmmm  MM   ,M9 ,pW"Wq.`7M'    ,A    `MF,pP"Ybd 
+ MM    `Mb MM :MI  I8    MMmmdM9 6W'   `Wb VA   ,VAA   ,V 8I   `" 
+ MM     M8 MM  WmmmP"    MM  YM. 8M     M8  VA ,V  VA ,V  `YMMMa. 
+ MM.   ,M9 MM 8M         MM   `MbYA.   ,A9   VVV    VVV   L.   I8 
+ P^YbmdP'.JMML.YMMMMMb .JMML. .JMM`Ybmd9'     W      W    M9mmmP' 
+              6'     dP                                           
+              Ybmmmd'                                             -->
 
-<!--              ,,                            ,,                                   
-`7MM"""Yp,   db               `7MM"""Yp, `7MM`7MM             
-  MM    Yb                      MM    Yb   MM  MM             
-  MM    dP `7MM  .P"Ybmmm       MM    dP   MM  MM  ,MP,pP"Ybd 
-  MM"""bg.   MM :MI  I8         MM"""bg.   MM  MM ;Y  8I   `" 
-  MM    `Y   MM  WmmmP"         MM    `Y   MM  MM;Mm  `YMMMa. 
-  MM    ,9   MM 8M              MM    ,9   MM  MM `Mb.L.   I8 
-.JMMmmmd9  .JMML.YMMMMMb      .JMMmmmd9  .JMMLJMML. YAM9mmmP' 
-                6'     dP                                                       
-                Ybmmmd'                                       -->                   
 
+<!-- 	Ketchum Row -->
+<div id="ketchRow" class="fullBlock">
+	<div class="large-12 small-12 columns">
+		<div class="commentText row">
+			<h1 class="ketchHeader large-12 small-12 large-centered small-centered columns">
+				Static content, brought to life.
+			</h1>
+		</div>
+	</div>
+	<div class="ketchHider">
+		<iframe id="ketchIframe" src="http://ketchumlabs.com" frameBorder="0"></iframe>
+	</div>
+	<div class="row ketchMakingRow">
+		<h2 class="ketchComment2 large-10 small-11 large-centered small-centered columns">
+			After being passed the Photoshop files, I got to work
+		</h2>
+		<div class="large-8 small-9 large-centered small-centered columns">
+			<%= image_tag "ketchMaking.png", :class => "ketchMaking" %>
+		</div>
+	</div>
+	<div class="row ketchMakingRow2">
+		<h2 class="ketchComment2 large-7 small-11 large-centered small-centered columns">
+			After a bit of chopping and measuring...
+		</h2>
+		<div class="large-8 small-11 large-centered small-centered columns">
+			<%= image_tag "ketchMaking2.png", :class => "ketchMaking" %>
+		</div>
+		<h2 class="ketchComment2 large-7 small-11 large-centered small-centered columns">
+			and implementing a Ruby on Rails, animated video sorter and player...
+		</h2>
+		<div class="large-12 small-12 columns">
+			<%= image_tag "ketchMaking3.png", :class => "ketchMaking3" %>
+		</div>
+	</div>
+	<div class="row ketchMakingRow2">
+		<h2 class="ketchComment2 large-7 small-11 large-centered small-centered columns">
+			...and with a few simple jQuery and CSS animations, it all came together.
+		</h2>
+		<div class="large-8 small-12 large-centered small-centered columns">
+			<div class="large-4 small-8 columns">
+				<%= image_tag "ketchumLogo.png", :class => "ketchumLogo" %>
+			</div>
+			<div class="large-12 small-12 columns ketchThing">
+				<%= image_tag "ketchBIG.png", :class => "ketchBIG" %>
+			</div>
+		</div>
+	</div>
+	<h2 class="ketchComment2 small-11 large-centered small-centered columns">
+		<a href="http://ketchumlabs.com" target="_blank">Live Site</a>
+	</h2>
+</div>
+
+<!-- Porta Row -->
 <div id="portaRow" class="bgBlack">
 	<div class="row spinPicRow">
 		<div class="large-5 small-5 large-centered small-centered columns">
@@ -160,56 +217,6 @@
 		</h4>
 	</div>
 </div> <!-- end #portaRow -->
-
-<!-- 	Ketchum Row -->
-<div id="ketchRow" class="fullBlock">
-	<div class="large-12 small-12 columns">
-		<div class="commentText row">
-			<h2 class="ketchComment large-10 small-12 large-centered small-centered columns">
-				Static content, brought to life.
-			</h2>
-		</div>
-	</div>
-	<div class="ketchHider">
-		<iframe id="ketchIframe" src="http://ketchumlabs.com" frameBorder="0"></iframe>
-	</div>
-	<div class="row ketchTexture"></div>
-	<div class="row ketchMakingRow">
-		<div class="large-8 small-9 large-centered small-centered columns">
-			<%= image_tag "ketchMaking.png", :class => "ketchMaking" %>
-		</div>
-		<h2 class="ketchComment2 large-7 small-11 large-centered small-centered columns">
-			It took a little planning...
-		</h2>
-	</div>
-	<div class="row ketchMakingRow2">
-		<div class="large-8 small-11 large-centered small-centered columns">
-			<%= image_tag "ketchMaking2.png", :class => "ketchMaking" %>
-		</div>
-		<h2 class="ketchComment2 large-7 small-11 large-centered small-centered columns">
-			Then a bit of measuring...
-		</h2>
-		<div class="large-12 small-12 columns">
-			<%= image_tag "ketchMaking3.png", :class => "ketchMaking3" %>
-		</div>
-	</div>
-	<div class="row ketchMakingRow2">
-		<h2 class="ketchComment2 large-7 small-11 large-centered small-centered columns">
-			...and with a few simple jQuery animations, it all came together.
-		</h2>
-		<div class="large-8 small-12 large-centered small-centered columns">
-			<div class="large-4 small-8 columns">
-				<%= image_tag "ketchumLogo.png", :class => "ketchumLogo" %>
-			</div>
-			<div class="large-12 small-12 columns ketchThing">
-				<%= image_tag "ketchBIG.png", :class => "ketchBIG" %>
-			</div>
-		</div>
-	</div>
-	<h2 class="ketchComment2 small-11 large-centered small-centered columns">
-		<a href="http://ketchumlabs.com" target="_blank">Live Site</a>
-	</h2>
-</div>
 
 <!-- Carol Row -->
 <div id="carolRow" class="fullBlock">
@@ -455,14 +462,15 @@
 
 <div id='aboutRow' class='row'>
 	<div class="large-12 large-centered columns">
-		<%= image_tag "mePic3.jpg", :class => "mePic1 large-4" %>
-		<h1 class='aboutBig large-6'>
-			Hey!
+		<%= image_tag "mePic3.jpg", :class => "mePic1 large-3" %>
+		<h1 class='aboutBig large-8 columns'>
+			Oh hey!
 		</h1>
-		<h2 class='aboutMed large-12'>
-			My name is Robert Sahm. I enjoy design, code and most of all, the intersection between the two.</h2>
-		<p class="aboutP">
-			Here's where a lot of little text goes, Here's where a lot of little text goes, Here's where a lot of little text goes, Here's where a lot of little text goes, Here's where a lot of little text goes, Here's where a lot of little text goes, Here's where a lot of little text goes, Here's where a lot of little text goes, Here's where a lot of little text goes, v
+		<h2 class='aboutMed large-8 columns'>
+			My name is Robert Sahm. I enjoy designing, coding and most of all, the intersection between the two.
+		</h2>
+		<p class="aboutP large-12 columns">
+			I've been freelancing for 3 years and built sites using Ruby on Rails, PHP, JavaScript/jQuery, HTML, CSS, SCSS, GitHub, Foundtaion and Bootstrap.
 		</p>
 	</div>
 </div>

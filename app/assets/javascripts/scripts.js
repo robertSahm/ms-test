@@ -178,7 +178,7 @@ $(function () {
 // c2c Hover
 $(function () {
   $('#c2cBlockWrapper').mouseenter( function () {
-    $('.c2cHoverText').stop(true, true).show(200);
+    $('.c2cHoverText').stop(true, true).fadeIn(200);
     $('#c2cBlockWrapper').addClass('bricksBG');
     $('img.c2cBlockCol').stop(true, true).animate({
       opacity : '1'
@@ -202,8 +202,6 @@ $(function () {
     }, 200);
   });
 });
-
-
 
 // Crawfest Hover
 $(function () {

@@ -115,13 +115,12 @@ $blueC2C: #67A5CE;
 body {
 	background-color: $body-bg;
 	overflow-x: hidden;
-	//border: 1px solid red;
+	position: relative !important;
+	border: 1px solid $body-bg;
+	top: 0;
+	left: 0;
+	min-height: 100%;
 }
-
-a.f {
-
-}
-
 
 a.introLetter:hover {
 	cursor: default;
@@ -205,13 +204,13 @@ a:hover {
 						@include fontBook;
 						line-height: 1em;
 						height: 44px;
-						transition: all .2s linear;
+						transition: all .3s linear;
 
-						:hover, :active, :target {
+						:hover, :active, :target, :visited  {
 							transition: all .2s linear;
   					  		color: $orange;
   					  		@include fontMed;
-  					  		text-shadow: 1px 1px 0 #aaa;
+  					  		text-shadow: 1px 1px 0 rgba(93,113,140, .5);
   						}
 				
 						a.navLink {
@@ -235,7 +234,7 @@ a:hover {
 .navSelected {
 	@include fontMed;
 	color: $orange !important;
-
+	text-shadow: 1px 1px 0 rgba(93,113,140, .5);
 }
 
 .descWrapper {
@@ -295,6 +294,55 @@ a:hover {
 //   MM      MM 8M"""""" 8MI    MM   MM     
 //   MM      MM YM.    , `Mb    MM   MM     
 // .JMML.  .JMML.`Mbmmd'  `Wbmd"MML.JMML.   
+
+.ribbonWrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.gitRibbon {
+	background-color: $orange;
+	z-index: 300;
+	width: 350px;
+	text-align: center;
+	position: relative;
+	top: 45px;
+	right: -115px;
+	    -ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Safari and Chrome */
+			transform: rotate(45deg);
+	box-shadow: 1px 1px 4px rgba(93,113,140, .5);
+	opacity: .7;
+	border: 1px dashed $yellow;
+	transition: all .3s ease-in-out;
+
+	&:hover {
+		border: 1px dashed $yellow;
+		opacity: 1;
+		box-shadow: 1px 1px 4px rgba(93,113,140, .9);
+	}
+
+	a {	
+		font-weight: 400;
+		display: block;
+		@include fontBook;
+		color: $body-bg;
+		line-height: 1.8em;
+		//opacity: .8;
+		text-decoration: none;
+
+		&:hover {
+			line-height: 1.8em;
+			font-weight: 400;
+			//opacity: 1;
+			display: block;
+			text-decoration: none;
+
+		}
+	}
+}
+
 
 .logoBorder {
 	width: 133px;
@@ -882,7 +930,6 @@ span.commentTextSmall {
 }
 
 //c2c Row
-// Carol Row /////////////////////
 
 #c2cRow {
 	display: none;
@@ -1010,6 +1057,13 @@ span.commentTextSmall {
 	display: none;
 }
 
+h1.ketchHeader {
+	font-size: 3.7em;
+	@include fontMed;
+	color: $blueKetch;
+	padding: 0;
+	margin: 0;
+}
 
 .ketchTexture {
 	background-image: url('ketchumBG.png');
@@ -1200,11 +1254,14 @@ h2.ketchComment {
 	}
 
 	h2 {
-		@include fontBook;	
+		@include fontBook;
+		padding: 0;
+		margin: 0;
+		font-size: 2em;
 	}
 
 	p {
-		@include fontLight;
+		@include fontBook;
 		display: block;
 	}
 

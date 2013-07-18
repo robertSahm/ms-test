@@ -27,8 +27,15 @@
 
   <body>
 
-    <%= yield %>
-
+    <%= render 'header' %>
+    <%= render 'intro' %>
+    <%= render 'about' %>
+    <%= render 'hoverBoxes' %>
+    <%= render 'ketchInfo' %>
+    <%= render 'portaInfo' %>
+    <%= render 'carolInfo' %>
+    <%= render 'c2cInfo' %>
+    <%= render 'footer' %>
     <%= javascript_include_tag "application" %>
     <script>
       jQuery("#fittext").fitText(3);

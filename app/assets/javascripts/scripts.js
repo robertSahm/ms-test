@@ -370,10 +370,10 @@ $(function() {
 
 
 
-$('#rowIntro, .blocksWrapper, .workIntroText').hide();
+//$('#rowIntro, .blocksWrapper, .workIntroText').hide();
 
 
-$('#ketchRow').show();
+//$('#ketchRow').show();
 
 
 

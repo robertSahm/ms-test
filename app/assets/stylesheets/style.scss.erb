@@ -1,39 +1,22 @@
 
+//         ,...
+//       .d' ""                mm
+//       dM`                   MM
+//      mMMmm,pW"Wq.`7MMpMMMbmmMMmm
+//       MM 6W'   `Wb MM    MM MM
+//       MM 8M     M8 MM    MM MM
+//       MM YA.   ,A9 MM    MM MM
+//     .JMML.`Ybmd9'.JMML  JMML`Mbmo
+//
+//
+//     `7MMpMMMb.pMMMb. `7MM `7M'   `MF`7MM `7MMpMMMb. ,pP"Ybd
+//       MM    MM    MM   MM   `VA ,V'   MM   MM    MM 8I   `"
+//       MM    MM    MM   MM     XMX     MM   MM    MM `YMMMa.
+//       MM    MM    MM   MM   ,V' VA.   MM   MM    MM L.   I8
+//     .JMML  JMML  JMML.JMML.AM.   .MA.JMML.JMML  JMMLM9mmmP'
 
-.redBorder {
-	border: 1px solid red;
-}
 
-.blueBorder {
-	border: 1px solid blue;
-}
-
-.greenBorder {
-	border: 1px solid green;
-}
-
-.blackBorder {
-	border: 2px solid black;
-}
-
-//     ,...                                                
-//   .d' ""                mm                              
-//   dM`                   MM                              
-//  mMMmm,pW"Wq.`7MMpMMMbmmMMmm                            
-//   MM 6W'   `Wb MM    MM MM                              
-//   MM 8M     M8 MM    MM MM                              
-//   MM YA.   ,A9 MM    MM MM                              
-// .JMML.`Ybmd9'.JMML  JMML`Mbmo                           
-//                    ,,             ,,                    
-//                    db             db                    
-                                                        
-// `7MMpMMMb.pMMMb. `7MM `7M'   `MF`7MM `7MMpMMMb. ,pP"Ybd 
-//   MM    MM    MM   MM   `VA ,V'   MM   MM    MM 8I   `" 
-//   MM    MM    MM   MM     XMX     MM   MM    MM `YMMMa. 
-//   MM    MM    MM   MM   ,V' VA.   MM   MM    MM L.   I8 
-// .JMML  JMML  JMML.JMML.AM.   .MA.JMML.JMML  JMMLM9mmmP'
-
-//Font Book 
+//Font Book
 @mixin fontBook {
 	font-family: 'klinicslabbook-webfont';
 }
@@ -65,14 +48,14 @@
 	font-family: 'klinicslablightIt-webfont';
 }
 
-//                     ,,                          
-//   .g8"""bgd       `7MM                          
-// .dP'     `M         MM                          
-// dM'       `,pW"Wq.  MM  ,pW"Wq.`7Mb,od8 ,pP"Ybd 
-// MM        6W'   `Wb MM 6W'   `Wb MM' "' 8I   `" 
-// MM.       8M     M8 MM 8M     M8 MM     `YMMMa. 
-// `Mb.     ,YA.   ,A9 MM YA.   ,A9 MM     L.   I8 
-//   `"bmmmd' `Ybmd9'.JMML.`Ybmd9'.JMML.   M9mmmP' 
+//                            ,,
+//          .g8"""bgd       `7MM
+//        .dP'     `M         MM
+//        dM'       `,pW"Wq.  MM  ,pW"Wq.`7Mb,od8 ,pP"Ybd
+//        MM        6W'   `Wb MM 6W'   `Wb MM' "' 8I   `"
+//        MM.       8M     M8 MM 8M     M8 MM     `YMMMa.
+//        `Mb.     ,YA.   ,A9 MM YA.   ,A9 MM     L.   I8
+//          `"bmmmd' `Ybmd9'.JMML.`Ybmd9'.JMML.   M9mmmP'
 
 $body-bg: #EFECCA;
 $body-font-color: #444;
@@ -80,12 +63,10 @@ $darkBlue: #5D718C;
 
 //Home Colors
 $orange:    #DE5605;
-$yellow:    #F7A035;	
+$yellow:    #F7A035;
 $blueLight: #B1DEB5;
 $blueDark:  #65ABA6;
 $white:     #EFECCA;
-
-
 
 //Porta Colors
 $bluePorta: #00BDFF;
@@ -107,10 +88,15 @@ $redC2C: #FF2B0B;
 $blueC2C: #67A5CE;
 
 
+//                                                        ,,
+//         .g8"""bgd                                    `7MM
+//       .dP'     `M                                      MM
+//       dM'       `  .gP"Ya `7MMpMMMb. `7Mb,od8 ,6"Yb.   MM
+//       MM          ,M'   Yb  MM    MM   MM' "'8)   MM   MM
+//       MM.    `7MMF8M""""""  MM    MM   MM     ,pm9MM   MM
+//       `Mb.     MM YM.    ,  MM    MM   MM    8M   MM   MM
+//         `"bmmmdPY  `Mbmmd'.JMML  JMML.JMML.  `Moo9^Yo.JMML.
 
-
-// :before, :after { -webkit-transform: translateZ(0); }
-//   -webkit-transform: translate3d(0, 0, 0) !important;
 
 body {
 	background-color: $body-bg;
@@ -143,7 +129,7 @@ a:hover {
 	  display: block;
 	  min-height: 30px;
 
-		.titleRow {
+		.titleRow { // ROBERT SAHM
 			position: relative;
 			top: 0;
 			left: 0;
@@ -184,10 +170,10 @@ a:hover {
 		}
 	}
 
-	section.top-bar-section { // must be block level (height in this case)
+	section.top-bar-section {
 		height: 1%;
-		//border: 1px solid red;
-		.navRow {
+
+		.navRow { // Nav stylings
 			div {
 				ul.navUl {
 					background-color: $body-bg;
@@ -195,7 +181,7 @@ a:hover {
   					display: block;
 					margin: 0% auto !important;
   					text-align: center;
-				
+
 					li.navLi {
 						display: inline-block;
 						position: relative;
@@ -212,7 +198,7 @@ a:hover {
   					  		@include fontMed;
   					  		text-shadow: 1px 1px 0 rgba(93,113,140, .5);
   						}
-				
+
 						a.navLink {
   					  		width: 100%;
   					 		width: 96px;
@@ -220,9 +206,6 @@ a:hover {
   					 		margin-top: 30%; // nav push up
   					 		margin-bottom: 10%; //nav push down
   					 		line-height: .2em; // height of links
-  					 		
-  					 		// margin: 0 !important;
-  					 		// padding: 0 !important;
   						}
 					}
 				}
@@ -286,14 +269,16 @@ a:hover {
 		}
 	}
 }
-//                              ,,                  
-// `7MMF'  `7MMF'             `7MM                  
-//   MM      MM                 MM                  
-//   MM      MM  .gP"Ya    ,M""bMM `7Mb,od8 
-//   MMmmmmmmMM ,M'   Yb ,AP    MM   MM' "' 
-//   MM      MM 8M"""""" 8MI    MM   MM     
-//   MM      MM YM.    , `Mb    MM   MM     
-// .JMML.  .JMML.`Mbmmd'  `Wbmd"MML.JMML.   
+
+
+//                                       ,,
+//      `7MMF'  `7MMF'             `7MM
+//            MM      MM                 MM
+//            MM      MM  .gP"Ya    ,M""bMM `7Mb,od8
+//            MMmmmmmmMM ,M'   Yb ,AP    MM   MM' "'
+//            MM      MM 8M"""""" 8MI    MM   MM
+//            MM      MM YM.    , `Mb    MM   MM
+//          .JMML.  .JMML.`Mbmmd'  `Wbmd"MML.JMML.
 
 .ribbonWrapper {
 	position: absolute;
@@ -302,7 +287,7 @@ a:hover {
 }
 
 .gitRibbon {
-	background-color: $orange;
+	background-color: $blueDark;
 	z-index: 300;
 	width: 350px;
 	text-align: center;
@@ -312,18 +297,20 @@ a:hover {
 	    -ms-transform: rotate(45deg); /* IE 9 */
 	-webkit-transform: rotate(45deg); /* Safari and Chrome */
 			transform: rotate(45deg);
-	box-shadow: 1px 1px 4px rgba(93,113,140, .5);
-	opacity: .7;
-	border: 1px dashed $yellow;
+	//box-shadow: 1px 1px 4px rgba(93,113,140, .5);
+	//opacity: .7;
+	//border: 2px dashed $body-bg;
 	transition: all .3s ease-in-out;
+	border: 1px dashed $body-bg;
 
 	&:hover {
-		border: 1px dashed $yellow;
-		opacity: 1;
-		box-shadow: 1px 1px 4px rgba(93,113,140, .9);
+		//background-color: $orange;
+		border: 4px dashed $body-bg;
+		//opacity: 1;
+		//box-shadow: 1px 1px 4px rgba(93,113,140, .9);
 	}
 
-	a {	
+	a {
 		font-weight: 400;
 		display: block;
 		@include fontBook;
@@ -331,6 +318,7 @@ a:hover {
 		line-height: 1.8em;
 		//opacity: .8;
 		text-decoration: none;
+		transition: all .3s ease-in-out;
 
 		&:hover {
 			line-height: 1.8em;
@@ -338,11 +326,11 @@ a:hover {
 			//opacity: 1;
 			display: block;
 			text-decoration: none;
-
+			//color: $yellow;
+			text-shadow: 2px 2px 2px rgba(93,113,140, .9);
 		}
 	}
 }
-
 
 .logoBorder {
 	width: 133px;
@@ -433,41 +421,26 @@ a:hover {
 	background-color: $body-bg !important;
 }
 
-
 ul.titleUl {
 	padding-bottom: 3%; // protects header text blocking
 }
 
-//Robert Sahm type
-
-
-
 // Nav
-@media only screen and (min-width: 800px) { 
-
-}
-
-// Nav
-@media only screen and (max-width: 800px) { 
+@media only screen and (max-width: 800px) {
 	.navRow {
 		position: relative;
 		//top: -29px;
 	}
 }
 
-
-
-
-
-//   ,,                                   
-//   db            mm                     
-//                 MM                     
-// `7MM `7MMpMMMbmmMMmm `7Mb,od8 ,pW"Wq.  
-//   MM   MM    MM MM     MM' "'6W'   `Wb 
-//   MM   MM    MM MM     MM    8M     M8 
-//   MM   MM    MM MM     MM    YA.   ,A9 
-// .JMML.JMML  JMML`Mbmo.JMML.   `Ybmd9'  
-// Intro stuff
+//          ,,
+//          db            mm
+//                        MM
+//        `7MM `7MMpMMMbmmMMmm `7Mb,od8 ,pW"Wq.
+//          MM   MM    MM MM     MM' "'6W'   `Wb
+//          MM   MM    MM MM     MM    8M     M8
+//          MM   MM    MM MM     MM    YA.   ,A9
+//        .JMML.JMML  JMML`Mbmo.JMML.   `Ybmd9'
 
 .introWrapper {
 	margin: 0;
@@ -483,7 +456,6 @@ ul.titleUl {
 	margin-bottom: 10px;
 	margin-top: 3%;
 	overflow: hidden;
-
 }
 
 h1.biggest {
@@ -594,19 +566,22 @@ span.pattern2 {
 	color: $yellow;
 }
 
-//  ,,        ,,                            
-// *MM      `7MM                            
-//  MM        MM                            
-//  MM,dMMb.  MM  ,pW"Wq.   ,p6"bo  ,pP"Ybd 
-//  MM    `Mb MM 6W'   `Wb 6M'  OO  8I   `" 
-//  MM     M8 MM 8M     M8 8M       `YMMMa. 
-//  MM.   ,M9 MM YA.   ,A9 YM.    , L.   I8 
-//  P^YbmdP'.JMML.`Ybmd9'   YMbmd'  M9mmmP'
-
-
-// .flipbox-container {
-// 	padding: 10%; // controlls overall sizes
-// }
+//         ,,
+//       `7MM
+//         MM
+//         MMpMMMb.  ,pW"Wq.`7M'   `MF'.gP"Ya `7Mb,od8
+//         MM    MM 6W'   `Wb VA   ,V ,M'   Yb  MM' "'
+//         MM    MM 8M     M8  VA ,V  8M""""""  MM
+//         MM    MM YA.   ,A9   VVV   YM.    ,  MM
+//       .JMML  JMML.`Ybmd9'     W     `Mbmmd'.JMML.
+//        ,,        ,,
+//       *MM      `7MM                  `7MM
+//        MM        MM                    MM
+//        MM,dMMb.  MM  ,pW"Wq.   ,p6"bo  MM  ,MP,pP"Ybd
+//        MM    `Mb MM 6W'   `Wb 6M'  OO  MM ;Y  8I   `"
+//        MM     M8 MM 8M     M8 8M       MM;Mm  `YMMMa.
+//        MM.   ,M9 MM YA.   ,A9 YM.    , MM `Mb.L.   I8
+//        P^YbmdP'.JMML.`Ybmd9'   YMbmd'.JMML. YAM9mmmP'
 
 img.portaBlockBW,
 img.ketchBlockBW,
@@ -625,7 +600,7 @@ img.candlBlockBW {
 
 // Hover state images
 img.portaBlockCol,
-img.ketchBlockCol, 
+img.ketchBlockCol,
 img.carolBlockCol,
 img.c2cBlockCol,
 img.crawBlockCol,
@@ -651,7 +626,7 @@ img.candlBlockCol {
 	background-color: rgba(222, 86, 5, .05);
 	//background-color: rgba(100, 50, 0, 0.1);
 	//border: 1px solid #ddd;
-    box-shadow: 0px 0px 0px -6px $body-bg, 
+    box-shadow: 0px 0px 0px -6px $body-bg,
   			    0px -3px 6px rgba(100, 50, 0, 0.1);
 }
 
@@ -663,11 +638,12 @@ img.candlBlockCol {
 	z-index: 100;
 	margin-bottom: 0;
 	border: 1px solid rgba(103,165,206, .3);
+	cursor: pointer;
 
 	&:hover {
 		border: 0 !important;
 		//background-color: rgba(101,171,166, .3);
-		box-shadow: 0px 0px 0px -6px $body-bg, 
+		box-shadow: 0px 0px 0px -6px $body-bg,
   		           0px 3px 6px rgba(100, 50, 0, 0.3);
 	}
 
@@ -679,9 +655,9 @@ img.candlBlockCol {
 			left: 0;
 
 			img {
-  			margin: 0 auto;
+  				margin: 0 auto;
+    		}
     	}
-    }
 	}
 }
 
@@ -714,7 +690,7 @@ img.candlBlockCol {
 }
 
 .portaHoverP {
-	color: $bluePorta; 
+	color: $bluePorta;
 }
 
 .portaHoverA a {
@@ -762,16 +738,16 @@ p.c2cHoverP {
 
 
 
-//  ,,        ,,                ,,        ,,                            
-// *MM        db               *MM      `7MM                            
-//  MM                          MM        MM                            
-//  MM,dMMb.`7MM  .P"Ybmmm      MM,dMMb.  MM  ,pW"Wq.   ,p6"bo  ,pP"Ybd 
-//  MM    `Mb MM :MI  I8        MM    `Mb MM 6W'   `Wb 6M'  OO  8I   `" 
-//  MM     M8 MM  WmmmP"        MM     M8 MM 8M     M8 8M       `YMMMa. 
-//  MM.   ,M9 MM 8M             MM.   ,M9 MM YA.   ,A9 YM.    , L.   I8 
-//  P^YbmdP'.JMML.YMMMMMb       P^YbmdP'.JMML.`Ybmd9'   YMbmd'  M9mmmP' 
-//               6'     dP                                              
-//               Ybmmmd'                                                
+//       ,,        ,,                ,,        ,,
+//      *MM        db               *MM      `7MM
+//       MM                          MM        MM
+//       MM,dMMb.`7MM  .P"Ybmmm      MM,dMMb.  MM  ,pW"Wq.   ,p6"bo  ,pP"Ybd
+//       MM    `Mb MM :MI  I8        MM    `Mb MM 6W'   `Wb 6M'  OO  8I   `"
+//       MM     M8 MM  WmmmP"        MM     M8 MM 8M     M8 8M       `YMMMa.
+//       MM.   ,M9 MM 8M             MM.   ,M9 MM YA.   ,A9 YM.    , L.   I8
+//       P^YbmdP'.JMML.YMMMMMb       P^YbmdP'.JMML.`Ybmd9'   YMbmd'  M9mmmP'
+//                    6'     dP
+//                    Ybmmmd'
 
 
 .commentText {
@@ -817,7 +793,134 @@ span.commentTextSmall {
 }
 
 
-// Porta Row ///////////////////
+//                                      ,,
+//       `7MM              mm         `7MM
+//         MM              MM           MM
+//         MM  ,MP.gP"Ya mmMMmm ,p6"bo  MMpMMMb. `7MMpMMMb.pMMMb.
+//         MM ;Y ,M'   Yb  MM  6M'  OO  MM    MM   MM    MM    MM
+//         MM;Mm 8M""""""  MM  8M       MM    MM   MM    MM    MM
+//         MM `MbYM.    ,  MM  YM.    , MM    MM   MM    MM    MM
+//       .JMML. YA`Mbmmd'  `MbmoYMbmd'.JMML  JMML.JMML  JMML  JMML.
+
+
+h1.ketchHeader {
+	font-size: 3.7em;
+	@include fontBold;
+	color: $blueKetch;
+	padding: 0;
+	margin: 0;
+}
+
+p.ketchComment2 {
+	color: #555;
+	@include fontBook;
+	font-size: 1.4em;
+	font-weight: 400;
+	//text-align: center;
+	z-index: 300;
+	padding: 5% 0;
+
+	span {
+		@include fontMed;
+
+	}
+}
+
+#ketchRow {
+	margin-top: 0%;
+	overflow: hidden;
+	display: none;
+}
+
+.ketchTexture {
+	background-image: url('ketchumBG.png');
+	opacity: .75;
+	background-repeat: no-repeat;
+	//background-size: cover;
+	height: 100%;
+	max-height: 500px;
+	min-width: 100%;
+	position: absolute;
+	//left: -20%;
+}
+
+img.copyjunk1, img.copyjunk2, img.copyjunk3 {
+	position: absolute;
+	left: 0;
+	z-index: 100;
+	min-width: 120%;
+	opacity: .5;
+	min-height: 100%;
+	max-height: 400px;
+	display: none;
+}
+
+img.copyjunk2 {
+	top: 100%;
+}
+img.copyjunk3 {
+	top: 20%;
+
+}
+
+#ketchIframe {
+	padding-left: 0%;
+	//margin-left: 25%;
+	width: 100%;
+	min-height: 680px;
+	overflow: hidden;
+	border: none;
+	z-index: 200;
+	//zoom: 0.75
+}
+
+.ketchHider {
+	height: 680px;
+}
+
+.ketchumLogo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 200;
+	margin-top: 2%;
+	margin-left: 13%;
+}
+
+.ketchThing {
+
+	img.ketchBIG {
+		position: relative;
+		width: 900px !important;
+		//width: 100%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		//margin-left: 20%;
+		}
+	img.slideBlock {
+		position: absolute;
+		max-width: 202px;
+		top: 137px;
+		left: 629px;
+	}
+}
+
+.ketchMakingRow {
+	padding-top: 5%;
+}
+
+.ketchMakingRow2 {
+	margin-top: 0%;
+}
+
+
+//       `7MM"""Mq.                   mm
+//         MM   `MM.                  MM
+//         MM   ,M9 ,pW"Wq.`7Mb,od8 mmMMmm ,6"Yb.
+//         MMmmdM9 6W'   `Wb MM' "'   MM  8)   MM
+//         MM      8M     M8 MM       MM   ,pm9MM
+//         MM      YA.   ,A9 MM       MM  8M   MM
+//       .JMML.     `Ybmd9'.JMML.     `Mbm`Moo9^Yo.
 
 
 
@@ -857,7 +960,14 @@ span.commentTextSmall {
 }
 
 
-// Carol Row /////////////////////
+//                                          ,,
+//        .g8"""bgd                       `7MM
+//      .dP'     `M                         MM
+//      dM'       `,6"Yb. `7Mb,od8 ,pW"Wq.  MM
+//      MM        8)   MM   MM' "'6W'   `Wb MM
+//      MM.        ,pm9MM   MM    8M     M8 MM
+//      `Mb.     ,8M   MM   MM    YA.   ,A9 MM
+//        `"bmmmd'`Moo9^Yo.JMML.   `Ybmd9'.JMML.
 
 #carolRow {
 	display: none;
@@ -913,7 +1023,7 @@ span.commentTextSmall {
 		width: 100%;
 		max-width: 1216px;
 	}
-	
+
 	img.anatsui {
 			padding-top: 5%;
 	}
@@ -929,7 +1039,13 @@ span.commentTextSmall {
 	min-width: 1000px;
 }
 
-//c2c Row
+
+//      ,p6"bo  pd*"*b.  ,p6"bo
+//     6M'  OO (O)   j8 6M'  OO
+//     8M          ,;j9 8M
+//     YM.    , ,-='    YM.    ,
+//      YMbmd' Ammmmmmm  YMbmd'.
+
 
 #c2cRow {
 	display: none;
@@ -1037,156 +1153,9 @@ span.commentTextSmall {
 	}
 }
 
-
-
-
-
-//                                ,,                         
-// `7MM              mm         `7MM                         
-//   MM              MM           MM                         
-//   MM  ,MP.gP"Ya mmMMmm ,p6"bo  MMpMMMb. `7MMpMMMb.pMMMb.  
-//   MM ;Y ,M'   Yb  MM  6M'  OO  MM    MM   MM    MM    MM  
-//   MM;Mm 8M""""""  MM  8M       MM    MM   MM    MM    MM  
-//   MM `MbYM.    ,  MM  YM.    , MM    MM   MM    MM    MM  
-// .JMML. YA`Mbmmd'  `MbmoYMbmd'.JMML  JMML.JMML  JMML  JMML.
-
-#ketchRow {
-	margin-top: 0%;
-	//background-color: $yellowKetch;
-	overflow: hidden;
-	display: none;
-}
-
-h1.ketchHeader {
-	font-size: 3.7em;
-	@include fontMed;
-	color: $blueKetch;
-	padding: 0;
-	margin: 0;
-}
-
-.ketchTexture {
-	background-image: url('ketchumBG.png');
-	opacity: .75;
-	background-repeat: no-repeat;
-	//background-size: cover;
-	height: 100%;
-	max-height: 500px;
-	min-width: 100%;
-	position: absolute;
-	//left: -20%;
-}
-
-img.copyjunk1, img.copyjunk2, img.copyjunk3 {
-	position: absolute;
-	left: 0;
-	z-index: 100;
-	min-width: 120%;
-	opacity: .5;
-	min-height: 100%;
-	max-height: 400px;
-	display: none;
-}
-
-img.copyjunk2 {
-	top: 100%;
-}
-img.copyjunk3 {
-	top: 20%;
-
-}
-
-#ketchIframe {
-	padding-left: 0%;
-	//margin-left: 25%;
-	width: 100%;
-	min-height: 680px;
-	overflow: hidden;
-	border: none;
-	z-index: 200;
-	//zoom: 0.75
-}
-
-.ketchHider {
-	height: 680px;
-}
-
-.ketchumLogo {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 200;
-	margin-top: 2%;
-	margin-left: 13%;
-}
-
-.ketchThing {
-
-	img.ketchBIG {
-		position: relative;
-		width: 900px !important;
-		//width: 100%;
-		margin-top: 2%;
-		margin-bottom: 2%;
-		//margin-left: 20%;
-		}
-	img.slideBlock {
-		position: absolute;
-		max-width: 202px;
-		top: 137px;
-		left: 629px;
-	}
-}
-
-h2.ketchComment {
-	color: $blueKetch;
-	@include fontBook;
-	font-size: 2.4em;
-	font-weight: 400;
-	text-align: center;
-}
-
-.ketchComment2 {
-	color: $blueKetch;
-	@include fontBook;
-	font-size: 2em;
-	font-weight: 400;
-	text-align: center;
-	z-index: 300;
-}
-
-.ketchMakingRow {
-	padding-top: 5%;
-}
-
-.ketchMakingRow2 {
-	margin-top: 0%;
-}
-
-//                                     ,,  
-//   .g8"""bgd                       `7MM  
-// .dP'     `M                         MM  
-// dM'       `,6"Yb. `7Mb,od8 ,pW"Wq.  MM  
-// MM        8)   MM   MM' "'6W'   `Wb MM  
-// MM.        ,pm9MM   MM    8M     M8 MM  
-// `Mb.     ,8M   MM   MM    YA.   ,A9 MM  
-//   `"bmmmd'`Moo9^Yo.JMML.   `Ybmd9'.JMML.
-
-
-                                                     
-//                                               ,,   ,,  
-//                         `7MM"""Yb.          `7MM   db  
-//                           MM    `Yb.          MM       
-//  ,p6"bo  pd*"*b.  ,p6"bo  MM     `Mb  .gP"Ya  MM `7MM  
-// 6M'  OO (O)   j8 6M'  OO  MM      MM ,M'   Yb MM   MM  
-// 8M          ,;j9 8M       MM     ,MP 8M"""""" MM   MM  
-// YM.    , ,-='    YM.    , MM    ,dP' YM.    , MM   MM  
-//  YMbmd' Ammmmmmm  YMbmd'.JMMmmmdP'    `Mbmmd.JMML.JMML.
-
 .c2cBigBlock {
 	display: none;
 }
-
 
 .c2cWrapper {
 	background-image: url('bricksBigDark.jpg');
@@ -1199,87 +1168,130 @@ h2.ketchComment {
 	margin: 7%;
 }
 
-//                                           ,...             
-//                                         .d' ""       mm    
-//                                         dM`          MM    
-//  ,p6"bo `7Mb,od8 ,6"Yb`7M'    ,A    `MFmMMm,pP"Ybd mmMMmm  
-// 6M'  OO   MM' "'8)   MM VA   ,VAA   ,V  MM 8I   `"   MM    
-// 8M        MM     ,pm9MM  VA ,V  VA ,V   MM `YMMMa.   MM    
-// YM.    ,  MM    8M   MM   VVV    VVV    MM L.   I8   MM    
+
+
+
+
+//                                           ,...
+//                                         .d' ""       mm
+//                                         dM`          MM
+//  ,p6"bo `7Mb,od8 ,6"Yb`7M'    ,A    `MFmMMm,pP"Ybd mmMMmm
+// 6M'  OO   MM' "'8)   MM VA   ,VAA   ,V  MM 8I   `"   MM
+// 8M        MM     ,pm9MM  VA ,V  VA ,V   MM `YMMMa.   MM
+// YM.    ,  MM    8M   MM   VVV    VVV    MM L.   I8   MM
 //  YMbmd' .JMML.  `Moo9^Yo.  W      W   .JMMLM9mmmP'   `Mbmo
 
-.crawBigBlock {
-	display: none;
-}
+// .crawBigBlock {
+// 	display: none;
+// }
 
-.crawWrapper {
-	margin-top: 3%;
-	background-image: url('crawBG.jpg');
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	background-repeat: no-repeat;
-	margin-bottom: 100px;
-	max-height: 400px;
-	border: 7px solid black;
-}
+// .crawWrapper {
+// 	margin-top: 3%;
+// 	background-image: url('crawBG.jpg');
+// 	background-size: cover;
+// 	background-position: center;
+// 	width: 100%;
+// 	background-repeat: no-repeat;
+// 	margin-bottom: 100px;
+// 	max-height: 400px;
+// 	border: 7px solid black;
+// }
 
-.crawHeader {
-	padding-top: 3%;
-	padding-left: 3%;
-	padding-right: 3%;
-	padding-bottom: 7%;
-}
+// .crawHeader {
+// 	padding-top: 3%;
+// 	padding-left: 3%;
+// 	padding-right: 3%;
+// 	padding-bottom: 7%;
+// }
 
-//         ,,                                   
-//        *MM                             mm    
-//         MM                             MM    
-//  ,6"Yb. MM,dMMb.   ,pW"Wq.`7MM  `7MM mmMMmm  
-// 8)   MM MM    `Mb 6W'   `Wb MM    MM   MM    
-//  ,pm9MM MM     M8 8M     M8 MM    MM   MM    
-// 8M   MM MM.   ,M9 YA.   ,A9 MM    MM   MM    
+//         ,,
+//        *MM                             mm
+//         MM                             MM
+//  ,6"Yb. MM,dMMb.   ,pW"Wq.`7MM  `7MM mmMMmm
+// 8)   MM MM    `Mb 6W'   `Wb MM    MM   MM
+//  ,pm9MM MM     M8 8M     M8 MM    MM   MM
+// 8M   MM MM.   ,M9 YA.   ,A9 MM    MM   MM
 // `Moo9^YoP^YbmdP'   `Ybmd9'  `Mbod"YML. `Mbmo
 
 #aboutRow {
-	margin-top: 5%;
+	//margin-top: 5%;
+	padding: 0 5% 0 5%;
 	display: none;
+	//padding-left: 10%;
 
-	h1 {
-		@include fontMed;
-		font-size: 4em;
-		padding: 0;
-		margin: 0;
-		position: relative;
-		top: -20px;
+	// h1 {
+	// 	display: block;
+	// 	@include fontMed;
+	// 	font-size: 4em;
+	// 	padding: 13% 0 0 0;
+	// 	margin: 0;
+	// 	position: relative;
+	// 	text-align: center;
+	// 	color: $orange;
+	// }
+
+	.row {
+		margin-top: 3%;
 	}
 
 	h2 {
-		@include fontBook;
-		padding: 0;
+		display: block;
+		@include fontMed;
+		padding: 0 0 0 0;
 		margin: 0;
-		font-size: 2em;
+		font-size: 2.7em;
+		line-height: 1.1em;
+		color: $darkBlue;
 	}
 
 	p {
 		@include fontBook;
-		display: block;
+		//margin: 4% 25% 4% 2%;
+	}
+
+	.centered {
+		text-align: center;
 	}
 
 	.mePic1 {
-		float: left !important;
+		position: relative;
+		float: left;
 		max-width: 290px;
-		margin-right: 5%;
+		min-width: 210px;
+		margin: 0 auto;
+		padding-right: 1em;
+		padding-top: 1%;
+	}
+
+	.adobeStuff {
+		margin-top: -1%;
+
+		div {
+			padding: 0;
+		}
+
+		img.iconsAdobe {
+			width: 100%;
+			max-width: 497px;
+
+		}
+	}
+
+	#dlPDF a {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
 	}
 }
 
-//     ,...                                      
-//   .d' ""                 mm                   
-//   dM`                    MM                   
-//  mMMmm,pW"Wq.   ,pW"Wq.mmMMmm .gP"Ya `7Mb,od8 
-//   MM 6W'   `Wb 6W'   `Wb MM  ,M'   Yb  MM' "' 
-//   MM 8M     M8 8M     M8 MM  8M""""""  MM     
-//   MM YA.   ,A9 YA.   ,A9 MM  YM.    ,  MM     
-// .JMML.`Ybmd9'   `Ybmd9'  `Mbmo`Mbmmd'.JMML.  
+//     ,...
+//   .d' ""                 mm
+//   dM`                    MM
+//  mMMmm,pW"Wq.   ,pW"Wq.mmMMmm .gP"Ya `7Mb,od8
+//   MM 6W'   `Wb 6W'   `Wb MM  ,M'   Yb  MM' "'
+//   MM 8M     M8 8M     M8 MM  8M""""""  MM
+//   MM YA.   ,A9 YA.   ,A9 MM  YM.    ,  MM
+// .JMML.`Ybmd9'   `Ybmd9'  `Mbmo`Mbmmd'.JMML.
 
 .footerBlocker {
 	position: relative;
@@ -1297,11 +1309,17 @@ h2.ketchComment {
  	background-color: $darkBlue;
  	height: 2.5em;
  	z-index: 500;
- 	opacity: 1;
+ 	opacity: .8;
  	box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.45);
- 	padding-right: 5%;
+ 	padding-right: 1%;
  	font-size: .8em;
-  
+ 	transition: all .2s linear;
+
+ 	&:hover {
+ 		height: 4.0em;
+ 		opacity: 1;
+ 	}
+
   	p.footer1 {
   		padding-top: .1em;
   		@include fontMed;
@@ -1310,4 +1328,20 @@ h2.ketchComment {
   	}
 }
 
+// just some little border class tools
+.redBorder {
+	border: 1px solid red;
+}
+
+.blueBorder {
+	border: 1px solid blue;
+}
+
+.greenBorder {
+	border: 1px solid green;
+}
+
+.blackBorder {
+	border: 2px solid black;
+}
 

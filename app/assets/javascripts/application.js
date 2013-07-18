@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.ui.all
+//= require jquery-ui-1.10.3.custom.min.js
 //= require fittext
 //= require foundation
 //= require foundation.topbar.js
@@ -21,3 +21,4 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+//= require jquery.ui.all

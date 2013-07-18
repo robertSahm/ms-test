@@ -1,5 +1,5 @@
 
-//Clicks 
+//Clicks
 
 $(function () {
     // header link
@@ -42,38 +42,38 @@ $(function () {
     $('#portaRow, #ketchRow #aboutRow, #contactRow').fadeOut(300);
   });
 
-  $('a.portaReveal').click(function() {
+  $('.portaReveal').click(function() {
     $('#portaRow').fadeIn(300);
     $('.blocksWrapper, .workIntroText, .rowIntro').hide(300);
     return false;
   });
 
-  $('a.ketchReveal').click(function() {
+  $('.ketchReveal').click(function() {
     $('#ketchRow').fadeIn(300);
     $('.blocksWrapper, .rowIntro, .workIntroText').hide(300);
     return false;
   });
 
-  $('a.carolReveal').click(function() {
+  $('.carolReveal').click(function() {
     $('#carolRow').fadeIn(300);
     $('.blocksWrapper, .rowIntro, .workIntroText').hide(300);
     return false;
   });
 
-  $('a.c2cReveal').click(function() {
+  $('.c2cReveal').click(function() {
     $('#c2cRow').fadeIn(300);
     $('.blocksWrapper, .rowIntro, .workIntroText').hide(300);
     return false;
   });
 });
 
-// `7MMF'  `7MMF'                                  
-//   MM      MM                                    
-//   MM      MM  ,pW"Wq.`7M'   `MF'.gP"Ya `7Mb,od8 
-//   MMmmmmmmMM 6W'   `Wb VA   ,V ,M'   Yb  MM' "' 
-//   MM      MM 8M     M8  VA ,V  8M""""""  MM     
-//   MM      MM YA.   ,A9   VVV   YM.    ,  MM     
-// .JMML.  .JMML.`Ybmd9'     W     `Mbmmd'.JMML.   
+// `7MMF'  `7MMF'
+//   MM      MM
+//   MM      MM  ,pW"Wq.`7M'   `MF'.gP"Ya `7Mb,od8
+//   MMmmmmmmMM 6W'   `Wb VA   ,V ,M'   Yb  MM' "'
+//   MM      MM 8M     M8  VA ,V  8M""""""  MM
+//   MM      MM YA.   ,A9   VVV   YM.    ,  MM
+// .JMML.  .JMML.`Ybmd9'     W     `Mbmmd'.JMML.
 
 //Porta hover
 //$('.portaHoverText').show();
@@ -83,7 +83,7 @@ $(function () {
     //show Text
     $('.portaHoverText').stop(true, true).fadeIn(500);
 
-    // animate background color 
+    // animate background color
     $('#portaBlockWrapper').stop(true, true).animate ({
       'background-color' : '#000'
     }, 200);
@@ -95,7 +95,7 @@ $(function () {
 
     // hide b & w image
     $('img.portaBlockBW').animate({
-      opacity : '0' 
+      opacity : '0'
     }, 200);
   });
 
@@ -126,7 +126,7 @@ $(function () {
       opacity : '1'
     }, 200);
     $('img.ketchBlockBW').stop(true, true).animate({
-      opacity : '0' 
+      opacity : '0'
     }, 200);
   });
   $('#ketchBlockWrapper').mouseleave( function () {
@@ -156,7 +156,7 @@ $(function () {
       opacity : '1'
     }, 200);
     $('img.carolBlockBW').stop(true, true).animate({
-      opacity : '0' 
+      opacity : '0'
     }, 200);
   });
   $('#carolBlockWrapper').stop(true, true).mouseleave( function () {
@@ -184,7 +184,7 @@ $(function () {
       opacity : '1'
     }, 200);
     $('img.c2cBlockBW').stop(true, true).stop(true, true).animate({
-      opacity : '0' 
+      opacity : '0'
     }, 200);
   });
   $('#c2cBlockWrapper').mouseleave( function () {
@@ -215,7 +215,7 @@ $(function () {
       opacity : '1'
     }, 200);
     $('img.crawBlockBW').stop(true, true).stop(true, true).animate({
-      opacity : '0' 
+      opacity : '0'
     }, 200);
   });
   $('#crawBlockWrapper').mouseleave( function () {
@@ -245,7 +245,7 @@ $(function () {
       opacity : '1'
     }, 200);
     $('img.candlBlockBW').stop(true, true).stop(true, true).animate({
-      opacity : '0' 
+      opacity : '0'
     }, 200);
   });
   $('#candlBlockWrapper').mouseleave( function () {
@@ -277,10 +277,10 @@ $(function() {
   $('.sc-scrubber').addClass('large-9 small-9 columns');
 });
 
-// Color Looping 
+// Color Looping
 // dots 100ms apart, letters 200ms apart
 
-$(function() {  
+$(function() {
   function endless(item) {
     $(item).css('display', 'inline-block').animate({
       'color': '#DE5605',
@@ -306,12 +306,12 @@ $(function() {
      endless($('a.f').delay( 1600 ));
      endless($('a.u').delay( 1800 ));
      endless($('a.l').delay( 2000 ));
-});  
+});
 
 
 // Intro word 2 color animations
 
-$(function() {  
+$(function() {
   function endless2(item) {
     $(item).css('display', 'inline-block').animate({
       'color': '#C4590E',
@@ -335,7 +335,7 @@ $(function() {
      endless2($('a.n2').delay( 1600 ));
      endless2($('a.g2').delay( 1800 ));
     endless2($('a.chk').delay( 2000 ));
-}); 
+});
 
 // Intro word 1 move in/out
 
@@ -362,10 +362,18 @@ $(function() {
   });
 });
 
-// $('#rowIntro, .blocksWrapper, .workIntroText').hide();
+
+// $('a#dlPDF').click(function(e) {
+//   e.preventDefault();  //stop the browser from following
+//   window.location.href = '/public/Robert_Sahm_Resume.pdf';
+// });
 
 
 
+$('#rowIntro, .blocksWrapper, .workIntroText').hide();
+
+
+$('#ketchRow').show();
 
 
 

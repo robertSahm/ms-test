@@ -36,8 +36,8 @@ Sahm::Application.configure do
   config.assets.version = '1.0'
 
 
-  #max-age for your static assets
-  # config.static_cache_control = "public, max-age=31536000"
+  # max-age for your static assets
+  config.static_cache_control = "public, max-age=31536000"
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache

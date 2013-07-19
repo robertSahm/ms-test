@@ -264,10 +264,7 @@ $(function () {
   });
 });
 
- //$('.blocksWrapper, .rowIntro').hide(300);
-
 //SoundCloud player styling
-
 $(function() {
   $('.sc-player').addClass('large-12 small-12 columns');
   $('.sc-volume-slider').addClass('large-5 small-5 columns');
@@ -362,13 +359,22 @@ $(function() {
   });
 });
 
-
-// $('a#dlPDF').click(function(e) {
-//   e.preventDefault();  //stop the browser from following
-//   window.location.href = '/public/Robert_Sahm_Resume.pdf';
-// });
-
-
+$('.logoBorder').mouseenter(function () {
+  $('a.braceLeft').animate({
+    'left': '-35'
+  }, .1);
+  $('a.braceRight').animate({
+    'margin-left': '38'
+  }, .5);
+});
+$('.logoBorder').mouseleave(function () {
+  $('a.braceLeft').animate({
+    'left': '5'
+  }, .1);
+  $('a.braceRight').animate({
+    'margin-left': '0'
+  }, .5);
+});
 
 //$('#rowIntro, .blocksWrapper, .workIntroText').hide();
 

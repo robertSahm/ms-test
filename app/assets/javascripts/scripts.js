@@ -376,7 +376,7 @@ $('.logoBorder').mouseleave(function () {
   }, .5);
 });
 
-//$('#rowIntro, .blocksWrapper, .workIntroText').hide();
+
 
 
 //$('#ketchRow').show();

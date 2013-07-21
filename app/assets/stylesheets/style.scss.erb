@@ -121,14 +121,20 @@ a:hover {
 	top: 0;
 	left: 0;
 	min-height: 30px;
-	margin-top: 3%;
+	padding: 0;
+	margin: 3% 0 0 0;
+	//max-width: 800px;
+	overflow: hidden;
 	//display: none;
 
-	nav.top-bar {
+	.top-bar {
 	  margin-bottom: 0px !important;
 	  position: relative;
-	  display: block;
+	  top: 0;
+	  left: 0;
+	  //display: none;
 	  min-height: 30px;
+	  margin: 0 auto;
 
 		.titleRow { // ROBERT SAHM
 			position: relative;
@@ -137,8 +143,13 @@ a:hover {
 
 			ul.titleUl {
 				padding-bottom: .08% !important;
+				display: block;
+				position: relative;
+				top: 0;
+				left: 0;
 
 				li.name {
+
 
 					h1.name {
 						@include fontMed;
@@ -176,11 +187,12 @@ a:hover {
 
 		.navRow { // Nav stylings
 			div {
+
 				ul.navUl {
 					background-color: $body-bg;
   				width: 100%;
   				display: block;
-					margin: 0% auto !important;
+					margin: 0 auto !important;
   				text-align: center;
 
 					li.navLi {
@@ -201,7 +213,7 @@ a:hover {
   						}
 
 						a.navLink {
-  					  		width: 100%;
+  					  	width: 100%;
   					 		width: 96px;
   					 		height: 44px;
   					 		margin-top: 30%; // nav push up
@@ -287,10 +299,15 @@ a:hover {
 	position: absolute;
 	top: 0;
 	right: 0;
+	overflow: hidden;
+	//z-index: 500;
+	min-height: 150px;
+	display: none;
 	//display: none;
 }
 
 .gitRibbon {
+	overflow: show;
 	background-color: $blueDark;
 	z-index: 300;
 	width: 350px;
@@ -327,13 +344,15 @@ a:hover {
 		&:hover {
 			line-height: 1.8em;
 			font-weight: 400;
-			//opacity: 1;
 			display: block;
 			text-decoration: none;
-			//color: $yellow;
 			text-shadow: 2px 2px 2px rgba(93,113,140, .9);
 		}
 	}
+}
+
+.logoRSRow {
+
 }
 
 .logoBorder {
@@ -435,7 +454,7 @@ ul.titleUl {
 // Nav
 @media only screen and (max-width: 800px) {
 	.navRow {
-		position: relative;
+		//position: relative;
 		//top: -29px;
 	}
 }

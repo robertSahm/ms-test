@@ -8,7 +8,7 @@
   </div>
 </div>
 <div class="row headerWrapper">
-  <nav class="top-bar bgCol">
+  <nav class="top-bar bgCol"> <!-- its in here... -->
     <div class="row logoRSRow">
       <!-- Header Logo (all css!) -->
         <div class="large-5 small-5 large-centered small-centered columns">
@@ -20,65 +20,67 @@
           </div>
         </div>
       </div>
-    <div class="row titleRow">
-      <ul class="title-area titleUl large-9 large-centered small-9 small-centered columns bgCol">
-        <li class="name">
-          <h1 class="name" id="logoHeader">
-            <a class="headerClick" href="#">
-              <span class="tighten1">R</span><span class="tighten2">ob</span>e<span class="loosen1">r</span>t <span class="loosen2">S</span>a<span class="loosen2">hm</span>
+      <div class="row titleRow">
+        <ul class="title-area titleUl large-9 large-centered small-9 small-centered columns   bgCol borderBlue">
+          <li class="name">
+            <h1 class="name" id="logoHeader">
+              <a class="headerClick" href="#">
+                <span class="tighten1">R</span><span class="tighten2">ob</span>e<span class=  "loosen1">r</span>t <span class="loosen2">S</span>a<span class="loosen2">hm </span>
+              </a>
+            </h1>
+          </li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#">
+              <span></span>
             </a>
-          </h1>
-        </li>
-        <li class="toggle-topbar menu-icon">
-          <a href="#">
-            <span></span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <section class="top-bar-section">
-      <div class="row navRow">
-        <div class="large-12 large-centered small-12 small-centered columns">
-          <ul class="left navUl">
-            <li class="navLi"><a class="bgCol navLink workLink" href="#">work</a></li>
-            <li class="navLi"><a class="bgCol navLink aboutLink" href="#">about</a></li>
-            <li class="navLi"> 
-            <!-- Let's hide my email address from bots -->
-              <script type="text/javascript" language="javascript">
-              <!--
-              // Email obfuscator script 2.1 by Tim Williams, University of Arizona
-              // Random encryption key feature by Andrew Moulden, Site Engineering Ltd
-              // This code is freeware provided these four comment lines remain intact
-              // A wizard to generate this code is at http://www.jottings.com/obfuscator/-->
-              { coded = "Xf1sXg27MN@eN74w.QfN"
-                key = "WYToH59bL0qjmSeuxRkchnyfIFv18azrNlsZtUiQMCK3EpGP67BXdw2JgD4OAV"
-                shift=coded.length
-                link=""
-                for (i=0; i<coded.length; i++) {
-                  if (key.indexOf(coded.charAt(i))==-1) {
-                    ltr = coded.charAt(i)
-                    link += (ltr)
-                  }
-                  else {     
-                    ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
-                    link += (key.charAt(ltr))
-                  }
-                }
-              document.write("<a class='bgCol navLink' href='mailto:"+link+"'>contact</a>")
-              }
-              
-              </script><noscript>Sorry, you need Javascript on to email me.</noscript>
-            </li>
-            <!-- <li class="navLi"><a class="bgCol navLink contactLink" href="#">contact</a></li> -->
-          </ul>
-        </div>
+          </li>
+        </ul>
       </div>
-    </section>
+    <div class="row">
+      <section class="top-bar-section row">
+        <div class="row navRow">
+          <div class="large-12 large-centered small-12 small-centered columns">
+            <ul class="left navUl">
+              <li class="navLi"><a class="bgCol navLink workLink" href="#">work</a></li>
+              <li class="navLi"><a class="bgCol navLink aboutLink" href="#">about</a></li>
+              <li class="navLi contactLi"> 
+                <!-- Let's hide my email address from bots -->
+                <script type="text/javascript" language="javascript">
+                  <!--
+                  // Email obfuscator script 2.1 by Tim Williams, University of Arizona
+                  // Random encryption key feature by Andrew Moulden, Site Engineering Ltd
+                  // This code is freeware provided these four comment lines remain intact
+                  // A wizard to generate this code is at http://www.jottings.com/obfuscator/-->
+                  { coded = "Xf1sXg27MN@eN74w.QfN"
+                    key = "WYToH59bL0qjmSeuxRkchnyfIFv18azrNlsZtUiQMCK3EpGP67BXdw2JgD4OAV"
+                    shift=coded.length
+                    link=""
+                    for (i=0; i<coded.length; i++) {
+                      if (key.indexOf(coded.charAt(i))==-1) {
+                        ltr = coded.charAt(i)
+                        link += (ltr)
+                      }
+                      else {     
+                        ltr = (key.indexOf(coded.charAt(i))-shift+key.length) % key.length
+                        link += (key.charAt(ltr))
+                      }
+                    }
+                  document.write("<a class='bgCol navLink' href='mailto:"+link+"'>contact</a>")
+                  }
+                  
+                </script><noscript>Sorry, you need Javascript on to email me.</noscript>
+              </li>
+              <!-- <li class="navLi"><a class="bgCol navLink contactLink" href="#">contact</a></li> -->
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
   </nav>
 </div> <!-- end row header wrapper -->
 
 <!-- Title Row ('web design and programmer') -->
-<div class="row descWrapper">
+<!-- <div class="row descWrapper">
   <div class="row topLineRow">
     <div class="topLine large-5 small-7 small-centered large-centered columns">
     </div>
@@ -88,4 +90,4 @@
       <h4 class="desc">front-end web dev</h4>
     </div>
   </div>
-</div>
+</div> -->

@@ -1,6 +1,8 @@
 
 //Clicks
 
+//$('#rowIntro').hide(0);
+
 $(function () {
     // header link
   $('a.headerClick').click( function() {
@@ -74,25 +76,22 @@ $(function () {
 //   MM      MM 8M     M8  VA ,V  8M""""""  MM
 //   MM      MM YA.   ,A9   VVV   YM.    ,  MM
 // .JMML.  .JMML.`Ybmd9'     W     `Mbmmd'.JMML.
+//I'm sure there's a better way to do this, but here we go...
 
 //Porta hover
 //$('.portaHoverText').show();
 $(function () {
   $('#portaBlockWrapper').mouseenter( function() {
-
     //show Text
     $('.portaHoverText').stop(true, true).fadeIn(500);
-
     // animate background color
     $('#portaBlockWrapper').stop(true, true).animate ({
       'background-color' : '#000'
     }, 200);
-
     // show color image
     $('img.portaBlockCol').animate({
       opacity : '1'
     }, 200);
-
     // hide b & w image
     $('img.portaBlockBW').animate({
       opacity : '0'
@@ -359,6 +358,7 @@ $(function() {
   });
 });
 
+// Animate CSS logo hover stuff
 $('.logoBorder').mouseenter(function () {
   $('a.braceLeft').animate({
     'left': '-35'

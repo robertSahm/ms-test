@@ -121,9 +121,9 @@ a:hover {
 	top: 0;
 	left: 0;
 	min-height: 30px;
-	padding: 0;
+	padding: 2% 0 0 0;
 	margin: 3% 0 0 0;
-	//max-width: 800px;
+	max-width: 100%;
 	overflow: hidden;
 	//display: none;
 
@@ -203,9 +203,11 @@ a:hover {
 						@include fontBook;
 						line-height: 1em;
 						height: 44px;
+						-webkit-transition: all .3s linear;
 						transition: all .3s linear;
 
 						:hover, :active, :target  {
+							-webkit-transition: all .2s linear;
 							transition: all .2s linear;
   					  color: $orange;
   					  @include fontMed;
@@ -238,7 +240,9 @@ a:hover {
 	background-color: $body-bg;
 	margin-top: 20px;
 	max-height: 10px;
+	height: 60px;
 	max-width: 90%;
+
 
 	.topLineRow {
 		position: relative;
@@ -249,14 +253,17 @@ a:hover {
 			position: relative;
 			top: 0;
 			left: 0;
-			height: 1px;
-			border-bottom: 1px solid $yellow;
+			height: 0px;
+			border-top: 1px solid $yellow;
 			width: 80%;
-
 		}
 	}
 
 	.descRow {
+		position: relative;
+		top: 0;
+		left: 0;
+		height: 90px;
 
 		.descWrap {
 			position: relative;
@@ -265,10 +272,14 @@ a:hover {
 			//margin: 0 auto;
 			top: -13px; // moves description words up
 			line-height: 0;
-			height: .5em;
+			height: .9em;
 			margin-top: 10px;
+			z-index: 400;
 
 			h4.desc {
+				// position: relative;
+				// top: 0;
+				// left: 0;
 				color: $yellow;
 				text-align: center;
 				@include fontBookIt;
@@ -277,7 +288,7 @@ a:hover {
 				line-height: .4em;
 				font-size: 1.2em;
 				width: 49%;
-				min-width: 100px;
+				min-width: 160px;
 				height: auto;
 				margin: 0 auto;
 			}
@@ -300,10 +311,7 @@ a:hover {
 	top: 0;
 	right: 0;
 	overflow: hidden;
-	//z-index: 500;
 	min-height: 150px;
-	display: none;
-	//display: none;
 }
 
 .gitRibbon {
@@ -317,10 +325,8 @@ a:hover {
 	right: -115px;
 	    -ms-transform: rotate(45deg); /* IE 9 */
 	-webkit-transform: rotate(45deg); /* Safari and Chrome */
-			transform: rotate(45deg);
-	//box-shadow: 1px 1px 4px rgba(93,113,140, .5);
-	//opacity: .7;
-	//border: 2px dashed $body-bg;
+			    transform: rotate(45deg);
+	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
 	border: 1px dashed $body-bg;
 
@@ -339,6 +345,7 @@ a:hover {
 		line-height: 1.8em;
 		//opacity: .8;
 		text-decoration: none;
+		-webkit-transition: all .3s ease-in-out;
 		transition: all .3s ease-in-out;
 
 		&:hover {
@@ -368,6 +375,7 @@ a:hover {
 	border-radius: 35px;
 	border: 6px solid $orange;
 	margin-bottom: 3%;
+	-webkit-transition: all .1s linear;
   transition: all .1s linear;
 
 	&:hover {
@@ -390,6 +398,7 @@ a:hover {
 		top: 36px;
 		left: 5px;
 		color: $yellow;
+		-webkit-transition: all .1s linear;
 		transition: all .1s linear;
 
 		&:hover {
@@ -407,6 +416,7 @@ a:hover {
 								-3px 0px 0 $body-bg;
 		z-index: 100;
 		color: $orange;
+		-webkit-transition: all .1s linear;
 		transition: all .1s linear;
 
 		&:hover {
@@ -421,6 +431,7 @@ a:hover {
 		top: 58px;
 		left: 48px;
 		color: $orange;
+		-webkit-transition: all .1s linear;
 		transition: all .1s linear;
 
 		&:hover {
@@ -435,6 +446,7 @@ a:hover {
 		top: 36px;
 		left: 97px;
 		color: $yellow;
+		-webkit-transition: all .1s linear;
 		transition: all .1s linear;
 
 		&:hover {
@@ -479,7 +491,7 @@ ul.titleUl {
 
 .rowIntro {
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
 	margin-top: 3%;
 	overflow: hidden;
 }
@@ -584,7 +596,7 @@ span.pattern2 {
 	position: relative;
 	font-size: 1.4em !important;
 	text-align: center;
-	margin: 0;
+	margin: 0 0 3% 0;
 	padding: 0;
 	width: 100%;
 	top: 10px;
@@ -1311,6 +1323,7 @@ p.ketchCentered,  {
 		img.iconsAdobe {
 			width: 100%;
 			max-width: 497px;
+			margin: 0 auto;
 
 		}
 	}
@@ -1351,6 +1364,7 @@ p.ketchCentered,  {
  	box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.45);
  	padding-right: 1%;
  	font-size: .8em;
+ 	-webkit-transition: all .2s linear;
  	transition: all .2s linear;
 
  	&:hover {

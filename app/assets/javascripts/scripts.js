@@ -1,7 +1,8 @@
 
 //Clicks
 
-//$('#rowIntro').hide(0);
+
+
 
 $(function () {
     // header link

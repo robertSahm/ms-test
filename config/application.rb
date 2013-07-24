@@ -6,6 +6,8 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
 
+
+
 module Sahm
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
@@ -24,6 +26,20 @@ module Sahm
     # config.assets.paths << "#{Rails.root}/app/assets/fonts"
     # # Precompile additional assets
     # config.assets.precompile += %w( .svg .eot .woff .ttf )
+
+    config.action_mailer.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :domain               => "google.com",
+      :user_name            => "robertsahm@gmail.com",
+      :password             => "dakota1234",
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+    }
+
+    config.action_mailer.default_url_options = {
+      :host => "allsahm.herokuapp.com"
+    }
 
   end
 end

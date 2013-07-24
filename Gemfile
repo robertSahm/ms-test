@@ -25,6 +25,11 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
+# Mailer
+# gem 'contact_us', '~> 0.4.0'
+gem 'mail_form'
+gem "actionmailer"
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 

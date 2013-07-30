@@ -1,8 +1,7 @@
 
 //Clicks
-
-
-
+// $('.blocksWrapper, .rowIntro, .workIntroText').hide(300);
+// $('#ketchRow').show();
 
 $(function () {
     // header link

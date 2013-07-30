@@ -496,11 +496,12 @@ ul.titleUl {
 	overflow: hidden;
 }
 
-h1.biggest {
+h1.biggest, h2.biggest {
 	@include fontMed;
 	color: $orange;
 	position: relative;
 	line-height: .5em;
+	text-align: center;
 }
 
 h3.biggest {
@@ -1349,6 +1350,7 @@ p.ketchCentered  {
 
 #sticky_footer {
  	position: fixed;
+ 	overflow: hidden;
  	bottom: 0px;
  	left: 0px;
  	width: 100%;

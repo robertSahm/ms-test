@@ -112,9 +112,19 @@ a.introLetter:hover {
 	cursor: default;
 }
 
-a:hover {
-	cursor: pointer;
+a {
+	-webkit-transition: all .2s linear;
+	transition: all .2s linear;
+
+	&:hover {
+		cursor: pointer;
+	}
 }
+
+.current {
+	display: block;
+}
+
 
 .headerWrapper {
 	position: relative;
@@ -504,9 +514,13 @@ h1.biggest, h2.biggest {
 	text-align: center;
 }
 
+h2.biggest {
+	color: $blueDark;
+}
+
 h3.biggest {
 	font-size: 1.3em;
-	color: $orange;
+	color: $blueLight;
 }
 
 .def {
@@ -861,7 +875,6 @@ p.ketchComment2 {
 
 	span {
 		@include fontMed;
-
 	}
 }
 
@@ -960,9 +973,29 @@ p.ketchCentered  {
 	padding-top: 5%;
 }
 
+img.ketchMaking {
+	margin-top: -10%;
+}
+
 .ketchMakingRow2 {
 	margin-top: 0%;
+
+	p {
+		font-size: 1.2em;
+
+		a {
+			font-size: 1.8em;
+
+			&:hover {
+				color: $orange;
+			}
+		}
+	}
 }
+
+// p.ketchLink {
+// 	font-size: 2em;
+// }
 
 
 //       `7MM"""Mq.                   mm
@@ -1000,8 +1033,23 @@ p.ketchCentered  {
 	}
 }
 
-.portaComment {
+.portaHeader {
+	text-align: center;
+	color: $bluePorta;
+}
+
+h4.portaComment {
 	color: #999;
+
+	a {
+		color: $bluePorta;
+		text-decoration: none;
+		font-size: 1.7em;
+
+		&:hover {
+			color: $redPorta;
+		}
+	}
 }
 
 .portaPostRow {

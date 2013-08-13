@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.bbq.min.js
 //= require jquery-ui-1.10.3.custom.min.js
 //= require fittext
 //= require foundation

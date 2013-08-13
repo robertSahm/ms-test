@@ -1,20 +1,31 @@
 
-//Clicks
+
+
+
+
+
+
+
+// Clicks
 // $('.blocksWrapper, .rowIntro, .workIntroText').hide(300);
-// $('#ketchRow').show();
+// $('#portaRow').show();
 
 $(function () {
     // header link
   $('a.headerClick').click( function() {
+    $('.rowIntro, .workIntroText').show(300);
+
+        // switch the css on nav text clicks
     $('a.workLink, a.aboutLink, a.contactLink').removeClass('navSelected');
     $('.rowIntro, .workIntroText, .blocksWrapper').fadeIn(300);
     $('.aboutWrapper, .contactWrapper, #ketchRow, #portaRow, #carolRow, #aboutRow').hide(0);
-    return false;
+  return false;
   });
 
   // work link
   $('a.workLink').click( function() {
-    $(this).addClass('navSelected');
+    $('.rowIntro, .workIntroText, #aboutRow').hide(300);
+    $('a.worklink').addClass('navSelected');
     $('a.aboutLink, a.contactLink').removeClass('navSelected');
     $('.blocksWrapper').show(300).css('margin-top', '77px !important');
     $('.rowIntro, .workIntroText, #aboutRow').hide(300);

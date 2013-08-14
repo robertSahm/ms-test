@@ -7,8 +7,8 @@
 
 
 // Clicks
-// $('.blocksWrapper, .rowIntro, .workIntroText').hide(300);
-// $('#portaRow').show();
+ // $('.blocksWrapper, .rowIntro, .workIntroText').hide(300);
+ // $('#portaRow').show();
 
 $(function () {
     // header link

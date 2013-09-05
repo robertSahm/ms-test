@@ -52,7 +52,7 @@ $(function () {
 
   $('a.homeLink').click(function() {
     $('.blocksWrapper, .workIntroText').fadeIn(300);
-    $('#portaRow, #ketchRow #aboutRow, #contactRow').fadeOut(300);
+    $('#portaRow, #ketchRow, #c2cRow, #carolRow, #aboutRow, #contactRow').fadeOut(300);
   });
 
   $('.portaReveal').click(function() {

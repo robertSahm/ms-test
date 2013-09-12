@@ -916,7 +916,7 @@ img.copyjunk3 {
 
 }
 
-#ketchIframe {
+iframe#ketchIframe {
 	padding-left: 0%;
 	//margin-left: 25%;
 	width: 100%;
@@ -925,10 +925,15 @@ img.copyjunk3 {
 	border: none;
 	z-index: 200;
 	//zoom: 0.75
+
+	iframe {
+		overflow: hidden;
+	}
 }
 
 .ketchHider {
 	height: 680px;
+	overflow: hidden;
 }
 
 .ketchumLogo {
@@ -1333,6 +1338,10 @@ h2.portaComment {
 	display: none;
 	margin-bottom: 80px;
 
+	.aboutList {
+	  font-size: 1em;
+	}
+
 	.row {
 		margin-top: 3%;
 	}
@@ -1366,7 +1375,7 @@ h2.portaComment {
 		display: block;
 		margin-left: 2%;
 		list-style-type: circle;
-		margin: 0;
+		margin: 0 0 0 5%;
 		padding: 0;
 
 		li {

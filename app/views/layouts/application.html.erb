@@ -38,7 +38,7 @@
     }(document));
     </script>
 
-  	<title><%= content_for?(:title) ? yield(:title) : "Robert Sahm" %></title>
+  	<title><%= content_for?(:title) ? yield(:title) : "Robby Sahm's ms test" %></title>
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "jquery.js" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
@@ -52,28 +52,100 @@
 
   <body>
   
-    <%= render 'header' %>
-    <%= render 'intro' %>
-    <%= render 'about' %>
-    <%= render 'hoverBoxes' %>
-    <%= render 'ketchInfo' %>
-    <%= render 'portaInfo' %>
-    <%= render 'carolInfo' %>
-    <%= render 'c2cInfo' %>
-    <%= render 'footer' %>
+    <!-- Top Navigation/Search area -->
+    <div class="nav-wrap">
+      <div class="nav-1">
+      <!-- 
+      Unordered inline list items must be formatted back with no spaces to back to avoid the dreaded spaces between list items. There are other ways, but since were simply dealing with images I decided this is the way to go. 
+      -->
+        <ul class="nav-1-ul">
+          <li><%= image_tag "apply_now.png", :alt => "apply_now" %></li><li><%= image_tag "email_page.png", :alt => "email page" %></li><li><%= image_tag "printer.png", :alt => "printer friendly" %></li><li><%= image_tag "site_map.png", :alt => "site map" %></li><li><%= image_tag "search.png", :alt => "search" %></li><li><form class="searchForm"><input type="text" name="firstname"></form></li>
+        </ul>
+      </div>
+      <div class="nav-2">
+        <ul class="nav-2-ul">
+          <li><%= image_tag "asia_pac.png", :alt => "Asia Pacific" %></li><li><%= image_tag "europe.png", :alt => "email page" %></li><li><%= image_tag "japan.png", :alt => "japan" %></li><li><%= image_tag "north_am.png", :alt => "north america" %></li><li><%= image_tag "blue_block.png", :alt => "" %></li>
+        <!-- <li><form input></li> -->
+        </ul>
+      </div>
+      <div class="nav-3">
+        <ul class="nav-3-ul">
+          <li><%= image_tag "programs.png", :alt => "programs" %></li><li><%= image_tag "profiles.png", :alt => "profiles" %></li><li><%= image_tag "on_campus.png", :alt => "on campus calendar" %></li><li><a class="popHover" href="#"><%= image_tag "interview.png", :alt => "interview" %></a></li><li><%= image_tag "contact.png", :alt => "contact" %></li><li><%= image_tag "green_block.png", :alt => "green_block" %></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Left Sub Nav -->
+    <div class="leftSubNav">
+      <ul class="subNavPrograms">
+        <li><h3 class="subNavHeader greenText"><b>North America</b></h3></li>
+        <ul>
+          <h4 class="subNavText greenText">Equity Research</h4>
+          <li class="indented"><h4 class="subNavText greenText">Undergraduate Degree</h4></li>
+          <li class="indented"><h4 class="subNavText">Graduate Degree</h4></li>
+        </ul>
+        <ul><h4 class="subNavText"><a class="financeClick" href="#">Finance</a></h4></ul>
+        <ul><h4 class="subNavText">Fixed Income</h4></ul>
+        <ul><h4 class="subNavText">Information Technology</h4></ul>
+        <ul><h4 class="subNavText">Institutional Equity</h4></ul>
+        <ul><h4 class="subNavText">Investment Banking</h4></ul>
+        <ul><h4 class="subNavText">Investment Management</h4></ul>
+        <ul><h4 class="subNavText">Private Equity</h4></ul>
+        <ul><h4 class="subNavText">Private Wealth Management</h4></ul>
+        <ul><h4 class="subNavText">Public Finance</h4></ul>
+        <ul><h4 class="subNavText">Strategic Planning</h4></ul>
+      </ul>
+    </div> <!-- End Left Sub Nav Wrapper -->
+
+    <!-- Main Content area -->
+    <div class="mainContent">
+      <h1 class="contentTitle greenText"><b>Equity Research</b></h1>
+      <h2 class="contentHeader">Junior Associate Role</h2>
+      <p class="contentP">Individuals may be assigned to a dedicated industry team or may participate in rotations throughout the department. Early activities may include gathering and analyzing industry data to develop and industry vision; analyzing emerging trends in an industry or macro-economy; preparing comprehensive company reports; assessing relative stock valuations; and reviewing findings with respective senior team members and ultimately internal and external clients.</p1>
+      <p class="contentP">The program begins with a four-week training and development curriculum that includes course work in financial statement analysis, corporate finance and financial modeling in Excel, and a customized series of seminars presented by senior members of Equity Research.
+      </p>
+      <p class="contentP">Excellent quantitative, analytical and communications skills are vital for success in this field. Junior Associates must demonstrate a keen research instinct, creative problem-solving ability, entrepreneurial spirit, teamwork and a profound interest in financial markets.
+      </p>
+    </div>
+
+    <!-- Alert Message 1 -->
+
+    <div class="popUp1">
+    </div>
+
+    <div class="popUp2">
+      <p class="popText">
+        Interviews are coming soon to your area.
+      </p>
+    </div>
+    <!-- Alert Message 2 -->
+
+
+    <div class="footer">
+      <%= image_tag "footer.png", :alt => "footer" %>
+    </div>
+
+
+    
+    
 
     <%= javascript_include_tag "application" %>
     
-    <script>
-      jQuery("#fittext").fitText(3);
-
-      // window.addEventListener("load",function() {
-      //   // Set a timeout...
-      //   setTimeout(function(){
-      //     // Hide the address bar!
-      //     if(navigator.userAgent.match(/Android/iPhone/)){
-      //     window.scrollTo(0, 0)};
-      // });
-    </script>
+    
   </body>
 </html>
+
+<script>
+$('a.financeClick').click(function() {
+  $('.popUp1').fadeIn(500);
+});
+
+$('a.popHover').hover(function() {
+  $('.popUp2, .popUp2 p').fadeIn(500);
+
+  // $('a.popHover').mouseleave(function() {
+  //   $('.popUp2').fadeOut(500);
+  // });
+});
+
+</script>

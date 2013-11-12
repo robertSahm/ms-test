@@ -1,1474 +1,169 @@
 
-//         ,...
-//       .d' ""                mm
-//       dM`                   MM
-//      mMMmm,pW"Wq.`7MMpMMMbmmMMmm
-//       MM 6W'   `Wb MM    MM MM
-//       MM 8M     M8 MM    MM MM
-//       MM YA.   ,A9 MM    MM MM
-//     .JMML.`Ybmd9'.JMML  JMML`Mbmo
-//
-//
-//     `7MMpMMMb.pMMMb. `7MM `7M'   `MF`7MM `7MMpMMMb. ,pP"Ybd
-//       MM    MM    MM   MM   `VA ,V'   MM   MM    MM 8I   `"
-//       MM    MM    MM   MM     XMX     MM   MM    MM `YMMMa.
-//       MM    MM    MM   MM   ,V' VA.   MM   MM    MM L.   I8
-//     .JMML  JMML  JMML.JMML.AM.   .MA.JMML.JMML  JMMLM9mmmP'
-
-
-//Font Book
-@mixin fontBook {
-	font-family: 'klinicslabbook-webfont';
-}
-@mixin fontBookIt {
-	font-family: 'klinicslabbookit-webfont';
-}
-
-//Font Bold
-@mixin fontBold {
-	font-family: 'klinicslabbold-webfont';
-}
-@mixin fontBoldIt {
-	font-family: 'klinicslabboldit-webfont';
-}
-
-//Font Medium
-@mixin fontMed {
-	font-family: 'klinicslabmedium-webfont';
-}
-@mixin fontMedIt {
-	font-family: 'klinicslabmediumit-webfont';
-}
-
-//Font Light
-@mixin fontLight {
-	font-family: 'klinicslablight-webfont';
-}
-@mixin fontLightIt{
-	font-family: 'klinicslablightIt-webfont';
-}
-
-//                            ,,
-//          .g8"""bgd       `7MM
-//        .dP'     `M         MM
-//        dM'       `,pW"Wq.  MM  ,pW"Wq.`7Mb,od8 ,pP"Ybd
-//        MM        6W'   `Wb MM 6W'   `Wb MM' "' 8I   `"
-//        MM.       8M     M8 MM 8M     M8 MM     `YMMMa.
-//        `Mb.     ,YA.   ,A9 MM YA.   ,A9 MM     L.   I8
-//          `"bmmmd' `Ybmd9'.JMML.`Ybmd9'.JMML.   M9mmmP'
-
-$body-bg: #EFECCA;
-$body-font-color: #444;
-$darkBlue: #5D718C;
-
-//Home Colors
-$orange:    #DE5605;
-$yellow:    #F7A035;
-$blueLight: #B1DEB5;
-$blueDark:  #65ABA6;
-$white:     #EFECCA;
-
-//Porta Colors
-$bluePorta: #00BDFF;
-$redPorta:  #BE4D4B;
-$bgPorta:   #000000;
-
-//Ketchum Colors
-$yellowKetch: #CAC9AA;
-$brownKetch: #684F40;
-$blueKetch: #47BCBA;
-
-//Carol Colors
-$blueCarol: #71B4C9;
-$redCarol: #CD3529;
-$greyCarol: #C4C0B6;
-
-//c2c Colors
-$redC2C: #FF2B0B;
-$blueC2C: #67A5CE;
-
-
-//                                                        ,,
-//         .g8"""bgd                                    `7MM
-//       .dP'     `M                                      MM
-//       dM'       `  .gP"Ya `7MMpMMMb. `7Mb,od8 ,6"Yb.   MM
-//       MM          ,M'   Yb  MM    MM   MM' "'8)   MM   MM
-//       MM.    `7MMF8M""""""  MM    MM   MM     ,pm9MM   MM
-//       `Mb.     MM YM.    ,  MM    MM   MM    8M   MM   MM
-//         `"bmmmdPY  `Mbmmd'.JMML  JMML.JMML.  `Moo9^Yo.JMML.
-
-
 body {
-	background-color: $body-bg;
-	//overflow-x: hidden;
-	position: relative !important;
-	border: 1px solid $body-bg;
-	top: 0;
-	left: 0;
-	min-height: 100%;
+  width: 1125px;
 }
 
-a.introLetter:hover {
-	cursor: default;
+/*Font Styling*/
+h1.contentTitle {
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  font-weight: bold;
+  font-family: "TradeGothic LT CondEighteen";
+  font-size: 12px;
+  margin: 0 0 5px 0;
 }
 
-a {
-	-webkit-transition: all .2s linear;
-	transition: all .2s linear;
-
-	&:hover {
-		cursor: pointer;
-	}
-}
-
-.current {
-	display: block;
-}
-
-
-.headerWrapper {
-	position: relative;
-	top: 0;
-	left: 0;
-	min-height: 30px;
-	padding: 2% 0 0 0;
-	margin: 3% 0 0 0;
-	max-width: 100%;
-	overflow: hidden;
-	//display: none;
-
-	.top-bar {
-	  margin-bottom: 0px !important;
-	  position: relative;
-	  top: 0;
-	  left: 0;
-	  //display: none;
-	  min-height: 30px;
-	  margin: 0 auto;
-
-		.titleRow { // ROBERT SAHM
-			position: relative;
-			top: 0;
-			left: 0;
-
-			ul.titleUl {
-				padding-bottom: .08% !important;
-				display: block;
-				position: relative;
-				top: 0;
-				left: 0;
-
-				li.name {
-
-
-					h1.name {
-						@include fontMed;
-						font-weight: 400;
-						white-space: nowrap;
-						overflow: show;
-						background-color: $body-bg;
-						//color: lighten($body-bg, 50%);
-						text-align: center;
-						position: relative;
-						top: 0;
-						left: 0;
-
-						//Header Title Kearning fixes
-						.loosen1 {
-							letter-spacing: .02em;
-						}
-						.tighten1 {
-							letter-spacing: -.015em;
-						}
-						.tighten2 {
-							letter-spacing: -.01em;
-						}
-						.loosen2 {
-							letter-spacing: .008em;
-						}
-					}
-				}
-			}
-		}
-	}
-
-	section.top-bar-section {
-		height: 1%;
-
-		.navRow { // Nav stylings
-			div {
-
-				ul.navUl {
-					background-color: $body-bg;
-  				width: 100%;
-  				display: block;
-					margin: 0 auto !important;
-  				text-align: center;
-
-					li.navLi {
-						display: inline-block;
-						position: relative;
-						margin: 0 !important;
-						float: none;
-						@include fontBook;
-						line-height: 1em;
-						height: 44px;
-						-webkit-transition: all .3s linear;
-						transition: all .3s linear;
-
-						:hover, :active, :target  {
-							-webkit-transition: all .2s linear;
-							transition: all .2s linear;
-  					  color: $orange;
-  					  @include fontMed;
-  					  text-shadow: 1px 1px 0 rgba(93,113,140, .5);
-  						}
-
-						a.navLink {
-  					  	width: 100%;
-  					 		width: 96px;
-  					 		height: 44px;
-  					 		margin-top: 30%; // nav push up
-  					 		margin-bottom: 10%; //nav push down
-  					 		line-height: .2em; // height of links
-  						}
-					}
-				}
-			}
-		}
-	}
-}
-
-.navSelected {
-	@include fontMed;
-	color: $orange !important;
-	text-shadow: 1px 1px 0 rgba(93,113,140, .5);
-}
-
-.descWrapper {
-	position: relative;
-	background-color: $body-bg;
-	margin-top: 20px;
-	max-height: 10px;
-	height: 60px;
-	max-width: 90%;
-
-
-	.topLineRow {
-		position: relative;
-		top: 0;
-		left: 0;
-
-		.topLine {
-			position: relative;
-			top: 0;
-			left: 0;
-			height: 0px;
-			border-top: 1px solid $yellow;
-			width: 80%;
-		}
-	}
-
-	.descRow {
-		position: relative;
-		top: 0;
-		left: 0;
-		height: 90px;
-
-		.descWrap {
-			position: relative;
-			top: 0;
-			left: 0;
-			//margin: 0 auto;
-			top: -13px; // moves description words up
-			line-height: 0;
-			height: .9em;
-			margin-top: 10px;
-			z-index: 400;
-
-			h4.desc {
-				// position: relative;
-				// top: 0;
-				// left: 0;
-				color: $yellow;
-				text-align: center;
-				@include fontBookIt;
-				padding: 0;
-				background-color: $body-bg;
-				line-height: .4em;
-				font-size: 1.2em;
-				width: 49%;
-				min-width: 160px;
-				height: auto;
-				margin: 0 auto;
-			}
-		}
-	}
-}
-
-
-//                                       ,,
-//     `7MMF'  `7MMF'             `7MM
-//       MM      MM                 MM
-//       MM      MM  .gP"Ya    ,M""bMM `7Mb,od8
-//       MMmmmmmmMM ,M'   Yb ,AP    MM   MM' "'
-//       MM      MM 8M"""""" 8MI    MM   MM
-//       MM      MM YM.    , `Mb    MM   MM
-//     .JMML.  .JMML.`Mbmmd'  `Wbmd"MML.JMML.
-
-.ribbonWrapper {
-	position: absolute;
-	top: 0;
-	right: 0;
-	overflow: hidden;
-	min-height: 150px;
-}
-
-.gitRibbon {
-	overflow: show;
-	background-color: $blueDark;
-	z-index: 300;
-	width: 350px;
-	text-align: center;
-	position: relative;
-	top: 45px;
-	right: -115px;
-	    -ms-transform: rotate(45deg); /* IE 9 */
-	-webkit-transform: rotate(45deg); /* Safari and Chrome */
-			    transform: rotate(45deg);
-	-webkit-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-	border: 1px dashed $body-bg;
-
-	&:hover {
-		//background-color: $orange;
-		border: 4px dashed $body-bg;
-		//opacity: 1;
-		//box-shadow: 1px 1px 4px rgba(93,113,140, .9);
-	}
-
-	a {
-		font-weight: 400;
-		display: block;
-		@include fontBook;
-		color: $body-bg;
-		line-height: 1.8em;
-		//opacity: .8;
-		text-decoration: none;
-		-webkit-transition: all .3s ease-in-out;
-		transition: all .3s ease-in-out;
-
-		&:hover {
-			line-height: 1.8em;
-			font-weight: 400;
-			display: block;
-			text-decoration: none;
-			text-shadow: 2px 2px 2px rgba(93,113,140, .9);
-		}
-	}
-}
-
-.logoRSRow {
-
-}
-
-.logoBorder {
-	width: 133px;
-	height: 133px;
-	margin: 0 auto;
-	position: relative !important;
-	display: block;
-	top: 0;
-	left: 0;
-	padding: 11px 0 0 5px;
-	box-sizing: border-box;
-	border-radius: 35px;
-	border: 6px solid $orange;
-	margin-bottom: 3%;
-	-webkit-transition: all .1s linear;
-  transition: all .1s linear;
-
-	&:hover {
-		border: 6px solid $blueLight;
-		box-shadow: 5px 6px 1px 0px rgba(0, 0, 0, 0.25);
-		left: -6px;
-		top: -5px;
-	}
-
-	img.logoRS {
-		margin: 0;
-		padding: 0;
-		width: 111px;
-	}
-
-	a.braceLeft {
-		position: absolute;
-		@include fontLight;
-		font-size: 4.9em;
-		top: 36px;
-		left: 5px;
-		color: $yellow;
-		-webkit-transition: all .1s linear;
-		transition: all .1s linear;
-
-		&:hover {
-			color: $blueLight;
-		}
-	}
-
-	a.logoR {
-		@include fontBook;
-		font-size: 5.9em;
-		position: absolute;
-		top: 15px;
-		left: 21px;
-		text-shadow: 3px 0px 0 $body-bg,
-								-3px 0px 0 $body-bg;
-		z-index: 100;
-		color: $orange;
-		-webkit-transition: all .1s linear;
-		transition: all .1s linear;
-
-		&:hover {
-			color: $blueDark;
-		}
-	}
-
-	a.logoS {
-		@include fontBook;
-		font-size: 6em;
-		position: absolute;
-		top: 58px;
-		left: 48px;
-		color: $orange;
-		-webkit-transition: all .1s linear;
-		transition: all .1s linear;
-
-		&:hover {
-			color: $blueDark;
-		}
-	}
-
-	a.braceRight {
-		position: absolute;
-		@include fontLight;
-		font-size: 4.9em;
-		top: 36px;
-		left: 97px;
-		color: $yellow;
-		-webkit-transition: all .1s linear;
-		transition: all .1s linear;
-
-		&:hover {
-			color: $blueDark;
-		}
-	}
-}
-
-.bgCol {
-	background-color: $body-bg !important;
-}
-
-ul.titleUl {
-	padding-bottom: 3%; // protects header text blocking
-}
-
-// Nav
-@media only screen and (max-width: 800px) {
-	.navRow {
-		//position: relative;
-		//top: -29px;
-	}
-}
-
-//          ,,
-//          db            mm
-//                        MM
-//        `7MM `7MMpMMMbmmMMmm `7Mb,od8 ,pW"Wq.
-//          MM   MM    MM MM     MM' "'6W'   `Wb
-//          MM   MM    MM MM     MM    8M     M8
-//          MM   MM    MM MM     MM    YA.   ,A9
-//        .JMML.JMML  JMML`Mbmo.JMML.   `Ybmd9'
-
-.introWrapper {
-	margin: 0;
-	padding: 0 0 2% 0;
-}
-
-.introHide {
-	//display: none;
-}
-
-.rowIntro {
-	text-align: center;
-	margin-bottom: 0px;
-	margin-top: 3%;
-	overflow: hidden;
-}
-
-h1.biggest, h2.biggest {
-	@include fontMed;
-	color: $orange;
-	position: relative;
-	line-height: .5em;
-	text-align: center;
-}
-
-h2.biggest {
-	color: $blueDark;
-}
-
-h3.biggest {
-	font-size: 1.3em;
-	color: $blueLight;
-}
-
-.def {
-	margin-top: -1%;
-}
-
-.biggestItal {
-	@include fontMedIt;
-	color: $blueDark;
-	padding-bottom: 0%;
-	z-index: 200;
-}
-
-.hider {
-	//display: none;
-}
-
-// fixes webkit letter flickering
-a.dot2, a.u {
-	z-index: 400;
-	-webkit-backface-visibility: hidden !important;
-}
-
-a.n2 {
-	letter-spacing: -.03em;
-}
-
-#introWord1, #introWord2 {
-	position: relative;
-	top: 0;
-	padding: 0;
-	font-size: 1em;
-}
-
-#introWord1 {
-	//display: none;
-	margin: 0 0 5% 0;
-}
-
-#introWord2 {
-	@include fontMed;
-	position: relative;
-	left: -2000px;
-	margin: -25% 0 0 0;
-	padding: 1% 0 0 0;
-	line-height: 1em;
-}
-
-.introLetter2 {
-	text-transform: uppercase;
-}
-
-.medItal {
-	@include fontMedIt;
-	color: $orange;
-	font-size: 1.6em;
-	z-index: 100;
-	//margin-bottom: -10px;
-}
-
-.pattern1 {
-	background-image: url('pattern1@2x.png');
-	opacity: .27;
-	z-index: -200;
-	display: block;
-	position: absolute !important;
-	top: 0;
-	left: 0;
-	min-height: 100%;
-	width: 100%;
-	//margin-top: 20%;
-}
-
-span.pattern2 {
-	background-image: url('pattern2@2x.png');
-	opacity: 1;
-	z-index: 200;
-	left: -2000px;
-	border: 5px solid transparent;
-
-}
-
-.orangeLine {
-	border-bottom: 1px solid $orange;
-}
-
-.workIntroText h1 {
-	position: relative;
-	font-size: 1.4em !important;
-	text-align: center;
-	margin: 0 0 3% 0;
-	padding: 0;
-	width: 100%;
-	top: 10px;
-	@include fontBookIt;
-	color: $yellow;
-}
-
-//         ,,
-//       `7MM
-//         MM
-//         MMpMMMb.  ,pW"Wq.`7M'   `MF'.gP"Ya `7Mb,od8
-//         MM    MM 6W'   `Wb VA   ,V ,M'   Yb  MM' "'
-//         MM    MM 8M     M8  VA ,V  8M""""""  MM
-//         MM    MM YA.   ,A9   VVV   YM.    ,  MM
-//       .JMML  JMML.`Ybmd9'     W     `Mbmmd'.JMML.
-//        ,,        ,,
-//       *MM      `7MM                  `7MM
-//        MM        MM                    MM
-//        MM,dMMb.  MM  ,pW"Wq.   ,p6"bo  MM  ,MP,pP"Ybd
-//        MM    `Mb MM 6W'   `Wb 6M'  OO  MM ;Y  8I   `"
-//        MM     M8 MM 8M     M8 8M       MM;Mm  `YMMMa.
-//        MM.   ,M9 MM YA.   ,A9 YM.    , MM `Mb.L.   I8
-//        P^YbmdP'.JMML.`Ybmd9'   YMbmd'.JMML. YAM9mmmP'
-
-img.portaBlockBW,
-img.ketchBlockBW,
-img.carolBlockBW,
-img.c2cBlockBW,
-img.crawBlockBW,
-img.candlBlockBW {
-	//width: 100%;
-	position: relative;
-	top: 0;
-	left: 0;
-	//min-height: 50px;
-	margin: 0 auto;
-	z-index: 100;
-}
-
-// Hover state images
-img.portaBlockCol,
-img.ketchBlockCol,
-img.carolBlockCol,
-img.c2cBlockCol,
-img.crawBlockCol,
-img.candlBlockCol {
-	width: 100%;
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 100;
-}
-
-.bricksBG {
-	background-image: url('bricksBG.jpg');
-}
-
-#candlBlockWrapper {
-	margin: 0 auto;
-}
-
-.blocksWrapper {
-	margin-top: 2%;
-	margin-bottom: 5%;
-	background-color: rgba(222, 86, 5, .05);
-	//background-color: rgba(100, 50, 0, 0.1);
-	//border: 1px solid #ddd;
-    box-shadow: 0px 0px 0px -6px $body-bg,
-  			    0px -3px 6px rgba(100, 50, 0, 0.1);
-}
-
-.basicTextShadow {
-	text-shadow: 4px 4px 0 rgba(100, 50, 0, 0.5);
-}
-
-.blockWrapper {
-	z-index: 100;
-	margin-bottom: 0;
-	border: 1px solid rgba(103,165,206, .3);
-	cursor: pointer;
-
-	&:hover {
-		border: 0 !important;
-		//background-color: rgba(101,171,166, .3);
-		box-shadow: 0px 0px 0px -6px $body-bg,
-  		           0px 3px 6px rgba(100, 50, 0, 0.3);
-	}
-
-	.imgClick {
-
-		.hoverFade {
-			position: relative;
-			top: 0;
-			left: 0;
-
-			img {
-  				margin: 0 auto;
-    		}
-    	}
-	}
-}
-
-.shrinkMe {
-	z-index: 200;
-}
-
-//HOVER WORDS
-
-.hoverText {
-	display: none;
-	font-size: .9em !important;
-	@include fontBook;
-	text-align: center;
-	z-index: 100;
-
-	p {
-		margin: 5% 0 0 0;
-
-		a {
-			display: block;
-			@include fontBold;
-			font-weight: 400;
-			position: relative;
-			margin-top: 0;
-			padding: 0 0 0 0;
-			line-height: .8em;
-		}
-	}
-}
-
-.portaHoverP {
-	color: $bluePorta;
-}
-
-.portaHoverA a {
-	color: $redPorta;
-}
-
-.ketchHoverText, .ketchHoverP {
-	color: $brownKetch;
-	@include fontBold;
-}
-
-p.carolHoverP {
-	color: $blueCarol;
-
-	a {
-		color: $redCarol;
-	}
-}
-
-p.c2cHoverP {
-	@include fontBold;
-	color: white;
-
-	a {
-		color: $blueC2C;
-	}
-}
-
-.crawHoverText, .crawHoverP {
-	color: $brownKetch;
-
-	a {
-		margin-top: -70px;
-	}
-}
-
-.candlHoverP {
-	color: #999;
-
-	 a {
-	 	color: black;
-	 	margin-bottom: 50px;
-	 }
-}
-
-
-
-//       ,,        ,,                ,,        ,,
-//      *MM        db               *MM      `7MM
-//       MM                          MM        MM
-//       MM,dMMb.`7MM  .P"Ybmmm      MM,dMMb.  MM  ,pW"Wq.   ,p6"bo  ,pP"Ybd
-//       MM    `Mb MM :MI  I8        MM    `Mb MM 6W'   `Wb 6M'  OO  8I   `"
-//       MM     M8 MM  WmmmP"        MM     M8 MM 8M     M8 8M       `YMMMa.
-//       MM.   ,M9 MM 8M             MM.   ,M9 MM YA.   ,A9 YM.    , L.   I8
-//       P^YbmdP'.JMML.YMMMMMb       P^YbmdP'.JMML.`Ybmd9'   YMbmd'  M9mmmP'
-//                    6'     dP
-//                    Ybmmmd'
-
-
-.commentText {
-	margin-top: 2%;
-	text-align: center;
-	@include fontBook;
-	margin-bottom: 2%;
-
-	h2 {
-		font-size: 1.6em;
-	}
-
-	span.biggerText {
-		font-size: 1.8em;
-		text-align: center;
-		color: $bluePorta;
-	}
-
-	h4 {
-		font-size: 1.4em;
-	}
-}
-
-.viewLive {
-
-	a {
-		text-decoration: underline;
-		@include fontMed;
-		display: block;
-		font-weight: 400 !important;
-	}
-}
-
-span.commentTextSmall {
-	display: block;
-	margin-top: 5%;
-	text-align: center;
-	padding: 0;
-	@include fontBookIt;
-	color: $redPorta;
-	//opacity: .75;
-	font-size: 1em;
-}
-
-
-//                                      ,,
-//       `7MM              mm         `7MM
-//         MM              MM           MM
-//         MM  ,MP.gP"Ya mmMMmm ,p6"bo  MMpMMMb. `7MMpMMMb.pMMMb.
-//         MM ;Y ,M'   Yb  MM  6M'  OO  MM    MM   MM    MM    MM
-//         MM;Mm 8M""""""  MM  8M       MM    MM   MM    MM    MM
-//         MM `MbYM.    ,  MM  YM.    , MM    MM   MM    MM    MM
-//       .JMML. YA`Mbmmd'  `MbmoYMbmd'.JMML  JMML.JMML  JMML  JMML.
-
-
-h1.ketchHeader {
-	font-size: 3.7em;
-	@include fontBold;
-	color: $blueKetch;
-	padding: 0;
-	margin: 0;
-}
-
-p.ketchComment2 {
-	color: #555;
-	@include fontBook;
-	font-size: 1.4em;
-	font-weight: 400;
-	//text-align: center;
-	z-index: 300;
-	padding: 5% 0;
-
-	span {
-		@include fontMed;
-	}
-}
-
-#ketchRow {
-	margin-top: 0%;
-	overflow: hidden;
-	display: none;
-}
-
-.ketchTexture {
-	background-image: url('ketchumBG.png');
-	opacity: .75;
-	background-repeat: no-repeat;
-	//background-size: cover;
-	height: 100%;
-	max-height: 500px;
-	min-width: 100%;
-	position: absolute;
-	//left: -20%;
+h2.contentHeader {
+  color: #4C89A6;
+  font-weight: 100;
+  font-family: "TradeGothic LT CondEighteen";
+  font-size: 20px;
+  margin: 0 0 10px 0;
 }
 
-img.copyjunk1, img.copyjunk2, img.copyjunk3 {
-	position: absolute;
-	left: 0;
-	z-index: 100;
-	min-width: 120%;
-	opacity: .5;
-	min-height: 100%;
-	max-height: 400px;
-	display: none;
+h3, h4 {
+  font-family: 'verdana';
+  font-size: 11px;
+  line-height: .6em;
+  color: #999;
 }
 
-img.copyjunk2 {
-	top: 100%;
+a, a:hover, a:active, a:focus {
+  color: #999;
 }
-img.copyjunk3 {
-	top: 20%;
 
+/* Top Nav Area Styling*/
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-iframe#ketchIframe {
-	padding-left: 0%;
-	//margin-left: 25%;
-	width: 100%;
-	min-height: 680px;
-	overflow: hidden;
-	border: none;
-	z-index: 200;
-	//zoom: 0.75
-
-	iframe {
-		overflow: hidden;
-	}
-}
-
-.ketchHider {
-	height: 680px;
-	overflow: hidden;
-}
-
-.ketchumLogo {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 200;
-	margin-top: 2%;
-	margin-left: 13%;
-}
-
-.ketchThing {
-
-	img.ketchBIG {
-		position: relative;
-		width: 900px !important;
-		//width: 100%;
-		margin-top: 2%;
-		margin-bottom: 2%;
-		//margin-left: 20%;
-		}
-	img.slideBlock {
-		position: absolute;
-		max-width: 202px;
-		top: 137px;
-		left: 629px;
-	}
+.nav-wrap {
+  width: 1025px;
+  height: 159px;
+  background-image: url("header_bg.png");
+  padding-top: 49px;
+  margin-bottom: 38px;
 }
-
-img.ketchPlayer {
 
+.nav-1 {
+  //margin-bottom: 17px;
+  margin-bottom: 6px;
+  margin-left: 329px;
+  height: 31px
 }
 
-p.ketchCentered  {
-	text-align: center;
-	@include fontMed;
-	font-size: 2em;
-	margin-bottom: 0;
-	padding: 1% 0;
+.nav-2-ul {
+  height: 31px
 }
 
-.ketchMakingRow {
-	padding-top: 5%;
+.nav2 {
+  margin: 0;
+  padding: 0;
 }
 
-img.ketchMaking {
-	margin-top: -5%;
+ul.nav-1-ul li, 
+ul.nav-2-ul li,
+ul.nav-3-ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
 }
-
-.ketchMakingRow2 {
-	margin-top: 0%;
-
-	p {
-		font-size: 1.2em;
-
-		a {
-			font-size: 1.8em;
 
-			&:hover {
-				color: $orange;
-			}
-		}
-	}
+form.searchForm {
+ font-size: 12px;
 }
 
-// p.ketchLink {
-// 	font-size: 2em;
+// form.searchForm {
+//   display: block;
+//   display: block;
+//   position: relative;
+//   width: 105px;
+//   font-size: 10px;
+//   margin-top: -200px;
 // }
 
-
-//       `7MM"""Mq.                   mm
-//         MM   `MM.                  MM
-//         MM   ,M9 ,pW"Wq.`7Mb,od8 mmMMmm ,6"Yb.
-//         MMmmdM9 6W'   `Wb MM' "'   MM  8)   MM
-//         MM      8M     M8 MM       MM   ,pm9MM
-//         MM      YA.   ,A9 MM       MM  8M   MM
-//       .JMML.     `Ybmd9'.JMML.     `Mbm`Moo9^Yo.
-
-
-
-#portaRow {
-	display: none;
-	background-color: black;
-	position: relative;
-	top: 50px;
-	left: 0;
-	padding-top: 6%;
-	margin-bottom: 0;
-
-	.portaInfo {
-
-		p1 {
-			display: block;
-			color: $bluePorta;
-			@include fontBook;
-			font-size: 1.4em;
-			letter-spacing: .05em;
-			//padding-left: 0;
-			padding: 10% 2% 10% 5%;
-			margin: 1% 0 5% 2%;
-			border-right: 1px solid $bluePorta;
-			border-left: 1px solid $bluePorta;
-		}
-	}
-}
-
-.portaHeader {
-	font-size: 3.7em;
-	@include fontMed;
-	text-align: center;
-	color: $bluePorta;
-}
-
-h4.portaComment {
-	color: #999;
-
-	a {
-		color: $bluePorta;
-		text-decoration: none;
-		font-size: 1.7em;
-
-		&:hover {
-			color: $redPorta;
-		}
-	}
-}
-
-h2.portaComment {
-	font-size: 1.5em;
-	color: $redPorta;
-	text-align: center;
-	margin: 5% 0;
-}
-
-.portaIconsRow {
-
-	div {
-
-
-	img {
-	padding: 0;
-	margin: 0;
-}
-}
-}
-
-//                                          ,,
-//        .g8"""bgd                       `7MM
-//      .dP'     `M                         MM
-//      dM'       `,6"Yb. `7Mb,od8 ,pW"Wq.  MM
-//      MM        8)   MM   MM' "'6W'   `Wb MM
-//      MM.        ,pm9MM   MM    8M     M8 MM
-//      `Mb.     ,8M   MM   MM    YA.   ,A9 MM
-//        `"bmmmd'`Moo9^Yo.JMML.   `Ybmd9'.JMML.
-
-#carolRow {
-	display: none;
-	margin-top: 5%;
-	padding-top: 5%;
-	padding: 5%;
-	background-color: white;
-
-	h2.carolComment {
-		@include fontBold;
-		color: $greyCarol;
-		font-size: 3.7em;
-		text-align: center;
-		padding: 0;
-		margin: 0;
-		//background-color: $greyCarol;
-	}
-
-	img {
-		display: block;
-		margin: 0 auto;
-	}
-
-	.carolCommentDark {
-		background-color: $greyCarol;
-		margin: 7% 0;
-		padding: 5% 0;
-	}
-
-	h4.carolComment {
-		text-align: center;
-		//background-color: $greyCarol;
-
-		a {
-			font-size: 2.5em;
-		}
-	}
-
-	img.carolLogoSmall {
-		margin-top: 3%;
-	}
-
-	img.indiaSmall {
-		padding: 5% 0;
-	}
-
-	img.devi {
-		margin-top: 5%;
-	}
-
-	img.carolBar {
-		padding: 7% 0;
-		width: 100%;
-		max-width: 1216px;
-	}
-
-	img.anatsui {
-			padding-top: 5%;
-	}
-
-	img.carolFull {
-		margin-top: 8%;
-		border: 1px solid black;
-	}
-}
-
-.carolInteractive {
-	background-color: $greyCarol;
-	min-width: 1000px;
-}
-
-
-//      ,p6"bo  pd*"*b.  ,p6"bo
-//     6M'  OO (O)   j8 6M'  OO
-//     8M          ,;j9 8M
-//     YM.    , ,-='    YM.    ,
-//      YMbmd' Ammmmmmm  YMbmd'.
-
-
-#c2cRow {
-	display: none;
-	position: relative;
-	width: 100%;
-	margin-top: 2%;
-	padding-top: 0%;
-	padding: 0%;
-
-	.bricksBigBG {
-		position: absolute;
-		width: 100%;
-		top: 0;
-		left: 0;
-		min-height: 1000px;
-		height: 100%;
-		background-image: url('bricksBG3.png');
-	}
-
-	.bricksBG2 {
-		//background-image: url('bricksBG3.png');
-		padding: 2% 0;
-	}
-
-	.bricksBGStrong {
-		padding: 8% 0;
-		background-image: url('bricksBGStrong.png');
-		///opacity: .5;
-	}
-
-	.c2cContentWrapper {
-		z-index: 100;
-	}
-
-	h2.c2cComment {
-		@include fontBold;
-		color: #333;
-		font-size: 3.7em;
-		text-align: center;
-		padding: 0;
-		margin: 0 0 3% 0;
-		text-shadow: 2px 2px 0 $redC2C;
-		//background-color: $greyCarol;
-	}
-
-	p.c2cComment {
-		@include fontMed;
-		text-align: center;
-		color: #777;
-		margin-top: 3%;
-		//text-shadow: 1px 1px 0 $blueC2C;
-	}
-
-	h4.c2cBigText {
-		text-align: center;
-		color: $blueC2C;
-		font-size: 2.3em;
-		@include fontMed;
-		padding: 0;
-		text-shadow: 1px 1px 0 $redC2C;
-		//background-color: $greyCarol;
-
-		a {
-			font-size: 2.5em;
-		}
-	}
-
-	.signBigRow {
-		margin: 3% auto;
-	}
-
-	.c2cIphoneRow {
-		margin: 3% auto;
-	}
-
-	.oldSignWrap {
-		padding: 2% 0 0 0;
-
-		img {
-			padding: 0;
-		}
-	}
-
-	.oldSignWrap2 {
-
-		padding: 0;
-		img {
-			padding: 0 0 8% 0;
-
-		}
-	}
-
-	img {
-		display: block;
-		margin: 0 auto;
-		padding: 0;
-	}
-
-	img.oldSign {
-		margin-bottom: 15%;
-	}
-
-	img.c2cPinBig {
-		//max-width: 250px;
-	}
-}
-
-.c2cBigBlock {
-	display: none;
-}
-
-.c2cWrapper {
-	background-image: url('bricksBigDark.jpg');
-	max-height: 400px;
-	margin-top: 3%;
-}
-
-.c2cAwning {
-	width: 100%;
-	margin: 7%;
-}
-
-
-
-
-
-//                                           ,...
-//                                         .d' ""       mm
-//                                         dM`          MM
-//  ,p6"bo `7Mb,od8 ,6"Yb`7M'    ,A    `MFmMMm,pP"Ybd mmMMmm
-// 6M'  OO   MM' "'8)   MM VA   ,VAA   ,V  MM 8I   `"   MM
-// 8M        MM     ,pm9MM  VA ,V  VA ,V   MM `YMMMa.   MM
-// YM.    ,  MM    8M   MM   VVV    VVV    MM L.   I8   MM
-//  YMbmd' .JMML.  `Moo9^Yo.  W      W   .JMMLM9mmmP'   `Mbmo
-
-// .crawBigBlock {
-// 	display: none;
+// input {
+//   display: block;
+//   position: relative;
+//   margin-top: -50px;
 // }
 
-// .crawWrapper {
-// 	margin-top: 3%;
-// 	background-image: url('crawBG.jpg');
-// 	background-size: cover;
-// 	background-position: center;
-// 	width: 100%;
-// 	background-repeat: no-repeat;
-// 	margin-bottom: 100px;
-// 	max-height: 400px;
-// 	border: 7px solid black;
-// }
-
-// .crawHeader {
-// 	padding-top: 3%;
-// 	padding-left: 3%;
-// 	padding-right: 3%;
-// 	padding-bottom: 7%;
-// }
-
-//         ,,
-//        *MM                             mm
-//         MM                             MM
-//  ,6"Yb. MM,dMMb.   ,pW"Wq.`7MM  `7MM mmMMmm
-// 8)   MM MM    `Mb 6W'   `Wb MM    MM   MM
-//  ,pm9MM MM     M8 8M     M8 MM    MM   MM
-// 8M   MM MM.   ,M9 YA.   ,A9 MM    MM   MM
-// `Moo9^YoP^YbmdP'   `Ybmd9'  `Mbod"YML. `Mbmo
-
-#aboutRow {
-	padding: 0 5% 0 5%;
-	display: none;
-	margin-bottom: 80px;
-
-	.aboutList {
-	  font-size: 1em;
-	}
-
-	.row {
-		margin-top: 3%;
-	}
-
-	.mePic2 {
-		position: relative;
-		float: right;
-		max-width: 250px;
-		min-width: 200px;
-		margin: 0 auto 5% auto;
-		padding-right: 1em;
-		padding-top: 1%;
-	}
-
-	h2.aboutMed {
-		display: block;
-		@include fontMed;
-		padding: 0 0 0 0;
-		margin: 0 0 2% 0;
-		font-size: 2.7em;
-		line-height: 1.1em;
-		color: $darkBlue;
-	}
-
-	.aboutP {
-		@include fontBook;
-		font-size: 1.3em;
-	}
-
-	ul {
-		display: block;
-		margin-left: 2%;
-		list-style-type: circle;
-		margin: 0 0 0 5%;
-		padding: 0;
-
-		li {
-			@include fontBook;
-			font-size: 1em;
-		}
-	}
-	.centered {
-		text-align: center;
-	}
-
-	.adobeStuff {
-		margin: 4% 0;
-
-		div {
-
-		}
-
-		img.iconsAdobe {
-			width: 100%;
-			max-width: 497px;
-		}
-	}
-
-	a#dlPDF {
-		display: block;
-		margin: 0 auto;
-		text-align: center;
-		font-size: 1.5em;
-	}
+/* Left Sub-Nav */
+.leftSubNav {
+  float: left;
+  display: block;
+  width: 261px;
+  height: 531px;
+  padding-left: 44px;
 }
 
-//     ,...
-//   .d' ""                 mm
-//   dM`                    MM
-//  mMMmm,pW"Wq.   ,pW"Wq.mmMMmm .gP"Ya `7Mb,od8
-//   MM 6W'   `Wb 6W'   `Wb MM  ,M'   Yb  MM' "'
-//   MM 8M     M8 8M     M8 MM  8M""""""  MM
-//   MM YA.   ,A9 YA.   ,A9 MM  YM.    ,  MM
-// .JMML.`Ybmd9'   `Ybmd9'  `Mbmo`Mbmmd'.JMML.
 
-.footerBlocker {
-	position: relative;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 50px;
-	display: none;
+
+.subNavHeader {
+  padding-bottom: 10px;
 }
 
-#sticky_footer {
- 	position: fixed;
- 	overflow: hidden;
- 	bottom: 0px;
- 	left: 0px;
- 	width: 100%;
- 	background-color: $darkBlue;
- 	height: 2em;
- 	z-index: 500;
- 	opacity: .8;
- 	box-shadow: 0px 1px 6px 1px rgba(0, 0, 0, 0.45);
- 	padding-right: 1%;
- 	font-size: .8em;
- 	-webkit-transition: all .2s linear;
- 	transition: all .2s linear;
-
- 	&:hover {
- 		height: 4.0em;
- 		opacity: 1;
- 	}
-
-  	p.footer1 {
-  		padding-top: .1em;
-  		@include fontMed;
-  		color: $yellow;
-  		text-align: right;
-  	}
+.indented {
+  margin-left: 36px;
 }
 
-// just some little border class tools
-.redBorder {
-	border: 1px solid red;
+.greenText {
+  color: #A9BD4C;
 }
 
-.blueBorder {
-	border: 1px solid blue;
+/* Main Content  */
+.mainContent {
+  float: left;
+  width: 470px;
+  height: 531px;
+  padding-left: 20px;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
 }
 
-.greenBorder {
-	border: 1px solid green;
+.contentP {
+  padding-right: 20px;
+  font-weight: bold;
+  line-height: 1.6em;
+  font-family: "Verdana";
+  font-size: 10px;
 }
 
-.blackBorder {
-	border: 2px solid black;
+/* Pop ups */
+.popUp1, .popUp2 {
+  display: none; 
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin: 0 auto;
+  z-index: 100;
+  border-radius: 25px;
+  background-image: url("images/header_bg.png");
 }
 
+.popUp2 {
+  height: 90px;
+}
+
+.popUp2 p {
+  color: white;
+  position: absolute;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 30px;
+  font-family: verdana;
+}
+
+a.pop2 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Printer friendly version */
+@media print {
+  
+}
